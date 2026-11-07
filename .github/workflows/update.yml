@@ -33,65 +33,75 @@ jobs:
           (async () => {
             const browser = await puppeteer.launch({
               headless: "new",
-              args: ['--no-sandbox', '--disable-setuid-sandbox']
+              args: [
+                '--no-sandbox', 
+                '--disable-setuid-sandbox',
+                '--disable-blink-features=AutomationControlled'
+              ]
             });
             const page = await browser.newPage();
             await page.setViewport({ width: 1440, height: 900 });
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
 
             const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
-            console.log('Henter:', url);
-            await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+            console.log('Navigerer til:', url);
+            
+            const response = await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
+            console.log('HTTP Status:', response.status());
 
-            // Giv dynamiske elementer et ekstra sekund til at render
-            await new Promise(r => setTimeout(r, 2000));
+            // Giv siden tid til at rendere
+            await new Promise(r => setTimeout(r, 3000));
+
+            // VISUELT BEVIS: Tag et screenshot af hvad botten reelt ser
+            await page.screenshot({ path: 'debug.png', fullPage: true });
+            console.log('Gemte debug.png for visuel bekræftelse.');
 
             const parsed = await page.evaluate(() => {
               let lvl = 14;
               let items = [];
 
-              // Metode 1: Tjek om sidens interne state eksisterer
-              if (window.__INITIAL_STATE__ && window.__INITIAL_STATE__.character) {
-                const char = window.__INITIAL_STATE__.character;
-                if (char.level) lvl = char.level;
-                if (char.equipment && char.equipment.equipped_items) {
-                  return {
-                    level: lvl,
-                    items: char.equipment.equipped_items.map(it => ({
+              try {
+                // Tjek 1: Internt data-objekt
+                if (window.__INITIAL_STATE__ && window.__INITIAL_STATE__.character) {
+                  const char = window.__INITIAL_STATE__.character;
+                  if (char.level) lvl = char.level;
+                  if (char.equipment && char.equipment.equipped_items) {
+                    items = char.equipment.equipped_items.map(it => ({
                       name: it.name || it.item?.name || 'Item',
                       slot: { name: it.slot?.name || it.slot?.type || 'Gear' },
                       quality: { type: (it.quality?.type || 'common').toLowerCase() }
-                    }))
-                  };
+                    }));
+                    return { level: lvl, items };
+                  }
                 }
+
+                // Tjek 2: Gennemgå HTML for links og slots
+                const links = document.querySelectorAll('a[href*="/item/"], div[data-item-id], div[class*="CharacterEquipmentSlot"]');
+                links.forEach(el => {
+                  const text = el.getAttribute('aria-label') || el.innerText || '';
+                  const cleanName = text.split('\n')[0].trim();
+                  const slotAttr = el.getAttribute('data-slot') || el.getAttribute('data-slot-name') || 'Gear';
+
+                  let quality = 'common';
+                  const classStr = el.className.toLowerCase();
+                  if (classStr.includes('epic') || classStr.includes('quality-4')) quality = 'epic';
+                  else if (classStr.includes('rare') || classStr.includes('quality-3')) quality = 'rare';
+                  else if (classStr.includes('uncommon') || classStr.includes('quality-2')) quality = 'uncommon';
+                  else if (classStr.includes('poor') || classStr.includes('quality-0')) quality = 'poor';
+
+                  if (cleanName && cleanName.length > 2 && !cleanName.includes('Empty')) {
+                    items.push({ name: cleanName, slot: { name: slotAttr }, quality: { type: quality } });
+                  }
+                });
+
+                // Tjek 3: Level fallback fra tekst
+                if (document.body && document.body.innerText) {
+                  const textMatch = document.body.innerText.match(/Level\s+(\d+)/i);
+                  if (textMatch) lvl = parseInt(textMatch[1], 10);
+                }
+              } catch (e) {
+                console.error("Fejl i parsing:", e);
               }
-
-              // Metode 2: Scrape DOM efter links eller slots med items
-              const links = document.querySelectorAll('a[href*="/item/"], div[data-item-id], div[class*="CharacterEquipmentSlot"]');
-              links.forEach(el => {
-                const text = el.getAttribute('aria-label') || el.innerText || '';
-                const cleanName = text.split('\n')[0].trim();
-                const slotAttr = el.getAttribute('data-slot') || el.getAttribute('data-slot-name') || 'Gear';
-
-                let quality = 'common';
-                const classStr = el.className.toLowerCase();
-                if (classStr.includes('epic') || classStr.includes('quality-4')) quality = 'epic';
-                else if (classStr.includes('rare') || classStr.includes('quality-3')) quality = 'rare';
-                else if (classStr.includes('uncommon') || classStr.includes('quality-2')) quality = 'uncommon';
-                else if (classStr.includes('poor') || classStr.includes('quality-0')) quality = 'poor';
-
-                if (cleanName && cleanName.length > 2 && !cleanName.includes('Empty')) {
-                  items.push({
-                    name: cleanName,
-                    slot: { name: slotAttr },
-                    quality: { type: quality }
-                  });
-                }
-              });
-
-              // Metode 3: Hvis intet blev fanget af links, find level i teksten
-              const textMatch = document.body.innerText.match(/Level\s+(\d+)/i);
-              if (textMatch) lvl = parseInt(textMatch[1], 10);
 
               return { level: lvl, items };
             });
@@ -113,7 +123,6 @@ jobs:
             };
 
             fs.writeFileSync('character.json', JSON.stringify(finalData, null, 2));
-            console.log('Resultat af scrape:', JSON.stringify(finalData, null, 2));
           })();
           EOF
 
@@ -121,10 +130,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add character.json
+          git add character.json debug.png
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Scrape gear slots and stats for Fabi"
+            git commit -m "Scrape data og opdater debug.png"
             git push
           fi

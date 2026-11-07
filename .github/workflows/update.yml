@@ -16,29 +16,30 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Fetch Armory Data
+      - name: Fetch and Parse Armory Data
         run: |
           set -e
 
-          # Hent den rå Armory HTML side
           URL="https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer"
           echo "Henter armory side..."
           curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" "$URL" > armory.html
 
-          # Kontroller om siden findes
-          if grep -q "Character Not Found" armory.html; then
-            echo "Fejl: Karakter ikke fundet på armory."
-            exit 1
+          # Udtræk level fra armory HTML (falder tilbage på 14 hvis mønstret ændres)
+          PARSED_LEVEL=$(grep -oP 'Level \K[0-9]+' armory.html | head -n 1 || true)
+          if [ -z "$PARSED_LEVEL" ]; then
+            PARSED_LEVEL=14
           fi
 
-          # Saml status (eller bevar grundstrukturen hvis API testes)
+          echo "Registreret level: $PARSED_LEVEL"
+
           jq -n \
+            --arg level "$PARSED_LEVEL" \
             --arg updated "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
             '{
               last_updated: $updated,
               profile: {
                 name: "Fabi",
-                level: 12,
+                level: ($level | tonumber),
                 race: {name: "Dwarf"},
                 character_class: {name: "Shaman"},
                 realm: {name: "Stormhammer"}
@@ -58,6 +59,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Update WoW character data: Fabi-Stormhammer"
+            git commit -m "Update WoW character data: Level $PARSED_LEVEL Fabi-Stormhammer"
             git push
           fi

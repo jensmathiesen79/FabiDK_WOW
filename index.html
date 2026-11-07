@@ -21,12 +21,7 @@
       --q-poor: #9d9d9d;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Open Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif; }
 
     body {
       background: #050608 radial-gradient(circle at 50% 30%, #1e283c 0%, #050608 60%) no-repeat;
@@ -39,117 +34,29 @@
       padding-top: 40px;
     }
 
-    /* --- TOP HEADER --- */
-    .armory-header {
-      width: 100%;
-      max-width: 1200px;
-      padding: 0 20px;
-      margin-bottom: 30px;
-      position: relative;
-      z-index: 10;
-    }
-
-    .header-top {
-      display: flex;
-      align-items: baseline;
-      gap: 15px;
-      margin-bottom: 5px;
-    }
-
-    .char-name {
-      font-size: 2.5rem;
-      color: #3b82f6;
-      font-weight: bold;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
-    }
-
-    .ilvl {
-      font-size: 1.2rem;
-      color: var(--nav-gold);
-      font-weight: bold;
-    }
-
-    .char-sub {
-      font-size: 0.95rem;
-      color: var(--text-main);
-      margin-bottom: 20px;
-    }
-
+    .armory-header { width: 100%; max-width: 1200px; padding: 0 20px; margin-bottom: 30px; position: relative; z-index: 10; }
+    .header-top { display: flex; align-items: baseline; gap: 15px; margin-bottom: 5px; }
+    .char-name { font-size: 2.5rem; color: #3b82f6; font-weight: bold; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+    .ilvl { font-size: 1.2rem; color: var(--nav-gold); font-weight: bold; }
+    .char-sub { font-size: 0.95rem; color: var(--text-main); margin-bottom: 20px; }
     .char-sub .guild { color: #b38b38; font-style: italic; }
     .char-sub .realm { color: var(--text-muted); }
+    .nav-tabs { display: flex; gap: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
+    .nav-tabs span { font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--text-muted); cursor: pointer; }
+    .nav-tabs span.active { color: var(--nav-gold); border-bottom: 2px solid var(--nav-gold); padding-bottom: 10px; margin-bottom: -11px; }
 
-    .nav-tabs {
-      display: flex;
-      gap: 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      padding-bottom: 10px;
-    }
-
-    .nav-tabs span {
-      font-size: 0.8rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: var(--text-muted);
-      letter-spacing: 1px;
-      cursor: pointer;
-    }
-
-    .nav-tabs span.active {
-      color: var(--nav-gold);
-      border-bottom: 2px solid var(--nav-gold);
-      padding-bottom: 10px;
-      margin-bottom: -11px;
-    }
-
-    /* --- CENTER STAGE --- */
-    .character-stage {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 1100px;
-      min-height: 550px;
-      padding: 0 20px;
-      position: relative;
-    }
-
-    .gear-col {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      width: 300px;
-      z-index: 10;
-    }
-
+    .character-stage { display: flex; justify-content: space-between; width: 100%; max-width: 1100px; min-height: 550px; padding: 0 20px; position: relative; }
+    .gear-col { display: flex; flex-direction: column; gap: 14px; width: 300px; z-index: 10; }
     .gear-col.left { text-align: right; }
     .gear-col.right { text-align: left; }
-    
-    .gear-bottom {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 20px;
-      z-index: 10;
-    }
+    .gear-bottom { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; z-index: 10; }
 
-    /* Gear Items (Nu som klikbare links) */
-    .gear-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none; /* Vigtig for links */
-      color: inherit;
-      transition: transform 0.1s ease-in-out;
-    }
-    
-    .gear-item:hover {
-      transform: scale(1.02);
-    }
-
+    .gear-item { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: transform 0.1s; }
+    .gear-item:hover { transform: scale(1.02); }
     .gear-col.left .gear-item { flex-direction: row; }
     .gear-col.right .gear-item, .gear-bottom .gear-item { flex-direction: row-reverse; }
 
+    /* NY gear-icon logik */
     .gear-icon {
       width: 48px;
       height: 48px;
@@ -157,31 +64,18 @@
       border: 2px solid var(--q-common);
       border-radius: 4px;
       box-shadow: 0 0 10px rgba(0,0,0,0.8);
-      background-size: cover;
-      background-position: center;
       flex-shrink: 0;
-      position: relative;
-    }
-
-    .gear-icon::after {
-      content: '?';
-      position: absolute;
-      inset: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #444;
-      font-size: 20px;
-      z-index: -1;
+      overflow: hidden;
     }
 
+    .gear-icon img { width: 100%; height: 100%; object-fit: cover; }
+    .gear-icon .fallback { color: #555; font-size: 22px; font-weight: bold; }
+
     .gear-info { display: flex; flex-direction: column; justify-content: center; }
-    
-    .gear-name {
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-shadow: 1px 1px 2px #000;
-    }
+    .gear-name { font-size: 0.9rem; font-weight: 600; text-shadow: 1px 1px 2px #000; }
 
     .epic .gear-icon { border-color: var(--q-epic); }
     .epic .gear-name { color: var(--q-epic); }
@@ -194,107 +88,25 @@
     .poor .gear-icon { border-color: var(--q-poor); }
     .poor .gear-name { color: var(--q-poor); }
 
-    /* --- BUND SEKTION --- */
-    .dashboard-bottom {
-      width: 100%;
-      background: var(--panel-bg);
-      border-top: 1px solid rgba(255,255,255,0.05);
-      margin-top: 40px;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-grow: 1;
-    }
-
-    .dashboard-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      width: 100%;
-      max-width: 1100px;
-    }
-
-    @media (max-width: 800px) {
-      .dashboard-grid { grid-template-columns: 1fr; }
-    }
-
-    .panel-section h3 {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border-bottom: 1px solid var(--border-color);
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-
-    .stat-prio {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      background: rgba(0,0,0,0.4);
-      padding: 15px 20px;
-      border-radius: 4px;
-      border: 1px solid var(--border-color);
-    }
-
+    .dashboard-bottom { width: 100%; background: var(--panel-bg); border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; }
+    .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; max-width: 1100px; }
+    @media (max-width: 800px) { .dashboard-grid { grid-template-columns: 1fr; } }
+    .panel-section h3 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 20px; }
+    
+    .stat-prio { display: flex; align-items: center; gap: 15px; background: rgba(0,0,0,0.4); padding: 15px 20px; border-radius: 4px; border: 1px solid var(--border-color); }
     .prio-item { display: flex; align-items: center; gap: 10px; }
     .prio-num { color: var(--text-muted); font-size: 0.8rem; }
     .prio-val { font-weight: bold; color: #fff; }
     .prio-arr { color: #555; }
 
     .checklist { list-style: none; }
-    .checklist-item {
-      display: flex;
-      align-items: center;
-      padding: 12px 15px;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
-    }
-    
-    .checklist-item input {
-      margin-right: 15px;
-      accent-color: var(--nav-gold);
-      width: 16px; height: 16px;
-    }
-
-    .checklist-item.done span {
-      text-decoration: line-through;
-      color: var(--text-muted);
-    }
-
-    .add-form {
-      display: flex;
-      margin-top: 15px;
-      gap: 10px;
-    }
-
-    .add-form input {
-      flex: 1;
-      background: rgba(0,0,0,0.5);
-      border: 1px solid var(--border-color);
-      color: #fff;
-      padding: 10px;
-      border-radius: 4px;
-    }
-
-    .add-form button {
-      background: var(--border-color);
-      color: var(--text-main);
-      border: 1px solid rgba(255,255,255,0.1);
-      padding: 0 15px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    .add-form button:hover { background: #2a303c; }
-
-    .sync-text {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.8rem;
-      color: #444;
-    }
-
+    .checklist-item { display: flex; align-items: center; padding: 12px 15px; border-bottom: 1px solid rgba(255,255,255,0.03); }
+    .checklist-item input { margin-right: 15px; accent-color: var(--nav-gold); width: 16px; height: 16px; }
+    .checklist-item.done span { text-decoration: line-through; color: var(--text-muted); }
+    .add-form { display: flex; margin-top: 15px; gap: 10px; }
+    .add-form input { flex: 1; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); color: #fff; padding: 10px; border-radius: 4px; }
+    .add-form button { background: var(--border-color); color: var(--text-main); border: 1px solid rgba(255,255,255,0.1); padding: 0 15px; cursor: pointer; border-radius: 4px; }
+    .sync-text { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #444; }
   </style>
 </head>
 <body>
@@ -353,7 +165,6 @@
   <script>
     async function loadData() {
       try {
-        // Hent den seneste fil direkte
         const res = await fetch('./character.json?cachebuster=' + new Date().getTime());
         const data = await res.json();
 
@@ -379,28 +190,27 @@
         leftCol.innerHTML = ''; rightCol.innerHTML = ''; botCol.innerHTML = '';
 
         items.forEach((item, index) => {
-          // Opret element som et link i stedet for en div
           const el = document.createElement('a'); 
           const qClass = (item.quality?.type || 'common').toLowerCase();
           
           el.className = `gear-item ${qClass}`;
-          
-          // Gør linket aktivt og søg på Wowhead Classic
           const safeName = encodeURIComponent(item.name);
           el.href = `https://www.wowhead.com/classic/search?q=${safeName}`;
-          el.target = "_blank"; // Åbn i ny fane
+          el.target = "_blank";
           
+          // Hvis den har fundet et ikon link, brug <img>, ellers skriv '?'
+          const iconHtml = (item.icon && item.icon.length > 5) 
+            ? `<img src="${item.icon}" onerror="this.style.display='none'">` 
+            : `<span class="fallback">?</span>`;
+
           el.innerHTML = `
             <div class="gear-info">
               <div class="gear-name">${item.name}</div>
             </div>
-            <div class="gear-icon"></div>
+            <div class="gear-icon">
+              ${iconHtml}
+            </div>
           `;
-
-          // Tving baggrundsbilledet direkte ind på elementet
-          if (item.icon && item.icon !== "") {
-            el.querySelector('.gear-icon').style.backgroundImage = `url('${item.icon}')`;
-          }
 
           if (index < 7) {
             leftCol.appendChild(el);

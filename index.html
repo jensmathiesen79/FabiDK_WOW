@@ -67,13 +67,13 @@
     /* Main Armory Layout */
     .armory-grid {
       display: grid;
-      grid-template-columns: 280px minmax(400px, 500px) 280px;
+      grid-template-columns: 280px minmax(450px, 550px) 280px;
       gap: 30px;
       width: 100%;
-      max-width: 1200px;
+      max-width: 1250px;
     }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 1050px) {
       .armory-grid {
         grid-template-columns: 1fr;
       }
@@ -108,6 +108,7 @@
       border-radius: 4px;
       border: 1px solid rgba(255, 255, 255, 0.05);
       transition: background 0.2s;
+      min-height: 64px;
     }
 
     .gear-item:hover {
@@ -156,50 +157,71 @@
       margin-top: 2px;
     }
 
-    /* Quality Colors applied via JS */
+    /* Quality Colors */
     .epic .gear-icon { border-color: var(--q-epic); }
     .epic .gear-name { color: var(--q-epic); }
-    
     .rare .gear-icon { border-color: var(--q-rare); }
     .rare .gear-name { color: var(--q-rare); }
-    
     .uncommon .gear-icon { border-color: var(--q-uncommon); }
     .uncommon .gear-name { color: var(--q-uncommon); }
-    
     .common .gear-icon { border-color: var(--q-common); }
     .common .gear-name { color: var(--q-common); }
-
     .poor .gear-icon { border-color: var(--q-poor); }
     .poor .gear-name { color: var(--q-poor); }
 
-    /* Center Panel (Checklist) */
+    /* Center Panel */
     .center-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .info-block {
       background: var(--panel-bg);
       border: 1px solid var(--border-color);
       border-radius: 8px;
-      padding: 24px;
+      padding: 20px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-      display: flex;
-      flex-direction: column;
     }
 
-    .center-panel h3 {
+    .info-block h3 {
       color: var(--gold);
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
       border-bottom: 1px solid var(--border-color);
-      padding-bottom: 10px;
+      padding-bottom: 8px;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
 
+    /* Stat Priority */
+    .stat-prio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+    
+    .stat-badge {
+      background: rgba(0,0,0,0.5);
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #333;
+    }
+
+    .stat-badge.primary { color: #ff5252; border-color: #5c1b1b; }
+    .stat-badge.secondary { color: #44ff44; border-color: #1b4d1b; }
+    .stat-badge.tertiary { color: #e0e0e0; }
+
+    /* Progress & Checklist */
     .status-row {
       display: flex;
       justify-content: space-around;
       margin-bottom: 20px;
       background: rgba(0,0,0,0.3);
-      padding: 15px;
+      padding: 12px;
       border-radius: 6px;
     }
 
@@ -208,34 +230,31 @@
     }
 
     .status-val {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #fff;
       font-weight: bold;
     }
 
     .status-label {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
       color: var(--text-muted);
       text-transform: uppercase;
     }
 
-    /* Checklist */
     .checklist {
       list-style: none;
-      overflow-y: auto;
-      flex-grow: 1;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .checklist-item {
       display: flex;
       align-items: center;
       background: rgba(0,0,0,0.2);
-      padding: 12px 15px;
-      margin-bottom: 8px;
+      padding: 10px 12px;
+      margin-bottom: 6px;
       border-radius: 4px;
       border-left: 3px solid transparent;
-      cursor: pointer;
+      font-size: 0.9rem;
     }
 
     .checklist-item:hover {
@@ -252,10 +271,11 @@
     }
 
     .checklist-item input {
-      margin-right: 15px;
-      width: 18px;
-      height: 18px;
+      margin-right: 12px;
+      width: 16px;
+      height: 16px;
       accent-color: var(--gold);
+      cursor: pointer;
     }
 
     .add-form {
@@ -268,9 +288,10 @@
       background: rgba(0,0,0,0.5);
       border: 1px solid var(--border-color);
       color: #fff;
-      padding: 10px 15px;
+      padding: 8px 12px;
       border-radius: 4px;
       outline: none;
+      font-size: 0.9rem;
     }
     
     .add-form input:focus {
@@ -281,7 +302,7 @@
       background: var(--gold);
       color: #000;
       border: none;
-      padding: 0 20px;
+      padding: 0 15px;
       font-weight: bold;
       border-radius: 4px;
       cursor: pointer;
@@ -312,46 +333,61 @@
     <!-- Venstre Udstyr -->
     <div class="gear-col gear-left" id="gear-left"></div>
 
-    <!-- Midterpanel (Progression) -->
+    <!-- Midterpanel (Stat Prio, Quests, Progression) -->
     <div class="center-panel">
-      <h3>Næste Mål & BiS</h3>
       
-      <div class="status-row">
-        <div class="status-item">
-          <div class="status-val" id="stat-slots">-</div>
-          <div class="status-label">Equipped</div>
-        </div>
-        <div class="status-item">
-          <div class="status-val" id="stat-goals">0/0</div>
-          <div class="status-label">Mål Klaret</div>
+      <!-- Stat Prioritet Blok -->
+      <div class="info-block">
+        <h3>Stat Prioritet (Enhancement)</h3>
+        <div class="stat-prio">
+          <div class="stat-badge primary">1. Strength</div> <span>&gt;</span>
+          <div class="stat-badge secondary">2. Agility</div> <span>&gt;</span>
+          <div class="stat-badge tertiary">3. Stamina</div> <span>&gt;</span>
+          <div class="stat-badge tertiary">Intellect</div>
         </div>
       </div>
 
-      <ul class="checklist" id="checklist"></ul>
+      <!-- Progression / Action Items -->
+      <div class="info-block">
+        <h3>Næste Steps & Quests</h3>
+        
+        <div class="status-row">
+          <div class="status-item">
+            <div class="status-val" id="stat-slots">-</div>
+            <div class="status-label">Equipped Slots</div>
+          </div>
+          <div class="status-item">
+            <div class="status-val" id="stat-goals">0/0</div>
+            <div class="status-label">Mål Klaret</div>
+          </div>
+        </div>
 
-      <form class="add-form" id="goal-form">
-        <input type="text" id="new-goal" placeholder="Tilføj nyt mål..." required>
-        <button type="submit">Tilføj</button>
-      </form>
+        <ul class="checklist" id="checklist"></ul>
+
+        <form class="add-form" id="goal-form">
+          <input type="text" id="new-goal" placeholder="Tilføj quest/mål..." required>
+          <button type="submit">Tilføj</button>
+        </form>
+      </div>
+
     </div>
 
     <!-- Højre Udstyr -->
     <div class="gear-col gear-right" id="gear-right"></div>
     
-    <!-- Bund Udstyr (Våben) -->
+    <!-- Bund Udstyr (Våben/Trinkets) -->
     <div class="gear-bottom" id="gear-bottom"></div>
   </div>
 
   <div class="sync-info" id="sync-time">Synkroniserer...</div>
 
   <script>
-    // 1. Data Indlæsning
+    // Data Indlæsning
     async function loadData() {
       try {
         const res = await fetch('./character.json?t=' + Date.now());
         const data = await res.json();
 
-        // Opdater Header
         if (data.profile) {
           document.getElementById('char-name').textContent = data.profile.name || 'Fabi';
           document.getElementById('char-level').textContent = data.profile.level || '14';
@@ -361,7 +397,6 @@
           document.getElementById('sync-time').textContent = `Sidst opdateret: ${d.toLocaleString('da-DK')}`;
         }
 
-        // Opdater Udstyr
         const items = (data.equipment && data.equipment.equipped_items) ? data.equipment.equipped_items : [];
         document.getElementById('stat-slots').textContent = items.length;
 
@@ -373,21 +408,21 @@
         rightCol.innerHTML = '';
         botCol.innerHTML = '';
 
-        // Fordel items grafisk som på Armory
         items.forEach((item, index) => {
           const el = document.createElement('div');
           const qClass = (item.quality?.type || 'common').toLowerCase();
           el.className = `gear-item ${qClass}`;
+          
+          const bgStyle = item.icon ? `style="background-image: url('${item.icon}')"` : '';
           
           el.innerHTML = `
             <div class="gear-info">
               <div class="gear-name">${item.name}</div>
               <div class="gear-slot">${item.slot?.name || 'Gear'}</div>
             </div>
-            <div class="gear-icon"></div>
+            <div class="gear-icon" ${bgStyle}></div>
           `;
 
-          // Logik: De første 7 til venstre, næste 7 til højre, resten i bunden.
           if (index < 7) {
             leftCol.appendChild(el);
           } else if (index < 14) {
@@ -398,16 +433,17 @@
         });
 
       } catch (e) {
-        console.error("Kunne ikke indlæse character.json", e);
-        document.getElementById('sync-time').textContent = 'Fejl: Kunne ikke hente live-data.';
+        console.error("Fejl:", e);
+        document.getElementById('sync-time').textContent = 'Fejl ved indlæsning af karakterdata.';
       }
     }
 
-    // 2. Tjekliste Logik (LocalStorage)
+    // Tjekliste Logik
     const defaultGoals = [
-      { text: "Nå level 20 for Ghost Wolf", done: false },
-      { text: "Lær Water Totem Questline", done: false },
-      { text: "Få tasker (10+ slots)", done: false }
+      { text: "Nå Level 20: Træn Ghost Wolf", done: false },
+      { text: "Start Water Totem Questline", done: false },
+      { text: "Gennemfør Cozy Sleeping Bag quest", done: false },
+      { text: "Lær 2H Axes/Maces (Level 20)", done: false }
     ];
 
     function getGoals() {
@@ -436,7 +472,6 @@
           <input type="checkbox" ${g.done ? 'checked' : ''} data-index="${idx}">
           <span>${g.text}</span>
         `;
-        
         list.appendChild(li);
       });
 
@@ -463,7 +498,6 @@
       input.value = '';
     });
 
-    // Start App
     loadData();
     renderGoals();
   </script>

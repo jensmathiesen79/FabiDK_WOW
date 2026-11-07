@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabi - WoW Forever Dashboard</title>
+  <style>
+    :root {
+      --bg-dark: #0f1115;
+      --card-bg: #1a1d24;
+      --card-border: #2a2e39;
+      --accent-gold: #f8b700;
+      --shaman-blue: #0070dd;
+      --text-main: #e0e0e0;
+      --text-muted: #9aa0a6;
+      --quality-epic: #a335ee;
+      --quality-rare: #0070dd;
+      --quality-uncommon: #1eff00;
+      --quality-common: #ffffff;
+      --quality-poor: #9d9d9d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      padding: 24px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--card-border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .character-title h1 {
+      font-size: 2rem;
+      color: var(--shaman-blue);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .character-title p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .sync-badge {
+      font-size: 0.8rem;
+      background: #1e293b;
+      padding: 6px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card h2 {
+      color: var(--accent-gold);
+      font-size: 1.25rem;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 8px;
+    }
+
+    /* Gear Liste */
+    .gear-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .gear-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #14171d;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border-left: 3px solid var(--card-border);
+    }
+
+    .slot-name {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      width: 90px;
+    }
+
+    .item-name {
+      flex: 1;
+      font-weight: 500;
+    }
+
+    /* Kvalitetsfarver */
+    .epic { color: var(--quality-epic); border-left-color: var(--quality-epic); }
+    .rare { color: var(--quality-rare); border-left-color: var(--quality-rare); }
+    .uncommon { color: var(--quality-uncommon); border-left-color: var(--quality-uncommon); }
+    .common { color: var(--quality-common); }
+    .poor { color: var(--quality-poor); }
+
+    /* Mål / Checklist */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .checklist-item {
+      display: flex;
+      align-items: center;
+      background: #14171d;
+      padding: 10px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .checklist-item input {
+      margin-right: 12px;
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent-gold);
+      cursor: pointer;
+    }
+
+    .checklist-item.done span {
+      text-decoration: line-through;
+      color: var(--text-muted);
+    }
+
+    .add-goal-form {
+      display: flex;
+      margin-top: 16px;
+      gap: 8px;
+    }
+
+    .add-goal-form input {
+      flex: 1;
+      background: #14171d;
+      border: 1px solid var(--card-border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: #fff;
+    }
+
+    .add-goal-form button {
+      background: var(--accent-gold);
+      border: none;
+      border-radius: 6px;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .status-box {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat-pill {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      padding: 14px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-pill .num {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--accent-gold);
+    }
+
+    .stat-pill .label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="character-title">
+        <h1 id="char-name">Fabi</h1>
+        <p id="char-details">Dwarf Shaman | Stormhammer EU (WoW Forever)</p>
+      </div>
+      <div class="sync-badge" id="last-updated">Indlæser data...</div>
+    </header>
+
+    <div class="status-box">
+      <div class="stat-pill">
+        <div class="num" id="char-level">-</div>
+        <div class="label">Level</div>
+      </div>
+      <div class="stat-pill">
+        <div class="num" id="gear-count">-</div>
+        <div class="label">Equipped Slots</div>
+      </div>
+      <div class="stat-pill">
+        <div class="num" id="goals-completed">0/0</div>
+        <div class="label">Mål Fuldført</div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- Udstyr -->
+      <div class="card">
+        <h2>Aktivt Udstyr (Armory Sync)</h2>
+        <div class="gear-list" id="gear-list">
+          <p style="color: var(--text-muted);">Henter udstyr fra character.json...</p>
+        </div>
+      </div>
+
+      <!-- Målsætninger & Tjekliste -->
+      <div class="card">
+        <h2>Næste Mål & BiS Progression</h2>
+        <ul class="checklist" id="checklist"></ul>
+
+        <form class="add-goal-form" id="goal-form">
+          <input type="text" id="new-goal-text" placeholder="Tilføj nyt delmål..." required>
+          <button type="submit">Tilføj</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 1. Hent data fra opdateret character.json
+    async function loadCharacterData() {
+      try {
+        const res = await fetch('./character.json');
+        if (!res.ok) throw new Error('Kunne ikke hente character.json');
+        const data = await res.json();
+
+        // Opdater header & stats
+        if (data.profile) {
+          document.getElementById('char-name').textContent = data.profile.name || 'Fabi';
+          const lvl = data.profile.level || '-';
+          document.getElementById('char-level').textContent = lvl;
+          
+          const race = data.profile.race ? data.profile.race.name : 'Dwarf';
+          const cls = data.profile.character_class ? data.profile.character_class.name : 'Shaman';
+          const realm = data.profile.realm ? data.profile.realm.name : 'Stormhammer';
+          document.getElementById('char-details').textContent = `${race} ${cls} | ${realm} (Classic Forever)`;
+        }
+
+        if (data.last_updated) {
+          const d = new Date(data.last_updated);
+          document.getElementById('last-updated').textContent = `Synkroniseret: ${d.toLocaleDateString()} ${d.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}`;
+        }
+
+        // Opdater gear
+        const gearContainer = document.getElementById('gear-list');
+        gearContainer.innerHTML = '';
+
+        if (data.equipment && data.equipment.equipped_items && data.equipment.equipped_items.length > 0) {
+          const items = data.equipment.equipped_items;
+          document.getElementById('gear-count').textContent = items.length;
+
+          items.forEach(item => {
+            const el = document.createElement('div');
+            const qualityClass = (item.quality ? item.quality.type : 'common').toLowerCase();
+            el.className = `gear-item ${qualityClass}`;
+            
+            const slotName = item.slot ? item.slot.name : 'Slot';
+            const itemName = item.name || 'Ukendt genstand';
+
+            el.innerHTML = `
+              <span class="slot-name">${slotName}</span>
+              <span class="item-name">${itemName}</span>
+            `;
+            gearContainer.appendChild(el);
+          });
+        } else {
+          gearContainer.innerHTML = '<p style="color: var(--text-muted);">Ingen genstande registreret eller profilen har endnu ikke data i Blizzard API.</p>';
+        }
+      } catch (err) {
+        console.error(err);
+        document.getElementById('last-updated').textContent = 'Kunne ikke indlæse data';
+        document.getElementById('gear-list').innerHTML = '<p style="color: #ef4444;">character.json ikke fundet eller data er tom.</p>';
+      }
+    }
+
+    // 2. LocalStorage Mål / Checklist
+    const DEFAULT_GOALS = [
+      { text: "Nå level 20 for Ghost Wolf", done: false },
+      { text: "Lær Water Totem Questline", done: false },
+      { text: "Opgrader våben til højere DPS", done: false },
+      { text: "Få tasker (10+ slots)", done: false }
+    ];
+
+    function getGoals() {
+      const saved = localStorage.getItem('fabi_wow_goals');
+      return saved ? JSON.parse(saved) : DEFAULT_GOALS;
+    }
+
+    function saveGoals(goals) {
+      localStorage.setItem('fabi_wow_goals', JSON.stringify(goals));
+      renderGoals();
+    }
+
+    function renderGoals() {
+      const goals = getGoals();
+      const list = document.getElementById('checklist');
+      list.innerHTML = '';
+
+      let completed = 0;
+      goals.forEach((g, idx) => {
+        if (g.done) completed++;
+        const li = document.createElement('li');
+        li.className = `checklist-item ${g.done ? 'done' : ''}`;
+        li.innerHTML = `
+          <input type="checkbox" ${g.done ? 'checked' : ''} data-index="${idx}">
+          <span>${g.text}</span>
+        `;
+        list.appendChild(li);
+      });
+
+      document.getElementById('goals-completed').textContent = `${completed}/${goals.length}`;
+
+      list.querySelectorAll('input').forEach(chk => {
+        chk.addEventListener('change', (e) => {
+          const index = e.target.getAttribute('data-index');
+          goals[index].done = e.target.checked;
+          saveGoals(goals);
+        });
+      });
+    }
+
+    document.getElementById('goal-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('new-goal-text');
+      const val = input.value.trim();
+      if (!val) return;
+      const goals = getGoals();
+      goals.push({ text: val, done: false });
+      saveGoals(goals);
+      input.value = '';
+    });
+
+    // Start
+    loadCharacterData();
+    renderGoals();
+  </script>
+</body>
+</html>

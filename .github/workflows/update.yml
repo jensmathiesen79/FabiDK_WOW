@@ -24,7 +24,7 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Scrape Armory (Fast Mode Fix)
+      - name: Scrape Armory (Med Ikoner Fix)
         run: |
           node - << 'EOF'
           const fs = require('fs');
@@ -37,10 +37,10 @@ jobs:
             });
             const page = await browser.newPage();
             
-            // Bloker tunge filer for hastighed
             await page.setRequestInterception(true);
             page.on('request', (req) => {
-              if (['image', 'stylesheet', 'font', 'media'].includes(req.resourceType())) {
+              // VIGTIGT: Vi blokerer IKKE 'image' længere. Ellers bygger Blizzard ikke URL'en.
+              if (['stylesheet', 'font', 'media'].includes(req.resourceType())) {
                 req.abort();
               } else {
                 req.continue();
@@ -50,13 +50,8 @@ jobs:
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
             
             const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
-            console.log('Navigerer til:', url);
-            
-            // FIX: Vent på HTML i stedet for netværksstilhed, da vi har afbrudt netværkskald
             await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-            console.log('Side indlæst, venter på rendering...');
             
-            // Giv dynamisk indhold 4 sekunder til at bygge HTML'en færdig
             await new Promise(r => setTimeout(r, 4000));
 
             const parsed = await page.evaluate(() => {
@@ -79,7 +74,11 @@ jobs:
                   const lines = container.innerText.trim().split('\n').filter(s => s.trim().length > 1);
                   if (lines.length > 0) {
                     const name = lines[0];
-                    if (name.length > 2 && !items.find(i => i.name === name) && !name.includes('Level')) {
+                    const lowerName = name.toLowerCase();
+                    
+                    // Filtrer 'Level' og 'Specialization' fra
+                    if (name.length > 2 && !items.find(i => i.name === name) && !lowerName.includes('level') && !lowerName.includes('specialization')) {
+                      
                       let q = 'common';
                       const html = container.innerHTML.toLowerCase();
                       if (html.includes('epic') || html.includes('q4') || html.includes('quality-4')) q = 'epic';
@@ -87,8 +86,16 @@ jobs:
                       else if (html.includes('uncommon') || html.includes('q2') || html.includes('quality-2')) q = 'uncommon';
                       else if (html.includes('poor') || html.includes('q0') || html.includes('quality-0')) q = 'poor';
                       
+                      // Hent ikon URL
+                      let iconUrl = '';
+                      const iconNode = container.querySelector('.GameIcon-icon');
+                      if (iconNode && iconNode.style.backgroundImage) {
+                        iconUrl = iconNode.style.backgroundImage.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+                      }
+                      
                       items.push({
                         name: name,
+                        icon: iconUrl,
                         slot: { name: container.getAttribute('data-slot') || container.getAttribute('data-slot-name') || 'Gear' },
                         quality: { type: q }
                       });
@@ -116,7 +123,6 @@ jobs:
             };
 
             fs.writeFileSync('character.json', JSON.stringify(finalData, null, 2));
-            console.log("Fandt", parsed.items.length, "genstande:", parsed.items.map(i => i.name).join(', '));
           })();
           EOF
 
@@ -128,6 +134,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Fast-scrape gear with DOM fix"
+            git commit -m "Scrape gear icons fix"
             git push
           fi

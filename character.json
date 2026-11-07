@@ -1,0 +1,13 @@
+{
+  "last_updated": "2026-11-07T12:06:47Z",
+  "profile": {
+    "code": 404,
+    "type": "BLZWEBAPI00000404",
+    "detail": "Not Found"
+  },
+  "equipment": {
+    "code": 404,
+    "type": "BLZWEBAPI00000404",
+    "detail": "Not Found"
+  }
+}

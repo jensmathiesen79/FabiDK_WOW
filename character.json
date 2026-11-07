@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T14:40:00Z",
+  "last_updated": "2026-11-07T13:43:04.642Z",
   "profile": {
     "name": "Fabi",
     "level": 14,
@@ -17,69 +17,111 @@
     "equipped_items": [
       {
         "name": "Worn Hide Cloak",
-        "slot": { "name": "Back" },
-        "quality": { "type": "common" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_misc_cape_08.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "poor"
+        }
       },
       {
         "name": "Soft Leather Tunic",
-        "slot": { "name": "Chest" },
-        "quality": { "type": "common" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_leather_08.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Primitive Mantle",
-        "slot": { "name": "Shoulder" },
-        "quality": { "type": "common" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_09.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
       },
       {
         "name": "Spellbinder Bracers",
-        "slot": { "name": "Wrist" },
-        "quality": { "type": "common" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_07.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
       },
       {
         "name": "Hunting Gloves",
-        "slot": { "name": "Hands" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_gauntlets_11.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Fine Leather Belt",
-        "slot": { "name": "Waist" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_04.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Journeyman's Pants",
-        "slot": { "name": "Legs" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pants_06.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Fine Leather Boots",
-        "slot": { "name": "Feet" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boots_08.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Avala's Binding",
-        "slot": { "name": "Finger" },
-        "quality": { "type": "common" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_ring_12.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
       },
       {
         "name": "Invader's Mace",
-        "slot": { "name": "Main Hand" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_mace_02.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
       },
       {
         "name": "Dwarven Defender",
-        "slot": { "name": "Off Hand" },
-        "quality": { "type": "uncommon" },
-        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shield_04.jpg"
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Active Specialization",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
       }
     ]
   }

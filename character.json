@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T12:49:53.654Z",
+  "last_updated": "2026-11-07T12:54:57.952Z",
   "profile": {
     "name": "Fabi",
     "level": 14,
@@ -14,6 +14,115 @@
     }
   },
   "equipment": {
-    "equipped_items": []
+    "equipped_items": [
+      {
+        "name": "Worn Hide Cloak",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Soft Leather Tunic",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Primitive Mantle",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
+      },
+      {
+        "name": "Spellbinder Bracers",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
+      },
+      {
+        "name": "Hunting Gloves",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Fine Leather Belt",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Journeyman's Pants",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Fine Leather Boots",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Avala's Binding",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
+      },
+      {
+        "name": "Invader's Mace",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "Dwarven Defender",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "uncommon"
+        }
+      },
+      {
+        "name": "ACTIVE SPECIALIZATION",
+        "slot": {
+          "name": "Gear"
+        },
+        "quality": {
+          "type": "common"
+        }
+      }
+    ]
   }
 }

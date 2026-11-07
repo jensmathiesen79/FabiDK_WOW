@@ -14,7 +14,6 @@
       --text-main: #d1d5db;
       --text-muted: #8b92a5;
       
-      /* WoW Quality Colors */
       --q-epic: #a335ee;
       --q-rare: #0070dd;
       --q-uncommon: #1eff00;
@@ -30,7 +29,6 @@
     }
 
     body {
-      /* Imiterer den mørke in-game baggrundsbelysning */
       background: #050608 radial-gradient(circle at 50% 30%, #1e283c 0%, #050608 60%) no-repeat;
       background-attachment: fixed;
       color: var(--text-main);
@@ -41,7 +39,7 @@
       padding-top: 40px;
     }
 
-    /* --- TOP HEADER (Navn, Level, Tabs) --- */
+    /* --- TOP HEADER --- */
     .armory-header {
       width: 100%;
       max-width: 1200px;
@@ -60,7 +58,7 @@
 
     .char-name {
       font-size: 2.5rem;
-      color: #3b82f6; /* Alliance blå/Shaman agtig */
+      color: #3b82f6;
       font-weight: bold;
       text-shadow: 0 2px 8px rgba(0,0,0,0.8);
     }
@@ -103,18 +101,17 @@
       margin-bottom: -11px;
     }
 
-    /* --- CENTER STAGE (Gear + Model Area) --- */
+    /* --- CENTER STAGE --- */
     .character-stage {
       display: flex;
       justify-content: space-between;
       width: 100%;
       max-width: 1100px;
-      min-height: 550px; /* Giver plads til baggrunden/modellen i midten */
+      min-height: 550px;
       padding: 0 20px;
       position: relative;
     }
 
-    /* Gear Columns */
     .gear-col {
       display: flex;
       flex-direction: column;
@@ -136,11 +133,18 @@
       z-index: 10;
     }
 
-    /* Single Gear Item - Genskabt efter Blizzards layout */
+    /* Gear Items (Nu som klikbare links) */
     .gear-item {
       display: flex;
       align-items: center;
       gap: 12px;
+      text-decoration: none; /* Vigtig for links */
+      color: inherit;
+      transition: transform 0.1s ease-in-out;
+    }
+    
+    .gear-item:hover {
+      transform: scale(1.02);
     }
 
     .gear-col.left .gear-item { flex-direction: row; }
@@ -159,7 +163,6 @@
       position: relative;
     }
 
-    /* Placeholder ikon indtil billedet loader */
     .gear-icon::after {
       content: '?';
       position: absolute;
@@ -180,7 +183,6 @@
       text-shadow: 1px 1px 2px #000;
     }
 
-    /* Farvestyring via JS-klasser */
     .epic .gear-icon { border-color: var(--q-epic); }
     .epic .gear-name { color: var(--q-epic); }
     .rare .gear-icon { border-color: var(--q-rare); }
@@ -192,7 +194,7 @@
     .poor .gear-icon { border-color: var(--q-poor); }
     .poor .gear-name { color: var(--q-poor); }
 
-    /* --- BUND SEKTION (Dashboard / Stats) --- */
+    /* --- BUND SEKTION --- */
     .dashboard-bottom {
       width: 100%;
       background: var(--panel-bg);
@@ -227,7 +229,6 @@
       margin-bottom: 20px;
     }
 
-    /* Prio Row */
     .stat-prio {
       display: flex;
       align-items: center;
@@ -243,7 +244,6 @@
     .prio-val { font-weight: bold; color: #fff; }
     .prio-arr { color: #555; }
 
-    /* Checklist (Quests) */
     .checklist { list-style: none; }
     .checklist-item {
       display: flex;
@@ -299,7 +299,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <div class="armory-header">
     <div class="header-top">
       <div class="char-name" id="char-name">Fabi Stormhammer</div>
@@ -320,47 +319,25 @@
     </div>
   </div>
 
-  <!-- CHARACTER STAGE (Gear) -->
   <div class="character-stage">
-    <div class="gear-col left" id="gear-left">
-      <!-- Venstre gear indlæses her -->
-    </div>
-    
-    <div class="gear-col right" id="gear-right">
-      <!-- Højre gear indlæses her -->
-    </div>
-
-    <div class="gear-bottom" id="gear-bottom">
-      <!-- Våben indlæses her -->
-    </div>
+    <div class="gear-col left" id="gear-left"></div>
+    <div class="gear-col right" id="gear-right"></div>
+    <div class="gear-bottom" id="gear-bottom"></div>
   </div>
 
-  <!-- BUND (Custom Dashboard layoutet som Stats/Professions) -->
   <div class="dashboard-bottom">
     <div class="dashboard-grid">
-      
-      <!-- Venstre kolonne nede (Stats) -->
       <div class="panel-section">
         <h3>Specialization & Stat Priority</h3>
         <div class="stat-prio">
-          <div class="prio-item">
-            <span class="prio-num">1</span>
-            <span class="prio-val" style="color: #ff5252;">Strength</span>
-          </div>
+          <div class="prio-item"><span class="prio-num">1</span><span class="prio-val" style="color: #ff5252;">Strength</span></div>
           <div class="prio-arr">></div>
-          <div class="prio-item">
-            <span class="prio-num">2</span>
-            <span class="prio-val" style="color: #44ff44;">Agility</span>
-          </div>
+          <div class="prio-item"><span class="prio-num">2</span><span class="prio-val" style="color: #44ff44;">Agility</span></div>
           <div class="prio-arr">></div>
-          <div class="prio-item">
-            <span class="prio-num">3</span>
-            <span class="prio-val">Stamina</span>
-          </div>
+          <div class="prio-item"><span class="prio-num">3</span><span class="prio-val">Stamina</span></div>
         </div>
       </div>
 
-      <!-- Højre kolonne nede (Quests) -->
       <div class="panel-section">
         <h3>Action Items & Quests (<span id="quest-count">0/0</span>)</h3>
         <ul class="checklist" id="checklist"></ul>
@@ -369,34 +346,135 @@
           <button type="submit">Tilføj</button>
         </form>
       </div>
-
     </div>
-    
     <div class="sync-text" id="sync-time">Venter på data...</div>
   </div>
 
   <script>
-    // 1. Hent data fra GitHub Action json
     async function loadData() {
       try {
-        const res = await fetch('./character.json?t=' + Date.now());
+        // Hent den seneste fil direkte
+        const res = await fetch('./character.json?cachebuster=' + new Date().getTime());
         const data = await res.json();
 
         if (data.profile) {
-          // Opdater header, men behold 'Stormhammer' hvis det ikke står i navnet
           let charName = data.profile.name || 'Fabi';
           if (!charName.includes('Stormhammer')) charName += ' Stormhammer';
           document.getElementById('char-name').textContent = charName;
-          
           document.getElementById('char-level').textContent = data.profile.level || '14';
         }
         
         if (data.last_updated) {
           const d = new Date(data.last_updated);
-          document.getElementById('sync-time').textContent = `Sidst opdateret fra Armory: ${d.toLocaleString('da-DK')}`;
+          document.getElementById('sync-time').textContent = `Sidst opdateret: ${d.toLocaleString('da-DK')}`;
         }
 
         const items = (data.equipment && data.equipment.equipped_items) ? data.equipment.equipped_items : [];
-        document.getElementById('char-ilvl').textContent = `${items.length * 2} ILVL`; // Dummy beregning indtil vi scraper rigtig ilvl
+        document.getElementById('char-ilvl').textContent = `${items.length * 2} ILVL`;
 
-        const leftCol =
+        const leftCol = document.getElementById('gear-left');
+        const rightCol = document.getElementById('gear-right');
+        const botCol = document.getElementById('gear-bottom');
+
+        leftCol.innerHTML = ''; rightCol.innerHTML = ''; botCol.innerHTML = '';
+
+        items.forEach((item, index) => {
+          // Opret element som et link i stedet for en div
+          const el = document.createElement('a'); 
+          const qClass = (item.quality?.type || 'common').toLowerCase();
+          
+          el.className = `gear-item ${qClass}`;
+          
+          // Gør linket aktivt og søg på Wowhead Classic
+          const safeName = encodeURIComponent(item.name);
+          el.href = `https://www.wowhead.com/classic/search?q=${safeName}`;
+          el.target = "_blank"; // Åbn i ny fane
+          
+          el.innerHTML = `
+            <div class="gear-info">
+              <div class="gear-name">${item.name}</div>
+            </div>
+            <div class="gear-icon"></div>
+          `;
+
+          // Tving baggrundsbilledet direkte ind på elementet
+          if (item.icon && item.icon !== "") {
+            el.querySelector('.gear-icon').style.backgroundImage = `url('${item.icon}')`;
+          }
+
+          if (index < 7) {
+            leftCol.appendChild(el);
+          } else if (index < 14) {
+            rightCol.appendChild(el);
+          } else {
+            botCol.appendChild(el);
+          }
+        });
+
+      } catch (e) {
+        console.error("Fejl:", e);
+        document.getElementById('sync-time').textContent = 'Fejl: Kunne ikke indlæse character.json';
+      }
+    }
+
+    const defaultGoals = [
+      { text: "Nå Level 20: Træn Ghost Wolf", done: false },
+      { text: "Start Water Totem Questline", done: false },
+      { text: "Gennemfør Cozy Sleeping Bag quest", done: false },
+      { text: "Lær 2H Axes/Maces (Level 20)", done: false }
+    ];
+
+    function getGoals() {
+      const saved = localStorage.getItem('fabi_wow_goals');
+      return saved ? JSON.parse(saved) : defaultGoals;
+    }
+
+    function saveGoals(goals) {
+      localStorage.setItem('fabi_wow_goals', JSON.stringify(goals));
+      renderGoals();
+    }
+
+    function renderGoals() {
+      const goals = getGoals();
+      const list = document.getElementById('checklist');
+      list.innerHTML = '';
+      
+      let doneCount = 0;
+      goals.forEach((g, idx) => {
+        if (g.done) doneCount++;
+        const li = document.createElement('li');
+        li.className = `checklist-item ${g.done ? 'done' : ''}`;
+        li.innerHTML = `
+          <input type="checkbox" ${g.done ? 'checked' : ''} data-index="${idx}">
+          <span>${g.text}</span>
+        `;
+        list.appendChild(li);
+      });
+
+      document.getElementById('quest-count').textContent = `${doneCount}/${goals.length}`;
+
+      list.querySelectorAll('input').forEach(chk => {
+        chk.addEventListener('change', (e) => {
+          const index = e.target.getAttribute('data-index');
+          goals[index].done = e.target.checked;
+          saveGoals(goals);
+        });
+      });
+    }
+
+    document.getElementById('goal-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('new-goal');
+      const val = input.value.trim();
+      if (!val) return;
+      const goals = getGoals();
+      goals.push({ text: val, done: false });
+      saveGoals(goals);
+      input.value = '';
+    });
+
+    loadData();
+    renderGoals();
+  </script>
+</body>
+</html>

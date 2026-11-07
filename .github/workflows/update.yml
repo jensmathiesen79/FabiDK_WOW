@@ -7,8 +7,8 @@ on:
   # Gør det muligt at køre workflowet manuelt fra GitHub Actions fanebladet
   workflow_dispatch:
 
-  Permissions:
-    Contents: write-all
+permissions:
+  contents: write
 
 jobs:
   fetch-character-data:
@@ -31,7 +31,7 @@ jobs:
             -d grant_type=client_credentials \
             https://oauth.battle.net/token)
 
-          ACCESS_TOKEN=$(echo $TOKEN_RESPONSE | jq -r '.access_token')
+          ACCESS_TOKEN=$(echo "$TOKEN_RESPONSE" | jq -r '.access_token')
 
           if [ -z "$ACCESS_TOKEN" ] || [ "$ACCESS_TOKEN" == "null" ]; then
             echo "Fejl: Kunne ikke hente access token."

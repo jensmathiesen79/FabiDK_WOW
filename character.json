@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T13:49:11.883Z",
+  "last_updated": "2026-11-07T14:01:43.260Z",
   "profile": {
     "name": "Fabi",
     "level": 14,
@@ -17,6 +17,7 @@
     "equipped_items": [
       {
         "name": "Worn Hide Cloak",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -26,6 +27,7 @@
       },
       {
         "name": "Soft Leather Tunic",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135014.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -35,6 +37,7 @@
       },
       {
         "name": "Primitive Mantle",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -44,6 +47,7 @@
       },
       {
         "name": "Spellbinder Bracers",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132605.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -53,6 +57,7 @@
       },
       {
         "name": "Hunting Gloves",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -62,6 +67,7 @@
       },
       {
         "name": "Fine Leather Belt",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132493.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -71,6 +77,7 @@
       },
       {
         "name": "Journeyman's Pants",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -80,6 +87,7 @@
       },
       {
         "name": "Fine Leather Boots",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -89,6 +97,7 @@
       },
       {
         "name": "Avala's Binding",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133349.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -98,6 +107,7 @@
       },
       {
         "name": "Invader's Mace",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133040.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -107,20 +117,12 @@
       },
       {
         "name": "Dwarven Defender",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134951.jpg",
         "slot": {
           "name": "Gear"
         },
         "quality": {
           "type": "uncommon"
-        }
-      },
-      {
-        "name": "Active Specialization",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "common"
         }
       }
     ]

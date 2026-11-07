@@ -46,6 +46,27 @@
     .nav-tabs span.active { color: var(--nav-gold); border-bottom: 2px solid var(--nav-gold); padding-bottom: 10px; margin-bottom: -11px; }
 
     .character-stage { display: flex; justify-content: space-between; width: 100%; max-width: 1100px; min-height: 550px; padding: 0 20px; position: relative; }
+    
+    /* NYT: Opsætning af karakteren i midten */
+    .character-model {
+      position: absolute;
+      top: -30px; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1; /* Ligger bagerst, under udstyret */
+      pointer-events: none; /* Gør at man ikke kan klikke på billedet ved en fejl */
+    }
+    .character-model img {
+      max-height: 120%; /* Skalerer figuren så den fylder godt i højden */
+      max-width: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 25px rgba(0,0,0,0.7)); /* Giver 3D-effekt og dybde mod baggrunden */
+    }
+
     .gear-col { display: flex; flex-direction: column; gap: 14px; width: 300px; z-index: 10; }
     .gear-col.left { text-align: right; }
     .gear-col.right { text-align: left; }
@@ -56,7 +77,6 @@
     .gear-col.left .gear-item { flex-direction: row; }
     .gear-col.right .gear-item, .gear-bottom .gear-item { flex-direction: row-reverse; }
 
-    /* NY gear-icon logik */
     .gear-icon {
       width: 48px;
       height: 48px;
@@ -88,7 +108,7 @@
     .poor .gear-icon { border-color: var(--q-poor); }
     .poor .gear-name { color: var(--q-poor); }
 
-    .dashboard-bottom { width: 100%; background: var(--panel-bg); border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; }
+    .dashboard-bottom { width: 100%; background: var(--panel-bg); border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; z-index: 20; position: relative; }
     .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; max-width: 1100px; }
     @media (max-width: 800px) { .dashboard-grid { grid-template-columns: 1fr; } }
     .panel-section h3 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 20px; }
@@ -132,6 +152,11 @@
   </div>
 
   <div class="character-stage">
+    <!-- Karakterbillede hentes automatisk her -->
+    <div class="character-model">
+      <img src="fabi.png" alt="Fabi Character Model" onerror="this.style.opacity='0'">
+    </div>
+
     <div class="gear-col left" id="gear-left"></div>
     <div class="gear-col right" id="gear-right"></div>
     <div class="gear-bottom" id="gear-bottom"></div>
@@ -198,7 +223,6 @@
           el.href = `https://www.wowhead.com/classic/search?q=${safeName}`;
           el.target = "_blank";
           
-          // Hvis den har fundet et ikon link, brug <img>, ellers skriv '?'
           const iconHtml = (item.icon && item.icon.length > 5) 
             ? `<img src="${item.icon}" onerror="this.style.display='none'">` 
             : `<span class="fallback">?</span>`;

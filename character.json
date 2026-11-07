@@ -1,13 +1,19 @@
 {
-  "last_updated": "2026-11-07T12:06:47Z",
+  "last_updated": "2026-11-07T12:26:52Z",
   "profile": {
-    "code": 404,
-    "type": "BLZWEBAPI00000404",
-    "detail": "Not Found"
+    "name": "Fabi",
+    "level": 12,
+    "race": {
+      "name": "Dwarf"
+    },
+    "character_class": {
+      "name": "Shaman"
+    },
+    "realm": {
+      "name": "Stormhammer"
+    }
   },
   "equipment": {
-    "code": 404,
-    "type": "BLZWEBAPI00000404",
-    "detail": "Not Found"
+    "equipped_items": []
   }
 }

@@ -24,7 +24,7 @@ jobs:
       - name: Install Puppeteer
         run: npm install puppeteer
 
-      - name: Scrape Armory via Headless Browser
+      - name: Scrape Armory (Fast Mode)
         run: |
           node - << 'EOF'
           const fs = require('fs');
@@ -33,68 +33,70 @@ jobs:
           (async () => {
             const browser = await puppeteer.launch({
               headless: "new",
-              args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled']
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
-            await page.setViewport({ width: 1440, height: 900 });
-            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
-
-            const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
-            console.log('Navigerer til:', url);
             
-            await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
-            await new Promise(r => setTimeout(r, 2000));
+            // HASTIGHEDSOPTIMERING: Bloker alt tungt indhold (billeder, CSS, fonte)
+            await page.setRequestInterception(true);
+            page.on('request', (req) => {
+              if (['image', 'stylesheet', 'font', 'media'].includes(req.resourceType())) {
+                req.abort();
+              } else {
+                req.continue();
+              }
+            });
+
+            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/122.0.0.0 Safari/537.36');
+            
+            const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
+            console.log('Navigerer lyn-hurtigt til:', url);
+            
+            // networkidle2 er meget hurtigere nu, hvor billeder er blokeret
+            await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 });
 
             const parsed = await page.evaluate(() => {
               let lvl = 14;
               const items = [];
-
-              // 1. Udtræk level (fanger f.eks. "14 Dwarf Shaman")
-              const textContent = document.body.innerText;
-              const lvlMatch = textContent.match(/Level\s+(\d+)/i) || textContent.match(/(\d+)\s+Dwarf\s+Shaman/i);
-              if (lvlMatch) lvl = parseInt(lvlMatch[1], 10);
-
-              // 2. Find alt udstyr baseret på klassen GameIcon-icon
-              const icons = document.querySelectorAll('.GameIcon-icon');
-              icons.forEach(icon => {
-                // Hop op i HTML-træet for at finde den kasse, der indeholder både ikon og tekst
-                let container = icon.parentElement;
-                for (let i = 0; i < 5; i++) {
+              
+              const txt = document.body.innerText;
+              const m = txt.match(/(\d+)\s+Dwarf\s+Shaman/i) || txt.match(/Level\s+(\d+)/i);
+              if (m) lvl = parseInt(m[1], 10);
+              
+              // Mere aggressiv søgning efter udstyr
+              const elements = document.querySelectorAll('.GameIcon-icon, [data-item-id]');
+              elements.forEach(el => {
+                let container = el.parentElement;
+                // Hop opad indtil vi rammer en kasse med tekst
+                for (let i = 0; i < 4; i++) {
                   if (container && container.innerText && container.innerText.trim().length > 2) break;
                   if (container) container = container.parentElement;
                 }
-
+                
                 if (container && container.innerText) {
-                  // Teksten vil typisk være f.eks. ["Invader's Mace", "17"]
-                  const lines = container.innerText.trim().split('\n').map(s => s.trim()).filter(s => s);
+                  const lines = container.innerText.trim().split('\n').filter(s => s.trim().length > 1);
                   if (lines.length > 0) {
                     const name = lines[0];
-
-                    // Tjek farvekvaliteten via CSS-klasser eller inline styles
-                    let quality = 'common';
-                    const html = container.innerHTML.toLowerCase();
-                    if (html.includes('epic') || html.includes('quality-4') || html.includes('q4')) quality = 'epic';
-                    else if (html.includes('rare') || html.includes('quality-3') || html.includes('q3')) quality = 'rare';
-                    else if (html.includes('uncommon') || html.includes('quality-2') || html.includes('q2')) quality = 'uncommon';
-                    else if (html.includes('poor') || html.includes('quality-0') || html.includes('q0')) quality = 'poor';
-
-                    let slot = container.getAttribute('data-slot') || container.getAttribute('data-slot-name') || 'Gear';
-
-                    // Filtrer irrelevante tekster fra og undgå dubletter
-                    if (name.length > 2 && !items.find(i => i.name === name)) {
+                    // Undgå dubletter og forkerte udtræk
+                    if (name.length > 2 && !items.find(i => i.name === name) && !name.includes('Level')) {
+                      let q = 'common';
+                      const html = container.innerHTML.toLowerCase();
+                      if (html.includes('epic') || html.includes('q4')) q = 'epic';
+                      else if (html.includes('rare') || html.includes('q3')) q = 'rare';
+                      else if (html.includes('uncommon') || html.includes('q2')) q = 'uncommon';
+                      
                       items.push({
                         name: name,
-                        slot: { name: slot },
-                        quality: { type: quality }
+                        slot: { name: container.getAttribute('data-slot') || 'Gear' },
+                        quality: { type: q }
                       });
                     }
                   }
                 }
               });
-
+              
               return { level: lvl, items };
             });
-
             await browser.close();
 
             const finalData = {
@@ -112,7 +114,7 @@ jobs:
             };
 
             fs.writeFileSync('character.json', JSON.stringify(finalData, null, 2));
-            console.log("Fandt følgende gear:", parsed.items.map(i => i.name).join(', '));
+            console.log("Fandt", parsed.items.length, "genstande.");
           })();
           EOF
 
@@ -124,6 +126,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Scrape gear via GameIcon-icon target"
+            git commit -m "Fast-scrape gear via request interception"
             git push
           fi

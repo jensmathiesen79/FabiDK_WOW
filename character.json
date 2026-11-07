@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T13:33:56.528Z",
+  "last_updated": "2026-11-07T14:40:00Z",
   "profile": {
     "name": "Fabi",
     "level": 14,
@@ -17,111 +17,69 @@
     "equipped_items": [
       {
         "name": "Worn Hide Cloak",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "poor"
-        }
+        "slot": { "name": "Back" },
+        "quality": { "type": "common" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_misc_cape_08.jpg"
       },
       {
         "name": "Soft Leather Tunic",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Chest" },
+        "quality": { "type": "common" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_chest_leather_08.jpg"
       },
       {
         "name": "Primitive Mantle",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "common"
-        }
+        "slot": { "name": "Shoulder" },
+        "quality": { "type": "common" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shoulder_09.jpg"
       },
       {
         "name": "Spellbinder Bracers",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "common"
-        }
+        "slot": { "name": "Wrist" },
+        "quality": { "type": "common" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_bracer_07.jpg"
       },
       {
         "name": "Hunting Gloves",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Hands" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_gauntlets_11.jpg"
       },
       {
         "name": "Fine Leather Belt",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Waist" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_belt_04.jpg"
       },
       {
         "name": "Journeyman's Pants",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Legs" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_pants_06.jpg"
       },
       {
         "name": "Fine Leather Boots",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Feet" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_boots_08.jpg"
       },
       {
         "name": "Avala's Binding",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "common"
-        }
+        "slot": { "name": "Finger" },
+        "quality": { "type": "common" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_jewelry_ring_12.jpg"
       },
       {
         "name": "Invader's Mace",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
+        "slot": { "name": "Main Hand" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_mace_02.jpg"
       },
       {
         "name": "Dwarven Defender",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "uncommon"
-        }
-      },
-      {
-        "name": "Active Specialization",
-        "slot": {
-          "name": "Gear"
-        },
-        "quality": {
-          "type": "common"
-        }
+        "slot": { "name": "Off Hand" },
+        "quality": { "type": "uncommon" },
+        "icon": "https://render.worldofwarcraft.com/eu/icons/56/inv_shield_04.jpg"
       }
     ]
   }

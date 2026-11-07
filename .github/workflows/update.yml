@@ -36,64 +36,84 @@ jobs:
               args: ['--no-sandbox', '--disable-setuid-sandbox']
             });
             const page = await browser.newPage();
-            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+            await page.setViewport({ width: 1440, height: 900 });
+            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
 
             const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
-            console.log('Navigerer til:', url);
+            console.log('Henter:', url);
             await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
 
-            // Hent data direkte fra DOM
-            const characterData = await page.evaluate(() => {
-              // Level
-              let level = 14;
-              const textContent = document.body.innerText;
-              const lvlMatch = textContent.match(/Level\s+(\d+)/i);
-              if (lvlMatch) level = parseInt(lvlMatch[1], 10);
+            // Giv dynamiske elementer et ekstra sekund til at render
+            await new Promise(r => setTimeout(r, 2000));
 
-              // Udstyrsslots
-              const equippedItems = [];
-              const itemElements = document.querySelectorAll('[data-item-id], [class*="CharacterEquipment-item"], [class*="ItemSlot"]');
+            const parsed = await page.evaluate(() => {
+              let lvl = 14;
+              let items = [];
 
-              itemElements.forEach(el => {
-                const name = el.getAttribute('aria-label') || el.innerText.trim();
-                const slot = el.getAttribute('data-slot') || 'Gear';
+              // Metode 1: Tjek om sidens interne state eksisterer
+              if (window.__INITIAL_STATE__ && window.__INITIAL_STATE__.character) {
+                const char = window.__INITIAL_STATE__.character;
+                if (char.level) lvl = char.level;
+                if (char.equipment && char.equipment.equipped_items) {
+                  return {
+                    level: lvl,
+                    items: char.equipment.equipped_items.map(it => ({
+                      name: it.name || it.item?.name || 'Item',
+                      slot: { name: it.slot?.name || it.slot?.type || 'Gear' },
+                      quality: { type: (it.quality?.type || 'common').toLowerCase() }
+                    }))
+                  };
+                }
+              }
+
+              // Metode 2: Scrape DOM efter links eller slots med items
+              const links = document.querySelectorAll('a[href*="/item/"], div[data-item-id], div[class*="CharacterEquipmentSlot"]');
+              links.forEach(el => {
+                const text = el.getAttribute('aria-label') || el.innerText || '';
+                const cleanName = text.split('\n')[0].trim();
+                const slotAttr = el.getAttribute('data-slot') || el.getAttribute('data-slot-name') || 'Gear';
+
                 let quality = 'common';
+                const classStr = el.className.toLowerCase();
+                if (classStr.includes('epic') || classStr.includes('quality-4')) quality = 'epic';
+                else if (classStr.includes('rare') || classStr.includes('quality-3')) quality = 'rare';
+                else if (classStr.includes('uncommon') || classStr.includes('quality-2')) quality = 'uncommon';
+                else if (classStr.includes('poor') || classStr.includes('quality-0')) quality = 'poor';
 
-                const cl = el.className.toLowerCase();
-                if (cl.includes('epic') || cl.includes('quality-4')) quality = 'epic';
-                else if (cl.includes('rare') || cl.includes('quality-3')) quality = 'rare';
-                else if (cl.includes('uncommon') || cl.includes('quality-2')) quality = 'uncommon';
-
-                if (name && !name.includes('\n') && name.length > 1) {
-                  equippedItems.push({
-                    name: name,
-                    slot: { name: slot },
+                if (cleanName && cleanName.length > 2 && !cleanName.includes('Empty')) {
+                  items.push({
+                    name: cleanName,
+                    slot: { name: slotAttr },
                     quality: { type: quality }
                   });
                 }
               });
 
-              return { level, equippedItems };
+              // Metode 3: Hvis intet blev fanget af links, find level i teksten
+              const textMatch = document.body.innerText.match(/Level\s+(\d+)/i);
+              if (textMatch) lvl = parseInt(textMatch[1], 10);
+
+              return { level: lvl, items };
             });
 
             await browser.close();
 
-            const finalJson = {
+            const finalData = {
               last_updated: new Date().toISOString(),
               profile: {
                 name: "Fabi",
-                level: characterData.level,
+                level: parsed.level || 14,
                 race: { name: "Dwarf" },
                 character_class: { name: "Shaman" },
                 realm: { name: "Stormhammer" }
               },
               equipment: {
-                equipped_items: characterData.equippedItems
+                equipped_items: parsed.items
               }
             };
 
-            fs.writeFileSync('character.json', JSON.stringify(finalJson, null, 2));
-            console.log('Gemte character.json:', finalJson);
+            fs.writeFileSync('character.json', JSON.stringify(finalData, null, 2));
+            console.log('Resultat af scrape:', JSON.stringify(finalData, null, 2));
           })();
           EOF
 
@@ -105,6 +125,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Sync Fabi gear and level from Armory"
+            git commit -m "Scrape gear slots and stats for Fabi"
             git push
           fi

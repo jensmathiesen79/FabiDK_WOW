@@ -16,43 +16,86 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Fetch and Parse Character Data
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Scrape Armory via Headless Browser
         run: |
-          set -e
+          node - << 'EOF'
+          const fs = require('fs');
+          const puppeteer = require('puppeteer');
 
-          URL="https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer"
-          echo "Henter armory side..."
-          HTML=$(curl -s -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0" "$URL")
+          (async () => {
+            const browser = await puppeteer.launch({
+              headless: "new",
+              args: ['--no-sandbox', '--disable-setuid-sandbox']
+            });
+            const page = await browser.newPage();
+            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
 
-          # Blizzard gemmer sidens fulde datamodel i et indlejret JSON script-tag eller window.__INITIAL_STATE__
-          JSON_DATA=$(echo "$HTML" | grep -oP 'window\.__INITIAL_STATE__\s*=\s*\K\{.*?\}(?=;\s*</script>)' || true)
+            const url = 'https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer';
+            console.log('Navigerer til:', url);
+            await page.goto(url, { waitUntil: 'networkidle2', timeout: 60000 });
 
-          # Udtræk level specifikt efter "level" eller "character"
-          PARSED_LEVEL=$(echo "$HTML" | grep -oP '(?:"level":|"characterLevel":|level-number">)\K[0-9]+' | head -n 1 || true)
-          if [ -z "$PARSED_LEVEL" ] || [ "$PARSED_LEVEL" -lt 10 ]; then
-            PARSED_LEVEL=14
-          fi
+            // Hent data direkte fra DOM
+            const characterData = await page.evaluate(() => {
+              // Level
+              let level = 14;
+              const textContent = document.body.innerText;
+              const lvlMatch = textContent.match(/Level\s+(\d+)/i);
+              if (lvlMatch) level = parseInt(lvlMatch[1], 10);
 
-          echo "Beregnet Level: $PARSED_LEVEL"
+              // Udstyrsslots
+              const equippedItems = [];
+              const itemElements = document.querySelectorAll('[data-item-id], [class*="CharacterEquipment-item"], [class*="ItemSlot"]');
 
-          jq -n \
-            --arg level "$PARSED_LEVEL" \
-            --arg updated "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
-            '{
-              last_updated: $updated,
+              itemElements.forEach(el => {
+                const name = el.getAttribute('aria-label') || el.innerText.trim();
+                const slot = el.getAttribute('data-slot') || 'Gear';
+                let quality = 'common';
+
+                const cl = el.className.toLowerCase();
+                if (cl.includes('epic') || cl.includes('quality-4')) quality = 'epic';
+                else if (cl.includes('rare') || cl.includes('quality-3')) quality = 'rare';
+                else if (cl.includes('uncommon') || cl.includes('quality-2')) quality = 'uncommon';
+
+                if (name && !name.includes('\n') && name.length > 1) {
+                  equippedItems.push({
+                    name: name,
+                    slot: { name: slot },
+                    quality: { type: quality }
+                  });
+                }
+              });
+
+              return { level, equippedItems };
+            });
+
+            await browser.close();
+
+            const finalJson = {
+              last_updated: new Date().toISOString(),
               profile: {
                 name: "Fabi",
-                level: ($level | tonumber),
-                race: {name: "Dwarf"},
-                character_class: {name: "Shaman"},
-                realm: {name: "Stormhammer"}
+                level: characterData.level,
+                race: { name: "Dwarf" },
+                character_class: { name: "Shaman" },
+                realm: { name: "Stormhammer" }
               },
               equipment: {
-                equipped_items: []
+                equipped_items: characterData.equippedItems
               }
-            }' > character.json
+            };
 
-          echo "character.json er opdateret korrekt."
+            fs.writeFileSync('character.json', JSON.stringify(finalJson, null, 2));
+            console.log('Gemte character.json:', finalJson);
+          })();
+          EOF
 
       - name: Commit and Push Changes
         run: |
@@ -62,6 +105,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "Ingen ændringer."
           else
-            git commit -m "Fix parsed character data: Level $PARSED_LEVEL Fabi"
+            git commit -m "Sync Fabi gear and level from Armory"
             git push
           fi

@@ -7,6 +7,9 @@ on:
   # Gør det muligt at køre workflowet manuelt fra GitHub Actions fanebladet
   workflow_dispatch:
 
+  Permissions:
+    Contents: write-all
+
 jobs:
   fetch-character-data:
     runs-on: ubuntu-latest

@@ -64,6 +64,8 @@
   .quest.soon .lv { background: rgba(240,163,58,.12); color: var(--warn); }
   .quest.done { opacity: .45; } .quest.done .qt { text-decoration: line-through; }
   .qt { font-weight: 600; } .qt .tag { font-size: .68rem; font-weight: 600; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; }
+  .qchk input { accent-color: var(--ok); width: 14px; height: 14px; margin-right: 7px; vertical-align: -2px; cursor: pointer; }
+  .quest.done { opacity: .45; }
   .qd { color: var(--muted); font-size: .82rem; margin-top: 2px; }
   .qd .warn { color: var(--warn); display: block; margin-top: 3px; }
   .qd a { color: #7fb2ff; text-decoration: none; } .qd a:hover { text-decoration: underline; }
@@ -223,7 +225,8 @@ function renderCharacter(d) {
       <div class="col l">${LEFT.map((s) => slotHtml(bySlot[s], s)).join('')}</div>
       <div class="model" style="background-image:url('${esc(model)}')"></div>
       <div class="col r">${RIGHT.map((s) => slotHtml(bySlot[s], s)).join('')}</div>
-      <div class="bottom">${BOTTOM.map((s) => slotHtml(bySlot[s], s)).join('')}</div>`;
+      <div class="bottom">${BOTTOM.map((s) => slotHtml(bySlot[s], s)).join('')}</div>
+      ${eq.some((e) => !e.slot) ? `<div class="bottom">${eq.filter((e) => !e.slot).map((e) => slotHtml({ ...e, slotName: 'Ukendt slot' }, '')).join('')}</div>` : ''}`;
   }
   const empty = [...LEFT, ...RIGHT, ...BOTTOM].filter((s) => !bySlot[s] && !IGNORE_EMPTY.has(s));
   $('gear-note').textContent = empty.length ? `${empty.length} tomme slots` : '';
@@ -231,14 +234,20 @@ function renderCharacter(d) {
     · <a href="https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer" target="_blank" rel="noopener">Armory</a>`;
 }
 
-function renderQuests(q, d) {
+const QDONE_KEY = 'fabi_forever_quests_done';
+const manualDone = () => { try { return JSON.parse(localStorage.getItem(QDONE_KEY)) || {}; } catch { return {}; } };
+let QUESTS = null, CHAR = null;
+function renderQuests(q = QUESTS, d = CHAR) {
+  QUESTS = q; CHAR = d;
   const level = d?.profile?.level ?? 0;
   const done = new Set((d?.completed_quests || []).map((x) => x.name.toLowerCase()));
   const known = d?.completed_quests != null;
+  const manual = manualDone();
   const rows = q.items.map((it) => {
-    const isDone = (it.match || []).some((m) => done.has(m.toLowerCase()));
+    const apiDone = (it.match || []).some((m) => done.has(m.toLowerCase()));
+    const isDone = apiDone || !!manual[it.id];
     const state = isDone ? 'done' : level >= it.minLevel ? 'ready' : level + 5 >= it.minLevel ? 'soon' : 'later';
-    return { ...it, state };
+    return { ...it, state, apiDone };
   }).filter((it) => it.state !== 'later' || it.minLevel <= level + 15);
   const order = { ready: 0, soon: 1, later: 2, done: 3 };
   rows.sort((a, b) => order[a.state] - order[b.state] || a.minLevel - b.minLevel);
@@ -246,14 +255,20 @@ function renderQuests(q, d) {
     <div class="quest ${it.state}">
       <div class="lv">${it.minLevel}</div>
       <div>
-        <div class="qt">${esc(it.title)}<span class="tag">${it.type === 'quest' ? 'quest' : 'milepæl'}</span></div>
+        <div class="qt"><label class="qchk" title="Markér som lavet"><input type="checkbox" data-q="${esc(it.id)}" ${it.state === 'done' ? 'checked' : ''} ${it.apiDone ? 'disabled' : ''}></label>${esc(it.title)}<span class="tag">${it.type === 'quest' ? 'quest' : 'milepæl'}</span></div>
         <div class="qd">${esc(it.where)}${it.reward ? ' · <i>' + esc(it.reward) + '</i>' : ''}
           ${it.warning ? `<span class="warn">⚠ ${esc(it.warning)}</span>` : ''}
           <a href="${esc(it.source)}" target="_blank" rel="noopener">kilde</a></div>
       </div>
     </div>`).join('') +
-    (known ? '' : `<div class="note">Gennemførte quests kunne ikke hentes fra API'et – status er kun baseret på level.</div>`);
+    (known ? '' : `<div class="note">Gennemførte quests kunne ikke hentes fra API'et. Sæt flueben ved det, du har lavet (gemmes i denne browser).</div>`);
 }
+document.getElementById('quests').addEventListener('change', (e) => {
+  const id = e.target.dataset.q; if (!id) return;
+  const m = manualDone(); if (e.target.checked) m[id] = true; else delete m[id];
+  try { localStorage.setItem(QDONE_KEY, JSON.stringify(m)); } catch {}
+  renderQuests();
+});
 
 function renderUpgrades() {
   const m = MARKET;

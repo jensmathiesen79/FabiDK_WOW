@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T19:17:04.000Z",
+  "last_updated": "2026-11-08T19:23:16.618Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -9,14 +9,230 @@
     "class": "Shaman",
     "faction": "Alliance",
     "guild": "The Argent Dawn",
-    "ruleset": null,
+    "ruleset": {
+      "id": 3,
+      "name": "Roleplay"
+    },
     "averageItemLevel": 8
   },
   "media": {
-    "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-sd-raw.png",
+    "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
     "avatar": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-avatar.jpg"
   },
-  "equipment": [],
+  "equipment": [
+    {
+      "slot": "BACK",
+      "slotName": "Back",
+      "id": 6549,
+      "name": "Soldier's Cloak",
+      "quality": "common",
+      "inv": "CLOAK",
+      "c": 4,
+      "sc": 1,
+      "ilvl": 14,
+      "st": {},
+      "ar": 12,
+      "dps": 0,
+      "mediaId": 6549,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133769.jpg"
+    },
+    {
+      "slot": "CHEST",
+      "slotName": "Chest",
+      "id": 2817,
+      "name": "Soft Leather Tunic",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 12,
+      "st": {
+        "STAMINA": 2
+      },
+      "ar": 62,
+      "dps": 0,
+      "mediaId": 2817,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135014.jpg"
+    },
+    {
+      "slot": "FEET",
+      "slotName": "Feet",
+      "id": 2307,
+      "name": "Fine Leather Boots",
+      "quality": "uncommon",
+      "inv": "FEET",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 18,
+      "st": {
+        "AGILITY": 3,
+        "STAMINA": 2
+      },
+      "ar": 51,
+      "dps": 0,
+      "mediaId": 2307,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+    },
+    {
+      "slot": "HANDS",
+      "slotName": "Hands",
+      "id": 270231,
+      "name": "Flamefist Grips",
+      "quality": "rare",
+      "inv": "HAND",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 18,
+      "st": {
+        "AGILITY": 5,
+        "SPIRIT": 5
+      },
+      "ar": 51,
+      "dps": 0,
+      "mediaId": 270231,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132959.jpg"
+    },
+    {
+      "slot": "FINGER_1",
+      "slotName": "Ring 1",
+      "id": 286737,
+      "name": "Avala's Binding",
+      "quality": "common",
+      "inv": "FINGER",
+      "c": 4,
+      "sc": 0,
+      "ilvl": 8,
+      "st": {
+        "FROST_RESISTANCE": 1
+      },
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 286737,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133349.jpg"
+    },
+    {
+      "slot": "LEGS",
+      "slotName": "Legs",
+      "id": 279900,
+      "name": "Deepgrave Trousers",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 17,
+      "st": {
+        "AGILITY": 3,
+        "SPIRIT": 3
+      },
+      "ar": 64,
+      "dps": 0,
+      "mediaId": 279900,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134581.jpg"
+    },
+    {
+      "slot": "OFF_HAND",
+      "slotName": "Off Hand",
+      "id": 3160,
+      "name": "Ironplate Buckler",
+      "quality": "uncommon",
+      "inv": "SHIELD",
+      "c": 4,
+      "sc": 6,
+      "ilvl": 15,
+      "st": {
+        "SPELL_POWER": 2
+      },
+      "ar": 328,
+      "dps": 0,
+      "mediaId": 3160,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
+    },
+    {
+      "slot": "RANGED",
+      "slotName": "Ranged",
+      "id": 263412,
+      "name": "Totem of Charged Flames",
+      "quality": "uncommon",
+      "inv": "RELIC",
+      "c": 4,
+      "sc": 9,
+      "ilvl": 10,
+      "st": {},
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 263412,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134919.jpg"
+    },
+    {
+      "slot": "SHIRT",
+      "slotName": "Shirt",
+      "id": 154,
+      "name": "Primitive Mantle",
+      "quality": "common",
+      "inv": "BODY",
+      "c": 4,
+      "sc": 0,
+      "ilvl": 1,
+      "st": {},
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 154,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg"
+    },
+    {
+      "slot": "WAIST",
+      "slotName": "Waist",
+      "id": 4246,
+      "name": "Fine Leather Belt",
+      "quality": "uncommon",
+      "inv": "WAIST",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 16,
+      "st": {
+        "AGILITY": 2,
+        "STAMINA": 2
+      },
+      "ar": 40,
+      "dps": 0,
+      "mediaId": 4246,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132493.jpg"
+    },
+    {
+      "slot": "MAIN_HAND",
+      "slotName": "Main Hand",
+      "id": 270256,
+      "name": "Durgen's Crescent Axe",
+      "quality": "rare",
+      "inv": "WEAPONMAINHAND",
+      "c": 2,
+      "sc": 0,
+      "ilvl": 18,
+      "st": {
+        "STRENGTH": 4
+      },
+      "ar": 0,
+      "dps": 12.291666,
+      "mediaId": 270256,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132409.jpg"
+    },
+    {
+      "slot": "WRIST",
+      "slotName": "Wrist",
+      "id": 3158,
+      "name": "Burnt Hide Bracers",
+      "quality": "common",
+      "inv": "WRIST",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 12,
+      "st": {},
+      "ar": 26,
+      "dps": 0,
+      "mediaId": 3158,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132607.jpg"
+    }
+  ],
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
@@ -26,7 +242,7 @@
       "quests/completed: 404"
     ],
     "scrape": {
-      "equipmentSource": null,
+      "equipmentSource": "state:character.gear",
       "stateFound": true,
       "stateShape": {
         "character": {
@@ -537,13 +753,13 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
-        "https://geo.battle.net/",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
+        "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
-        "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-2509-7974-8c3e-c9d9de5bcc5e/en.json",
+        "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
         "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
         "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],

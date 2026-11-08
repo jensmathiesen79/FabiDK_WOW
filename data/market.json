@@ -1,6 +1,878 @@
 {
-  "last_updated": "2026-11-08T19:17:04.000Z",
-  "error": "Ingen item-stats for dit udstyr – kan ikke sammenligne",
-  "houses": [],
-  "upgrades": []
+  "last_updated": "2026-11-08T19:23:16.618Z",
+  "error": null,
+  "houses": [
+    {
+      "id": 110,
+      "name": "Alliance Auction House",
+      "auctions": 170193
+    },
+    {
+      "id": 111,
+      "name": "Alliance Auction House",
+      "auctions": 205384
+    },
+    {
+      "id": 112,
+      "name": "Alliance Auction House",
+      "auctions": 0
+    },
+    {
+      "id": 119,
+      "name": "Alliance Auction House",
+      "auctions": 20418
+    },
+    {
+      "id": 123,
+      "name": "Alliance Auction House",
+      "auctions": 13774
+    }
+  ],
+  "upgrades": [
+    {
+      "id": 7956,
+      "name": "Bronze Warhammer",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "STRENGTH": 6,
+        "STAMINA": 6
+      },
+      "armor": 0,
+      "dps": 16.857141,
+      "score": 109.5,
+      "delta": 25.6,
+      "current": {
+        "name": "Durgen's Crescent Axe + Ironplate Buckler",
+        "score": 83.89999999999999
+      },
+      "price": {
+        "copper": 1700,
+        "houseId": 110,
+        "listings": 465
+      },
+      "mediaId": 7956,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
+    },
+    {
+      "id": 2194,
+      "name": "Diamond Hammer",
+      "quality": "rare",
+      "inv": "WEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "STRENGTH": 3,
+        "STAMINA": 4
+      },
+      "armor": 0,
+      "dps": 16.2,
+      "score": 101.9,
+      "delta": 24.6,
+      "current": {
+        "name": "Durgen's Crescent Axe",
+        "score": 77.3
+      },
+      "price": {
+        "copper": 8700,
+        "houseId": 110,
+        "listings": 70
+      },
+      "mediaId": 2194,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
+    },
+    {
+      "id": 2236,
+      "name": "Blackfang",
+      "quality": "rare",
+      "inv": "WEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "SHADOW_RESISTANCE": 5,
+        "SPIRIT": 2
+      },
+      "armor": 0,
+      "dps": 16.333332,
+      "score": 98.2,
+      "delta": 20.9,
+      "current": {
+        "name": "Durgen's Crescent Axe",
+        "score": 77.3
+      },
+      "price": {
+        "copper": 8500,
+        "houseId": 110,
+        "listings": 34
+      },
+      "mediaId": 2236,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135638.jpg"
+    },
+    {
+      "id": 6468,
+      "name": "Deviate Scale Belt",
+      "quality": "rare",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 18,
+      "usableNow": false,
+      "itemLevel": 23,
+      "stats": {
+        "AGILITY": 5,
+        "STRENGTH": 3,
+        "STAMINA": 6
+      },
+      "armor": 51,
+      "dps": 0,
+      "score": 11.7,
+      "delta": 7.9,
+      "current": {
+        "name": "Fine Leather Belt",
+        "score": 3.8
+      },
+      "price": {
+        "copper": 15000,
+        "houseId": 111,
+        "listings": 32
+      },
+      "mediaId": 6468,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
+    },
+    {
+      "id": 4821,
+      "name": "Bear Buckler",
+      "quality": "uncommon",
+      "inv": "SHIELD",
+      "slotGroup": "OFF_HAND",
+      "requiredLevel": 18,
+      "usableNow": false,
+      "itemLevel": 23,
+      "stats": {
+        "STRENGTH": 3,
+        "STAMINA": 3
+      },
+      "armor": 461,
+      "dps": 0,
+      "score": 13.4,
+      "delta": 6.8,
+      "current": {
+        "name": "Ironplate Buckler",
+        "score": 6.6
+      },
+      "price": {
+        "copper": 8500,
+        "houseId": 110,
+        "listings": 5
+      },
+      "mediaId": 4821,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
+    },
+    {
+      "id": 5781,
+      "name": "Murloc Scale Breastplate",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 14,
+      "usableNow": true,
+      "itemLevel": 19,
+      "stats": {
+        "AGILITY": 3,
+        "STRENGTH": 5
+      },
+      "armor": 76,
+      "dps": 0,
+      "score": 9,
+      "delta": 6.8,
+      "current": {
+        "name": "Soft Leather Tunic",
+        "score": 2.2
+      },
+      "price": {
+        "copper": 1600,
+        "houseId": 111,
+        "listings": 119
+      },
+      "mediaId": 5781,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
+    },
+    {
+      "id": 10499,
+      "name": "Bright-Eye Goggles",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 0,
+      "usableNow": true,
+      "itemLevel": 35,
+      "stats": {
+        "STAMINA": 9,
+        "SPIRIT": 9
+      },
+      "armor": 38,
+      "dps": 0,
+      "score": 6.2,
+      "delta": 6.2,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 9500,
+        "houseId": 111,
+        "listings": 1
+      },
+      "mediaId": 10499,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
+    },
+    {
+      "id": 2317,
+      "name": "Dark Leather Tunic",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 15,
+      "usableNow": true,
+      "itemLevel": 20,
+      "stats": {
+        "AGILITY": 6
+      },
+      "armor": 78,
+      "dps": 0,
+      "score": 7.6,
+      "delta": 5.4,
+      "current": {
+        "name": "Soft Leather Tunic",
+        "score": 2.2
+      },
+      "price": {
+        "copper": 1000,
+        "houseId": 110,
+        "listings": 222
+      },
+      "mediaId": 2317,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
+    },
+    {
+      "id": 4385,
+      "name": "Green Tinted Goggles",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 0,
+      "usableNow": true,
+      "itemLevel": 30,
+      "stats": {
+        "STAMINA": 8,
+        "SPIRIT": 7
+      },
+      "armor": 35,
+      "dps": 0,
+      "score": 5.4,
+      "delta": 5.4,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 1500,
+        "houseId": 111,
+        "listings": 65
+      },
+      "mediaId": 4385,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
+    },
+    {
+      "id": 4794,
+      "name": "Wolf Bracers",
+      "quality": "uncommon",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "AGILITY": 4,
+        "STAMINA": 2
+      },
+      "armor": 37,
+      "dps": 0,
+      "score": 5.7,
+      "delta": 5.2,
+      "current": {
+        "name": "Burnt Hide Bracers",
+        "score": 0.5
+      },
+      "price": {
+        "copper": 5500,
+        "houseId": 110,
+        "listings": 36
+      },
+      "mediaId": 4794,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
+    },
+    {
+      "id": 4820,
+      "name": "Guardian Buckler",
+      "quality": "uncommon",
+      "inv": "SHIELD",
+      "slotGroup": "OFF_HAND",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "STAMINA": 3,
+        "SPIRIT": 3
+      },
+      "armor": 495,
+      "dps": 0,
+      "score": 11.7,
+      "delta": 5.1,
+      "current": {
+        "name": "Ironplate Buckler",
+        "score": 6.6
+      },
+      "price": {
+        "copper": 8000,
+        "houseId": 111,
+        "listings": 3
+      },
+      "mediaId": 4820,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
+    },
+    {
+      "id": 2316,
+      "name": "Dark Leather Cloak",
+      "quality": "uncommon",
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 17,
+      "usableNow": true,
+      "itemLevel": 22,
+      "stats": {
+        "AGILITY": 3,
+        "STRENGTH": 2
+      },
+      "armor": 18,
+      "dps": 0,
+      "score": 5.2,
+      "delta": 5,
+      "current": {
+        "name": "Soldier's Cloak",
+        "score": 0.2
+      },
+      "price": {
+        "copper": 500,
+        "houseId": 110,
+        "listings": 3391
+      },
+      "mediaId": 2316,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg"
+    },
+    {
+      "id": 4243,
+      "name": "Fine Leather Tunic",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 12,
+      "usableNow": true,
+      "itemLevel": 17,
+      "stats": {
+        "AGILITY": 4,
+        "STAMINA": 3
+      },
+      "armor": 73,
+      "dps": 0,
+      "score": 7,
+      "delta": 4.8,
+      "current": {
+        "name": "Soft Leather Tunic",
+        "score": 2.2
+      },
+      "price": {
+        "copper": 600,
+        "houseId": 110,
+        "listings": 291
+      },
+      "mediaId": 4243,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132724.jpg"
+    },
+    {
+      "id": 5961,
+      "name": "Dark Leather Pants",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 18,
+      "usableNow": false,
+      "itemLevel": 23,
+      "stats": {
+        "AGILITY": 8
+      },
+      "armor": 72,
+      "dps": 0,
+      "score": 9.4,
+      "delta": 4.8,
+      "current": {
+        "name": "Deepgrave Trousers",
+        "score": 4.6
+      },
+      "price": {
+        "copper": 1100,
+        "houseId": 110,
+        "listings": 392
+      },
+      "mediaId": 5961,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134589.jpg"
+    },
+    {
+      "id": 4822,
+      "name": "Owl's Disk",
+      "quality": "uncommon",
+      "inv": "SHIELD",
+      "slotGroup": "OFF_HAND",
+      "requiredLevel": 18,
+      "usableNow": false,
+      "itemLevel": 23,
+      "stats": {
+        "INTELLECT": 4
+      },
+      "armor": 461,
+      "dps": 0,
+      "score": 10.2,
+      "delta": 3.6,
+      "current": {
+        "name": "Ironplate Buckler",
+        "score": 6.6
+      },
+      "price": {
+        "copper": 3500,
+        "houseId": 110,
+        "listings": 11
+      },
+      "mediaId": 4822,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
+    },
+    {
+      "id": 4249,
+      "name": "Dark Leather Belt",
+      "quality": "uncommon",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "AGILITY": 4,
+        "STAMINA": 4
+      },
+      "armor": 48,
+      "dps": 0,
+      "score": 7,
+      "delta": 3.2,
+      "current": {
+        "name": "Fine Leather Belt",
+        "score": 3.8
+      },
+      "price": {
+        "copper": 700,
+        "houseId": 110,
+        "listings": 1747
+      },
+      "mediaId": 4249,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132492.jpg"
+    },
+    {
+      "id": 7282,
+      "name": "Light Leather Pants",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 14,
+      "usableNow": true,
+      "itemLevel": 19,
+      "stats": {
+        "AGILITY": 5,
+        "STAMINA": 3
+      },
+      "armor": 66,
+      "dps": 0,
+      "score": 7.8,
+      "delta": 3.2,
+      "current": {
+        "name": "Deepgrave Trousers",
+        "score": 4.6
+      },
+      "price": {
+        "copper": 600,
+        "houseId": 110,
+        "listings": 1124
+      },
+      "mediaId": 7282,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134582.jpg"
+    },
+    {
+      "id": 6466,
+      "name": "Deviate Scale Cloak",
+      "quality": "uncommon",
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 13,
+      "usableNow": true,
+      "itemLevel": 18,
+      "stats": {
+        "AGILITY": 2,
+        "STAMINA": 2
+      },
+      "armor": 16,
+      "dps": 0,
+      "score": 3.3,
+      "delta": 3.1,
+      "current": {
+        "name": "Soldier's Cloak",
+        "score": 0.2
+      },
+      "price": {
+        "copper": 900,
+        "houseId": 110,
+        "listings": 35
+      },
+      "mediaId": 6466,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134305.jpg"
+    },
+    {
+      "id": 4368,
+      "name": "Flying Tiger Goggles",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 0,
+      "usableNow": true,
+      "itemLevel": 20,
+      "stats": {
+        "STAMINA": 4,
+        "SPIRIT": 4
+      },
+      "armor": 27,
+      "dps": 0,
+      "score": 2.9,
+      "delta": 2.9,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 500,
+        "houseId": 110,
+        "listings": 427
+      },
+      "mediaId": 4368,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
+    },
+    {
+      "id": 4795,
+      "name": "Bear Bracers",
+      "quality": "uncommon",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "STAMINA": 5
+      },
+      "armor": 37,
+      "dps": 0,
+      "score": 3.2,
+      "delta": 2.7,
+      "current": {
+        "name": "Burnt Hide Bracers",
+        "score": 0.5
+      },
+      "price": {
+        "copper": 4900,
+        "houseId": 110,
+        "listings": 23
+      },
+      "mediaId": 4795,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
+    },
+    {
+      "id": 4314,
+      "name": "Double-Stitched Woolen Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 17,
+      "usableNow": true,
+      "itemLevel": 22,
+      "stats": {
+        "STAMINA": 4,
+        "SPELL_POWER": 4
+      },
+      "armor": 27,
+      "dps": 0,
+      "score": 2.5,
+      "delta": 2.5,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 400,
+        "houseId": 110,
+        "listings": 1514
+      },
+      "mediaId": 4314,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
+    },
+    {
+      "id": 7281,
+      "name": "Light Leather Bracers",
+      "quality": "uncommon",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 9,
+      "usableNow": true,
+      "itemLevel": 14,
+      "stats": {
+        "AGILITY": 1,
+        "STRENGTH": 1
+      },
+      "armor": 30,
+      "dps": 0,
+      "score": 2.5,
+      "delta": 2,
+      "current": {
+        "name": "Burnt Hide Bracers",
+        "score": 0.5
+      },
+      "price": {
+        "copper": 200,
+        "houseId": 110,
+        "listings": 1248
+      },
+      "mediaId": 7281,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
+    },
+    {
+      "id": 4798,
+      "name": "Heavy Runed Cloak",
+      "quality": "uncommon",
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {
+        "STAMINA": 3,
+        "SPIRIT": 3
+      },
+      "armor": 19,
+      "dps": 0,
+      "score": 2.2,
+      "delta": 2,
+      "current": {
+        "name": "Soldier's Cloak",
+        "score": 0.2
+      },
+      "price": {
+        "copper": 6500,
+        "houseId": 110,
+        "listings": 4
+      },
+      "mediaId": 4798,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133754.jpg"
+    },
+    {
+      "id": 5780,
+      "name": "Murloc Scale Belt",
+      "quality": "uncommon",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 13,
+      "usableNow": true,
+      "itemLevel": 18,
+      "stats": {
+        "AGILITY": 3,
+        "STRENGTH": 2
+      },
+      "armor": 42,
+      "dps": 0,
+      "score": 5.6,
+      "delta": 1.8,
+      "current": {
+        "name": "Fine Leather Belt",
+        "score": 3.8
+      },
+      "price": {
+        "copper": 1100,
+        "houseId": 110,
+        "listings": 30
+      },
+      "mediaId": 5780,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
+    },
+    {
+      "id": 4315,
+      "name": "Reinforced Woolen Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 19,
+      "usableNow": false,
+      "itemLevel": 24,
+      "stats": {
+        "INTELLECT": 4,
+        "SPELL_POWER": 5
+      },
+      "armor": 28,
+      "dps": 0,
+      "score": 1.6,
+      "delta": 1.6,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 2100,
+        "houseId": 110,
+        "listings": 114
+      },
+      "mediaId": 4315,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135040.jpg"
+    },
+    {
+      "id": 1801,
+      "name": "Rawhide Shoulderpads",
+      "quality": "poor",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 20,
+      "usableNow": false,
+      "itemLevel": 25,
+      "stats": {},
+      "armor": 58,
+      "dps": 0,
+      "score": 1.2,
+      "delta": 1.2,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 700,
+        "houseId": 110,
+        "listings": 66
+      },
+      "mediaId": 1801,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
+    },
+    {
+      "id": 2315,
+      "name": "Gray Leather Boots",
+      "quality": "uncommon",
+      "inv": "FEET",
+      "slotGroup": "FEET",
+      "requiredLevel": 15,
+      "usableNow": true,
+      "itemLevel": 20,
+      "stats": {
+        "AGILITY": 5
+      },
+      "armor": 53,
+      "dps": 0,
+      "score": 6.1,
+      "delta": 1.1,
+      "current": {
+        "name": "Fine Leather Boots",
+        "score": 5
+      },
+      "price": {
+        "copper": 400,
+        "houseId": 110,
+        "listings": 4404
+      },
+      "mediaId": 2315,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+    },
+    {
+      "id": 4788,
+      "name": "Agile Boots",
+      "quality": "uncommon",
+      "inv": "FEET",
+      "slotGroup": "FEET",
+      "requiredLevel": 15,
+      "usableNow": true,
+      "itemLevel": 20,
+      "stats": {
+        "AGILITY": 5
+      },
+      "armor": 53,
+      "dps": 0,
+      "score": 6.1,
+      "delta": 1.1,
+      "current": {
+        "name": "Fine Leather Boots",
+        "score": 5
+      },
+      "price": {
+        "copper": 1500,
+        "houseId": 111,
+        "listings": 44
+      },
+      "mediaId": 4788,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+    },
+    {
+      "id": 7285,
+      "name": "Nimble Leather Gloves",
+      "quality": "uncommon",
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 19,
+      "usableNow": false,
+      "itemLevel": 24,
+      "stats": {
+        "AGILITY": 4,
+        "STAMINA": 4
+      },
+      "armor": 52,
+      "dps": 0,
+      "score": 7,
+      "delta": 0.5,
+      "current": {
+        "name": "Flamefist Grips",
+        "score": 6.5
+      },
+      "price": {
+        "copper": 600,
+        "houseId": 110,
+        "listings": 735
+      },
+      "mediaId": 7285,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    }
+  ],
+  "rulesetId": 3,
+  "scannedItems": 3573,
+  "unknownItems": 1884,
+  "weights": {
+    "AGILITY": 1,
+    "STRENGTH": 0.9,
+    "STAMINA": 0.5,
+    "INTELLECT": 0.25,
+    "SPIRIT": 0.1,
+    "ARMOR": 0.02,
+    "DPS": 6
+  }
 }

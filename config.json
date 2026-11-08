@@ -1,0 +1,30 @@
+{
+  "region": "eu",
+  "locale": "en_US",
+  "character": "fabi-stormhammer",
+  "armoryUrl": "https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer",
+  "wowheadItemUrl": "https://www.wowhead.com/forever/item=",
+
+  "auction": {
+    "rulesetIdFallback": 3,
+    "houseIds": [],
+    "houseNameFilter": "Alliance"
+  },
+
+  "upgrades": {
+    "levelLookahead": 3,
+    "maxBuyoutGold": 15,
+    "perSlot": 3,
+    "weights": {
+      "AGILITY": 1.0,
+      "STRENGTH": 0.9,
+      "STAMINA": 0.5,
+      "INTELLECT": 0.25,
+      "SPIRIT": 0.1,
+      "ARMOR": 0.02,
+      "DPS": 6.0
+    },
+    "armorSubclasses": [0, 1, 2, 6],
+    "weaponSubclasses": [0, 1, 4, 5, 10, 13, 15]
+  }
+}

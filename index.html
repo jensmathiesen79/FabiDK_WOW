@@ -1,314 +1,331 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fabi - WoW Armory</title>
-  <style>
-    :root {
-      --bg-base: #0b0c10;
-      --panel-bg: #0e1015;
-      --border-color: #1f232d;
-      --gold-text: #f8b700;
-      --nav-gold: #ffc100;
-      --text-main: #d1d5db;
-      --text-muted: #8b92a5;
-      
-      --q-epic: #a335ee;
-      --q-rare: #0070dd;
-      --q-uncommon: #1eff00;
-      --q-common: #ffffff;
-      --q-poor: #9d9d9d;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fabi Stormhammer · WoW Forever</title>
+<style>
+  :root {
+    --bg: #07080b; --panel: #0f1218; --panel-2: #141820; --line: #222836;
+    --text: #d6dae3; --muted: #8a91a3; --gold: #f8b700; --shaman: #0070dd;
+    --q-poor: #9d9d9d; --q-common: #ffffff; --q-uncommon: #1eff00; --q-rare: #0070dd; --q-epic: #a335ee; --q-legendary: #ff8000;
+    --ok: #3ecf6e; --warn: #f0a33a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font: 14px/1.45 "Segoe UI", Roboto, system-ui, sans-serif; color: var(--text);
+    background: var(--bg) radial-gradient(ellipse at 50% 0%, #17233a 0%, var(--bg) 60%) no-repeat fixed; min-height: 100vh; }
+  a { color: inherit; }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 60px; }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: "Open Sans", "Segoe UI", Roboto, Arial, sans-serif; }
+  /* Header */
+  header { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; margin-bottom: 24px; }
+  .avatar { width: 72px; height: 72px; border-radius: 8px; border: 2px solid var(--shaman); background: #111 center/cover; flex-shrink: 0; }
+  .who h1 { font-size: 2rem; color: var(--shaman); line-height: 1.1; }
+  .who h1 .sur { color: var(--text); font-weight: 400; }
+  .who .sub { color: var(--muted); margin-top: 4px; }
+  .who .sub b { color: var(--text); font-weight: 600; }
+  .who .guild { color: #c9a24a; font-style: italic; }
+  .kpis { margin-left: auto; display: flex; gap: 10px; }
+  .kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px 14px; text-align: center; min-width: 88px; }
+  .kpi .v { font-size: 1.4rem; font-weight: 700; color: var(--gold); }
+  .kpi .l { font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
 
-    body {
-      background: #050608 radial-gradient(circle at 50% 30%, #1e283c 0%, #050608 60%) no-repeat;
-      background-attachment: fixed;
-      color: var(--text-main);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 40px;
-    }
+  .grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; }
+  @media (max-width: 920px) { .grid { grid-template-columns: 1fr; } .kpis { margin-left: 0; } }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; }
+  .card h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 14px; display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+  .card h2 small { text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .span2 { grid-column: 1 / -1; }
 
-    .armory-header { width: 100%; max-width: 1200px; padding: 0 20px; margin-bottom: 30px; position: relative; z-index: 10; }
-    .header-top { display: flex; align-items: baseline; gap: 15px; margin-bottom: 5px; }
-    .char-name { font-size: 2.5rem; color: #3b82f6; font-weight: bold; text-shadow: 0 2px 8px rgba(0,0,0,0.8); }
-    .ilvl { font-size: 1.2rem; color: var(--nav-gold); font-weight: bold; }
-    .char-sub { font-size: 0.95rem; color: var(--text-main); margin-bottom: 20px; }
-    .char-sub .guild { color: #b38b38; font-style: italic; }
-    .char-sub .realm { color: var(--text-muted); }
-    .nav-tabs { display: flex; gap: 20px; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 10px; }
-    .nav-tabs span { font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: var(--text-muted); cursor: pointer; }
-    .nav-tabs span.active { color: var(--nav-gold); border-bottom: 2px solid var(--nav-gold); padding-bottom: 10px; margin-bottom: -11px; }
+  /* Paperdoll */
+  .doll { display: grid; grid-template-columns: 1fr 150px 1fr; gap: 10px; align-items: start; }
+  .doll .col { display: flex; flex-direction: column; gap: 6px; }
+  .doll .model { align-self: stretch; background: center 30% / contain no-repeat; min-height: 360px; opacity: .9; }
+  .doll .bottom { grid-column: 1 / -1; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+  @media (max-width: 600px) { .doll { grid-template-columns: 1fr 1fr; } .doll .model { display: none; } }
+  .slot { display: flex; align-items: center; gap: 8px; padding: 4px; border-radius: 6px; text-decoration: none; min-height: 44px; }
+  .slot:hover { background: var(--panel-2); }
+  .col.r .slot { flex-direction: row-reverse; text-align: right; }
+  .ic { width: 38px; height: 38px; border-radius: 5px; border: 2px solid #444; background: #0b0d12 center/cover; flex-shrink: 0; }
+  .slot .t { min-width: 0; }
+  .slot .n { font-weight: 600; font-size: .86rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 170px; }
+  .slot .s { font-size: .72rem; color: var(--muted); }
+  .slot.empty .ic { border-style: dashed; border-color: #333; }
+  .slot.empty .n { color: #555; font-weight: 400; }
+  .q-poor { --q: var(--q-poor); } .q-common { --q: var(--q-common); } .q-uncommon { --q: var(--q-uncommon); }
+  .q-rare { --q: var(--q-rare); } .q-epic { --q: var(--q-epic); } .q-legendary { --q: var(--q-legendary); }
+  [class*="q-"] .ic { border-color: var(--q); } [class*="q-"] .n, .qn[class*="q-"] { color: var(--q); }
 
-    .character-stage { display: flex; justify-content: space-between; width: 100%; max-width: 1100px; min-height: 550px; padding: 0 20px; position: relative; }
-    
-    /* NYT: Opsætning af karakteren i midten */
-    .character-model {
-      position: absolute;
-      top: -30px; 
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1; /* Ligger bagerst, under udstyret */
-      pointer-events: none; /* Gør at man ikke kan klikke på billedet ved en fejl */
-    }
-    .character-model img {
-      max-height: 120%; /* Skalerer figuren så den fylder godt i højden */
-      max-width: 100%;
-      object-fit: contain;
-      filter: drop-shadow(0 0 25px rgba(0,0,0,0.7)); /* Giver 3D-effekt og dybde mod baggrunden */
-    }
+  /* Quests */
+  .quest { display: grid; grid-template-columns: 46px 1fr; gap: 10px; padding: 10px 0; border-top: 1px solid var(--line); }
+  .quest:first-of-type { border-top: 0; }
+  .lv { font-weight: 700; text-align: center; border-radius: 6px; padding: 6px 0; font-size: .85rem; background: var(--panel-2); color: var(--muted); }
+  .quest.ready .lv { background: rgba(62,207,110,.15); color: var(--ok); }
+  .quest.soon .lv { background: rgba(240,163,58,.12); color: var(--warn); }
+  .quest.done { opacity: .45; } .quest.done .qt { text-decoration: line-through; }
+  .qt { font-weight: 600; } .qt .tag { font-size: .68rem; font-weight: 600; text-transform: uppercase; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 5px; margin-left: 6px; vertical-align: 2px; }
+  .qd { color: var(--muted); font-size: .82rem; margin-top: 2px; }
+  .qd .warn { color: var(--warn); display: block; margin-top: 3px; }
+  .qd a { color: #7fb2ff; text-decoration: none; } .qd a:hover { text-decoration: underline; }
 
-    .gear-col { display: flex; flex-direction: column; gap: 14px; width: 300px; z-index: 10; }
-    .gear-col.left { text-align: right; }
-    .gear-col.right { text-align: left; }
-    .gear-bottom { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 20px; z-index: 10; }
+  /* Upgrades */
+  .filters { display: flex; gap: 6px; }
+  .filters button { background: var(--panel-2); color: var(--muted); border: 1px solid var(--line); border-radius: 5px; padding: 3px 9px; cursor: pointer; font-size: .78rem; }
+  .filters button.on { color: var(--text); border-color: var(--gold); }
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  td { padding: 8px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  td.num { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .itm { display: flex; gap: 8px; align-items: center; text-decoration: none; }
+  .itm .ic { width: 30px; height: 30px; }
+  .stats { color: var(--muted); font-size: .76rem; }
+  .delta { color: var(--ok); font-weight: 700; }
+  .badge { font-size: .7rem; padding: 1px 6px; border-radius: 4px; background: var(--panel-2); color: var(--muted); white-space: nowrap; }
+  .badge.now { color: var(--ok); background: rgba(62,207,110,.12); }
+  .g { color: #ffd100; } .s { color: #c7c7cf; } .c { color: #c4723b; }
+  .note { color: var(--muted); font-size: .78rem; margin-top: 10px; }
+  .empty-msg { color: var(--muted); padding: 10px 0; }
+  .scroll { overflow-x: auto; }
 
-    .gear-item { display: flex; align-items: center; gap: 12px; text-decoration: none; color: inherit; transition: transform 0.1s; }
-    .gear-item:hover { transform: scale(1.02); }
-    .gear-col.left .gear-item { flex-direction: row; }
-    .gear-col.right .gear-item, .gear-bottom .gear-item { flex-direction: row-reverse; }
-
-    .gear-icon {
-      width: 48px;
-      height: 48px;
-      background-color: #111;
-      border: 2px solid var(--q-common);
-      border-radius: 4px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.8);
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .gear-icon img { width: 100%; height: 100%; object-fit: cover; }
-    .gear-icon .fallback { color: #555; font-size: 22px; font-weight: bold; }
-
-    .gear-info { display: flex; flex-direction: column; justify-content: center; }
-    .gear-name { font-size: 0.9rem; font-weight: 600; text-shadow: 1px 1px 2px #000; }
-
-    .epic .gear-icon { border-color: var(--q-epic); }
-    .epic .gear-name { color: var(--q-epic); }
-    .rare .gear-icon { border-color: var(--q-rare); }
-    .rare .gear-name { color: var(--q-rare); }
-    .uncommon .gear-icon { border-color: var(--q-uncommon); }
-    .uncommon .gear-name { color: var(--q-uncommon); }
-    .common .gear-icon { border-color: var(--q-common); }
-    .common .gear-name { color: var(--q-common); }
-    .poor .gear-icon { border-color: var(--q-poor); }
-    .poor .gear-name { color: var(--q-poor); }
-
-    .dashboard-bottom { width: 100%; background: var(--panel-bg); border-top: 1px solid rgba(255,255,255,0.05); margin-top: 40px; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; flex-grow: 1; z-index: 20; position: relative; }
-    .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; width: 100%; max-width: 1100px; }
-    @media (max-width: 800px) { .dashboard-grid { grid-template-columns: 1fr; } }
-    .panel-section h3 { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; border-bottom: 1px solid var(--border-color); padding-bottom: 8px; margin-bottom: 20px; }
-    
-    .stat-prio { display: flex; align-items: center; gap: 15px; background: rgba(0,0,0,0.4); padding: 15px 20px; border-radius: 4px; border: 1px solid var(--border-color); }
-    .prio-item { display: flex; align-items: center; gap: 10px; }
-    .prio-num { color: var(--text-muted); font-size: 0.8rem; }
-    .prio-val { font-weight: bold; color: #fff; }
-    .prio-arr { color: #555; }
-
-    .checklist { list-style: none; }
-    .checklist-item { display: flex; align-items: center; padding: 12px 15px; border-bottom: 1px solid rgba(255,255,255,0.03); }
-    .checklist-item input { margin-right: 15px; accent-color: var(--nav-gold); width: 16px; height: 16px; }
-    .checklist-item.done span { text-decoration: line-through; color: var(--text-muted); }
-    .add-form { display: flex; margin-top: 15px; gap: 10px; }
-    .add-form input { flex: 1; background: rgba(0,0,0,0.5); border: 1px solid var(--border-color); color: #fff; padding: 10px; border-radius: 4px; }
-    .add-form button { background: var(--border-color); color: var(--text-main); border: 1px solid rgba(255,255,255,0.1); padding: 0 15px; cursor: pointer; border-radius: 4px; }
-    .sync-text { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #444; }
-  </style>
+  /* Prio + checklist */
+  .prio { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .prio span { background: var(--panel-2); border: 1px solid var(--line); border-radius: 5px; padding: 4px 9px; font-weight: 600; }
+  .prio i { color: #555; font-style: normal; }
+  .check li { list-style: none; display: flex; gap: 10px; align-items: center; padding: 7px 0; border-top: 1px solid var(--line); }
+  .check li.done span { text-decoration: line-through; color: var(--muted); }
+  .check li button { margin-left: auto; background: none; border: 0; color: #555; cursor: pointer; font-size: 1rem; }
+  .check input[type=checkbox] { accent-color: var(--gold); width: 15px; height: 15px; }
+  form.add { display: flex; gap: 8px; margin-top: 10px; }
+  form.add input { flex: 1; background: #0b0d12; border: 1px solid var(--line); color: var(--text); padding: 8px; border-radius: 5px; }
+  form.add button { background: var(--panel-2); color: var(--text); border: 1px solid var(--line); padding: 0 14px; border-radius: 5px; cursor: pointer; }
+  footer { text-align: center; color: #555; font-size: .78rem; margin-top: 28px; }
+  footer a { color: #777; }
+</style>
 </head>
 <body>
+<div class="wrap">
 
-  <div class="armory-header">
-    <div class="header-top">
-      <div class="char-name" id="char-name">Fabi Stormhammer</div>
-      <div class="ilvl" id="char-ilvl">0 ILVL</div>
+  <header>
+    <div class="avatar" id="avatar"></div>
+    <div class="who">
+      <h1 id="name">Fabi <span class="sur">Stormhammer</span></h1>
+      <div class="sub" id="sub">Indlæser…</div>
     </div>
-    <div class="char-sub">
-      <span id="char-level">14</span> 
-      <span id="char-race">Dwarf</span> 
-      <span id="char-class" style="color: #0070dd;">Shaman</span> 
-      <span class="guild">&lt;The Argent Dawn&gt;</span>
-      <span class="realm">Stormhammer (Roleplay)</span>
+    <div class="kpis">
+      <div class="kpi"><div class="v" id="k-level">–</div><div class="l">Level</div></div>
+      <div class="kpi"><div class="v" id="k-ilvl">–</div><div class="l">Item level</div></div>
+      <div class="kpi"><div class="v" id="k-up">–</div><div class="l">AH-forslag</div></div>
     </div>
-    <div class="nav-tabs">
-      <span class="active">Character</span>
-      <span>Collections</span>
-      <span>Player vs Player</span>
-      <span>Reputation</span>
-    </div>
+  </header>
+
+  <div class="grid">
+    <section class="card">
+      <h2>Udstyr <small id="gear-note"></small></h2>
+      <div class="doll" id="doll"></div>
+    </section>
+
+    <section class="card">
+      <h2>Næste skridt <small>Dwarf Shaman</small></h2>
+      <div id="quests"></div>
+    </section>
+
+    <section class="card span2">
+      <h2>Opgraderinger fra auktionshuset
+        <span class="filters" id="filters">
+          <button data-f="now" class="on">Kan bruges nu</button>
+          <button data-f="all">Inkl. kommende levels</button>
+        </span>
+      </h2>
+      <div class="scroll" id="upgrades"><div class="empty-msg">Indlæser…</div></div>
+      <div class="note" id="market-note"></div>
+    </section>
+
+    <section class="card">
+      <h2>Stat-prioritet (leveling, Enhancement)</h2>
+      <div class="prio" id="prio"></div>
+      <div class="note">Rækkefølge fra <a href="https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents" target="_blank" rel="noopener">Method.gg</a>. Vægtene bruges til at score AH-forslag og kan rettes i <code>config.json</code>.</div>
+    </section>
+
+    <section class="card">
+      <h2>Egne mål <small id="goal-count"></small></h2>
+      <ul class="check" id="goals"></ul>
+      <form class="add" id="goal-form">
+        <input id="goal-input" placeholder="Tilføj mål…" required>
+        <button>Tilføj</button>
+      </form>
+    </section>
   </div>
 
-  <div class="character-stage">
-    <!-- Karakterbillede hentes automatisk her -->
-    <div class="character-model">
-      <img src="fabi.png" alt="Fabi Character Model" onerror="this.style.opacity='0'">
-    </div>
+  <footer id="footer"></footer>
+</div>
 
-    <div class="gear-col left" id="gear-left"></div>
-    <div class="gear-col right" id="gear-right"></div>
-    <div class="gear-bottom" id="gear-bottom"></div>
-  </div>
+<script>
+const LEFT  = ['HEAD','NECK','SHOULDER','BACK','CHEST','SHIRT','TABARD','WRIST'];
+const RIGHT = ['HANDS','WAIST','LEGS','FEET','FINGER_1','FINGER_2','TRINKET_1','TRINKET_2'];
+const BOTTOM = ['MAIN_HAND','OFF_HAND','RANGED'];
+const SLOT_DA = { HEAD:'Hoved', NECK:'Hals', SHOULDER:'Skuldre', BACK:'Kappe', CHEST:'Bryst', SHIRT:'Skjorte', TABARD:'Tabard', WRIST:'Håndled',
+  HANDS:'Hænder', WAIST:'Bælte', LEGS:'Ben', FEET:'Fødder', FINGER_1:'Ring 1', FINGER_2:'Ring 2', TRINKET_1:'Trinket 1', TRINKET_2:'Trinket 2',
+  MAIN_HAND:'Main hand', OFF_HAND:'Off hand', RANGED:'Ranged', FINGER:'Ring', TRINKET:'Trinket' };
+const STAT_DA = { STRENGTH:'Str', AGILITY:'Agi', STAMINA:'Sta', INTELLECT:'Int', SPIRIT:'Spi' };
+const IGNORE_EMPTY = new Set(['SHIRT','TABARD','RANGED']);
 
-  <div class="dashboard-bottom">
-    <div class="dashboard-grid">
-      <div class="panel-section">
-        <h3>Specialization & Stat Priority</h3>
-        <div class="stat-prio">
-          <div class="prio-item"><span class="prio-num">1</span><span class="prio-val" style="color: #ff5252;">Strength</span></div>
-          <div class="prio-arr">></div>
-          <div class="prio-item"><span class="prio-num">2</span><span class="prio-val" style="color: #44ff44;">Agility</span></div>
-          <div class="prio-arr">></div>
-          <div class="prio-item"><span class="prio-num">3</span><span class="prio-val">Stamina</span></div>
-        </div>
+let CFG = { wowheadItemUrl: 'https://www.wowhead.com/forever/item=' };
+let upgradeFilter = 'now';
+let MARKET = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]));
+const getJson = (u) => fetch(u + '?t=' + Date.now()).then((r) => r.ok ? r.json() : null).catch(() => null);
+const itemUrl = (id) => id ? CFG.wowheadItemUrl + id : null;
+
+function money(c) {
+  const g = Math.floor(c / 10000), s = Math.floor(c % 10000 / 100), cc = c % 100;
+  return [g && `<span class="g">${g}g</span>`, (g || s) && `<span class="s">${s}s</span>`, !g && `<span class="c">${cc}c</span>`].filter(Boolean).join(' ');
+}
+function statStr(u) {
+  const parts = Object.entries(u.stats || {}).map(([k, v]) => `+${v} ${STAT_DA[k] || k.toLowerCase()}`);
+  if (u.dps) parts.push(`${u.dps.toFixed(1)} dps`);
+  if (u.armor) parts.push(`${u.armor} armor`);
+  return parts.join(', ');
+}
+
+function slotHtml(item, slot) {
+  if (!item) return `<div class="slot empty"><div class="ic"></div><div class="t"><div class="n">Tom</div><div class="s">${SLOT_DA[slot] || slot}</div></div></div>`;
+  const href = itemUrl(item.id);
+  const tag = href ? `a href="${href}" target="_blank" rel="noopener"` : 'div';
+  return `<${tag} class="slot q-${esc(item.quality)}" title="${esc(item.name)}">
+      <div class="ic" style="background-image:url('${esc(item.icon || '')}')"></div>
+      <div class="t"><div class="n">${esc(item.name)}</div><div class="s">${esc(item.slotName || SLOT_DA[slot] || '')}${item.ilvl ? ' · ilvl ' + item.ilvl : ''}</div></div>
+    </${tag.split(' ')[0]}>`;
+}
+
+function renderCharacter(d) {
+  const p = d.profile || {};
+  $('name').innerHTML = `${esc(p.name || 'Fabi')} <span class="sur">${esc(p.surname || '')}</span>`;
+  $('sub').innerHTML = [
+    `<b>${esc(p.level ?? '?')}</b> ${esc(p.race || '')} <span style="color:var(--shaman)">${esc(p.class || '')}</span>`,
+    p.guild && `<span class="guild">&lt;${esc(p.guild)}&gt;</span>`,
+    p.ruleset?.name && esc(p.ruleset.name),
+    p.faction && esc(p.faction),
+  ].filter(Boolean).join(' · ');
+  $('k-level').textContent = p.level ?? '–';
+  $('k-ilvl').textContent = p.equippedItemLevel ?? p.averageItemLevel ?? '–';
+  if (d.media?.avatar) $('avatar').style.backgroundImage = `url('${d.media.avatar}')`;
+
+  const eq = d.equipment || [];
+  const bySlot = Object.fromEntries(eq.filter((e) => e.slot).map((e) => [e.slot, e]));
+  const model = d.media?.main || 'fabi.png';
+  if (eq.length && !eq.some((e) => e.slot)) {
+    // fallback-data uden slots: vis som liste
+    $('doll').innerHTML = `<div class="col" style="grid-column:1/-1">${eq.map((e) => slotHtml(e, '')).join('')}</div>`;
+  } else {
+    $('doll').innerHTML = `
+      <div class="col l">${LEFT.map((s) => slotHtml(bySlot[s], s)).join('')}</div>
+      <div class="model" style="background-image:url('${esc(model)}')"></div>
+      <div class="col r">${RIGHT.map((s) => slotHtml(bySlot[s], s)).join('')}</div>
+      <div class="bottom">${BOTTOM.map((s) => slotHtml(bySlot[s], s)).join('')}</div>`;
+  }
+  const empty = [...LEFT, ...RIGHT, ...BOTTOM].filter((s) => !bySlot[s] && !IGNORE_EMPTY.has(s));
+  $('gear-note').textContent = empty.length ? `${empty.length} tomme slots` : '';
+  $('footer').innerHTML = `Opdateret ${new Date(d.last_updated).toLocaleString('da-DK')} · kilde: ${d.source === 'api' ? 'Battle.net API' : 'Armory-scrape (fallback)'}
+    · <a href="https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/character/fabi-stormhammer" target="_blank" rel="noopener">Armory</a>`;
+}
+
+function renderQuests(q, d) {
+  const level = d?.profile?.level ?? 0;
+  const done = new Set((d?.completed_quests || []).map((x) => x.name.toLowerCase()));
+  const known = d?.completed_quests != null;
+  const rows = q.items.map((it) => {
+    const isDone = (it.match || []).some((m) => done.has(m.toLowerCase()));
+    const state = isDone ? 'done' : level >= it.minLevel ? 'ready' : level + 5 >= it.minLevel ? 'soon' : 'later';
+    return { ...it, state };
+  }).filter((it) => it.state !== 'later' || it.minLevel <= level + 15);
+  const order = { ready: 0, soon: 1, later: 2, done: 3 };
+  rows.sort((a, b) => order[a.state] - order[b.state] || a.minLevel - b.minLevel);
+  $('quests').innerHTML = rows.map((it) => `
+    <div class="quest ${it.state}">
+      <div class="lv">${it.minLevel}</div>
+      <div>
+        <div class="qt">${esc(it.title)}<span class="tag">${it.type === 'quest' ? 'quest' : 'milepæl'}</span></div>
+        <div class="qd">${esc(it.where)}${it.reward ? ' · <i>' + esc(it.reward) + '</i>' : ''}
+          ${it.warning ? `<span class="warn">⚠ ${esc(it.warning)}</span>` : ''}
+          <a href="${esc(it.source)}" target="_blank" rel="noopener">kilde</a></div>
       </div>
+    </div>`).join('') +
+    (known ? '' : `<div class="note">Gennemførte quests kunne ikke hentes fra API'et – status er kun baseret på level.</div>`);
+}
 
-      <div class="panel-section">
-        <h3>Action Items & Quests (<span id="quest-count">0/0</span>)</h3>
-        <ul class="checklist" id="checklist"></ul>
-        <form class="add-form" id="goal-form">
-          <input type="text" id="new-goal" placeholder="Tilføj ny quest..." required>
-          <button type="submit">Tilføj</button>
-        </form>
-      </div>
-    </div>
-    <div class="sync-text" id="sync-time">Venter på data...</div>
-  </div>
+function renderUpgrades() {
+  const m = MARKET;
+  if (!m) { $('upgrades').innerHTML = '<div class="empty-msg">market.json findes ikke endnu – kør workflowet.</div>'; return; }
+  if (m.error) { $('upgrades').innerHTML = `<div class="empty-msg">Ingen AH-data: ${esc(m.error)}</div>`; }
+  const list = (m.upgrades || []).filter((u) => upgradeFilter === 'all' || u.usableNow);
+  $('k-up').textContent = (m.upgrades || []).filter((u) => u.usableNow).length;
+  const houses = Object.fromEntries((m.houses || []).map((h) => [h.id, h.name]));
+  if (!m.error) {
+    $('upgrades').innerHTML = list.length ? `<table>
+      <thead><tr><th>Item</th><th>Slot</th><th>Krav</th><th class="num">Score</th><th>Erstatter</th><th class="num">Pris</th></tr></thead>
+      <tbody>${list.map((u) => `<tr>
+        <td><a class="itm q-${esc(u.quality)}" href="${itemUrl(u.id)}" target="_blank" rel="noopener">
+          <div class="ic" style="background-image:url('${esc(u.icon || '')}')"></div>
+          <div><div class="qn q-${esc(u.quality)}" style="font-weight:600">${esc(u.name)}</div><div class="stats">${esc(statStr(u))}</div></div></a></td>
+        <td>${esc(SLOT_DA[u.slotGroup] || u.slotGroup)}</td>
+        <td><span class="badge ${u.usableNow ? 'now' : ''}">${u.usableNow ? 'Nu' : 'Lvl ' + u.requiredLevel}</span></td>
+        <td class="num"><span class="delta">+${u.delta}</span></td>
+        <td class="stats">${esc(u.current?.name || 'tom slot')}</td>
+        <td class="num">${money(u.price.copper)}<div class="stats">${esc(houses[u.price.houseId] || '#' + u.price.houseId)} · ${u.price.listings} stk</div></td>
+      </tr>`).join('')}</tbody></table>`
+      : '<div class="empty-msg">Ingen opgraderinger fundet inden for prisloftet.</div>';
+  }
+  const nH = (m.houses || []).length;
+  $('market-note').innerHTML = m.last_updated ? `Scannet ${new Date(m.last_updated).toLocaleString('da-DK')} · ${nH} auktionshus${nH === 1 ? '' : 'e'} · ${m.scannedItems ?? 0} unikke items
+    ${m.unknownItems ? ` (${m.unknownItems} uden data i API'et og derfor udeladt)` : ''}.
+    Score er en vægtet sum af stats – en tommelfingerregel, ikke en simulering.
+    ${nH > 1 ? ' Flere huse matcher filteret; tjek at prisen er fra dit eget AH, eller lås det i <code>config.json</code> → <code>auction.houseIds</code>.' : ''}` : '';
+}
 
-  <script>
-    async function loadData() {
-      try {
-        const res = await fetch('./character.json?cachebuster=' + new Date().getTime());
-        const data = await res.json();
+function renderPrio(m) {
+  const w = m?.weights || { AGILITY: 1, STRENGTH: .9, STAMINA: .5, INTELLECT: .25 };
+  const names = { AGILITY: 'Agility', STRENGTH: 'Strength', STAMINA: 'Stamina', INTELLECT: 'Intellect', SPIRIT: 'Spirit' };
+  $('prio').innerHTML = Object.entries(w).filter(([k]) => names[k]).sort((a, b) => b[1] - a[1])
+    .map(([k]) => `<span>${names[k]}</span>`).join('<i>›</i>');
+}
 
-        if (data.profile) {
-          let charName = data.profile.name || 'Fabi';
-          if (!charName.includes('Stormhammer')) charName += ' Stormhammer';
-          document.getElementById('char-name').textContent = charName;
-          document.getElementById('char-level').textContent = data.profile.level || '14';
-        }
-        
-        if (data.last_updated) {
-          const d = new Date(data.last_updated);
-          document.getElementById('sync-time').textContent = `Sidst opdateret: ${d.toLocaleString('da-DK')}`;
-        }
+// Egne mål (gemmes lokalt i browseren)
+const GOAL_KEY = 'fabi_forever_goals';
+const goals = () => { try { return JSON.parse(localStorage.getItem(GOAL_KEY)) || []; } catch { return []; } };
+const saveGoals = (g) => { try { localStorage.setItem(GOAL_KEY, JSON.stringify(g)); } catch {} renderGoals(); };
+function renderGoals() {
+  const g = goals();
+  $('goal-count').textContent = g.length ? `${g.filter((x) => x.done).length}/${g.length}` : '';
+  $('goals').innerHTML = g.map((x, i) => `<li class="${x.done ? 'done' : ''}">
+      <input type="checkbox" data-i="${i}" ${x.done ? 'checked' : ''}><span>${esc(x.text)}</span><button data-del="${i}" title="Slet">×</button></li>`).join('');
+}
+$('goals').addEventListener('click', (e) => {
+  const g = goals();
+  if (e.target.dataset.i !== undefined) { g[e.target.dataset.i].done = e.target.checked; saveGoals(g); }
+  if (e.target.dataset.del !== undefined) { g.splice(e.target.dataset.del, 1); saveGoals(g); }
+});
+$('goal-form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const v = $('goal-input').value.trim(); if (!v) return;
+  saveGoals([...goals(), { text: v, done: false }]); $('goal-input').value = '';
+});
+$('filters').addEventListener('click', (e) => {
+  if (!e.target.dataset.f) return;
+  upgradeFilter = e.target.dataset.f;
+  [...$('filters').children].forEach((b) => b.classList.toggle('on', b === e.target));
+  renderUpgrades();
+});
 
-        const items = (data.equipment && data.equipment.equipped_items) ? data.equipment.equipped_items : [];
-        document.getElementById('char-ilvl').textContent = `${items.length * 2} ILVL`;
-
-        const leftCol = document.getElementById('gear-left');
-        const rightCol = document.getElementById('gear-right');
-        const botCol = document.getElementById('gear-bottom');
-
-        leftCol.innerHTML = ''; rightCol.innerHTML = ''; botCol.innerHTML = '';
-
-        items.forEach((item, index) => {
-          const el = document.createElement('a'); 
-          const qClass = (item.quality?.type || 'common').toLowerCase();
-          
-          el.className = `gear-item ${qClass}`;
-          const safeName = encodeURIComponent(item.name);
-          el.href = `https://www.wowhead.com/classic/search?q=${safeName}`;
-          el.target = "_blank";
-          
-          const iconHtml = (item.icon && item.icon.length > 5) 
-            ? `<img src="${item.icon}" onerror="this.style.display='none'">` 
-            : `<span class="fallback">?</span>`;
-
-          el.innerHTML = `
-            <div class="gear-info">
-              <div class="gear-name">${item.name}</div>
-            </div>
-            <div class="gear-icon">
-              ${iconHtml}
-            </div>
-          `;
-
-          if (index < 7) {
-            leftCol.appendChild(el);
-          } else if (index < 14) {
-            rightCol.appendChild(el);
-          } else {
-            botCol.appendChild(el);
-          }
-        });
-
-      } catch (e) {
-        console.error("Fejl:", e);
-        document.getElementById('sync-time').textContent = 'Fejl: Kunne ikke indlæse character.json';
-      }
-    }
-
-    const defaultGoals = [
-      { text: "Nå Level 20: Træn Ghost Wolf", done: false },
-      { text: "Start Water Totem Questline", done: false },
-      { text: "Gennemfør Cozy Sleeping Bag quest", done: false },
-      { text: "Lær 2H Axes/Maces (Level 20)", done: false }
-    ];
-
-    function getGoals() {
-      const saved = localStorage.getItem('fabi_wow_goals');
-      return saved ? JSON.parse(saved) : defaultGoals;
-    }
-
-    function saveGoals(goals) {
-      localStorage.setItem('fabi_wow_goals', JSON.stringify(goals));
-      renderGoals();
-    }
-
-    function renderGoals() {
-      const goals = getGoals();
-      const list = document.getElementById('checklist');
-      list.innerHTML = '';
-      
-      let doneCount = 0;
-      goals.forEach((g, idx) => {
-        if (g.done) doneCount++;
-        const li = document.createElement('li');
-        li.className = `checklist-item ${g.done ? 'done' : ''}`;
-        li.innerHTML = `
-          <input type="checkbox" ${g.done ? 'checked' : ''} data-index="${idx}">
-          <span>${g.text}</span>
-        `;
-        list.appendChild(li);
-      });
-
-      document.getElementById('quest-count').textContent = `${doneCount}/${goals.length}`;
-
-      list.querySelectorAll('input').forEach(chk => {
-        chk.addEventListener('change', (e) => {
-          const index = e.target.getAttribute('data-index');
-          goals[index].done = e.target.checked;
-          saveGoals(goals);
-        });
-      });
-    }
-
-    document.getElementById('goal-form').addEventListener('submit', (e) => {
-      e.preventDefault();
-      const input = document.getElementById('new-goal');
-      const val = input.value.trim();
-      if (!val) return;
-      const goals = getGoals();
-      goals.push({ text: val, done: false });
-      saveGoals(goals);
-      input.value = '';
-    });
-
-    loadData();
-    renderGoals();
-  </script>
+(async () => {
+  const [cfg, ch, mk, q] = await Promise.all([getJson('config.json'), getJson('data/character.json'), getJson('data/market.json'), getJson('quests.json')]);
+  if (cfg) CFG = cfg;
+  if (ch) renderCharacter(ch); else $('sub').textContent = 'data/character.json mangler – kør workflowet under Actions.';
+  if (q) renderQuests(q, ch);
+  MARKET = mk; renderUpgrades(); renderPrio(mk);
+  renderGoals();
+})();
+</script>
 </body>
 </html>

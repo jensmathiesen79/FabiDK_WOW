@@ -1,0 +1,92 @@
+{
+  "_note": "Kurateret liste. 'match' sammenlignes med navne fra /quests/completed (hvis API'et returnerer dem). Ret/tilføj frit.",
+  "items": [
+    {
+      "id": "call-of-earth",
+      "type": "quest",
+      "title": "Call of Earth (Earth Totem)",
+      "minLevel": 4,
+      "match": ["Call of Earth"],
+      "where": "Teo Hammerstorm, Anvilmar, Dun Morogh (28.8, 66.2)",
+      "reward": "Earth Totem + Stoneskin Totem",
+      "source": "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/"
+    },
+    {
+      "id": "call-of-fire",
+      "type": "quest",
+      "title": "Call of Fire (Fire Totem)",
+      "minLevel": 10,
+      "match": ["Call of Fire"],
+      "where": "Start hos en Shaman-træner → Bruegs Kindleborn (hule i Dun Morogh, sti ved 86.7, 47.0) → Braldir Ashmantle, Loch Modan (32.0, 66.3)",
+      "reward": "Fire Totem + Searing Totem",
+      "source": "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/"
+    },
+    {
+      "id": "cozy-sleeping-bag",
+      "type": "quest",
+      "title": "Cozy Sleeping Bag (questkæde)",
+      "minLevel": 14,
+      "match": ["This Must Be the Place", "This Must Be The Place"],
+      "where": "Start: Alexstone Farmstead, Westfall (37.14, 50.13). Rute: Westfall → The Barrens → Stonetalon → Loch Modan → Hillsbrad",
+      "reward": "Cozy Sleeping Bag (XP-buff), Old Toolbox (12-slot), Student Fodder",
+      "warning": "Ruten går gennem Duskwood/STV/Barrens. Method anbefaler 30+ for Horde-versionen; Alliance-niveauet er ikke angivet. Level 14 er kravet fra SoD-versionen.",
+      "source": "https://www.method.gg/wow-forever/how-to-unlock-the-cozy-sleeping-bag-in-wow-forever"
+    },
+    {
+      "id": "imp-ghost-wolf",
+      "type": "milestone",
+      "title": "Talent: Improved Ghost Wolf 2/2",
+      "minLevel": 15,
+      "where": "Enhancement-træet. Hav 2/2 klar inden level 20",
+      "reward": "Instant Ghost Wolf, kan bruges indendørs",
+      "source": "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"
+    },
+    {
+      "id": "ghost-wolf",
+      "type": "milestone",
+      "title": "Træn Ghost Wolf",
+      "minLevel": 20,
+      "where": "Shaman-træner",
+      "reward": "+40% bevægelseshastighed",
+      "source": "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"
+    },
+    {
+      "id": "call-of-water",
+      "type": "quest",
+      "title": "Call of Water (Water Totem)",
+      "minLevel": 20,
+      "match": ["Call of Water"],
+      "where": "Start hos Shaman-træner → Norric Lochthane, Loch Modan (41.9, 19.0). Kæden går via Wetlands, Redridge, Ashenvale og Westfall",
+      "reward": "Water Totem + Healing Stream Totem",
+      "source": "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/"
+    },
+    {
+      "id": "stormstrike",
+      "type": "milestone",
+      "title": "Talent: Stormstrike",
+      "minLevel": 25,
+      "where": "Enhancement-træet",
+      "reward": "Kerne-angreb til Enhancement",
+      "source": "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"
+    },
+    {
+      "id": "call-of-air",
+      "type": "quest",
+      "title": "Call of Air (Air Totem)",
+      "minLevel": 30,
+      "match": ["Call of Air"],
+      "where": "Veyric Thundervein, Arathi Highlands (59.8, 27.6)",
+      "reward": "Air Totem",
+      "source": "https://www.warcrafttavern.com/forever/guides/dwarf-shaman-totem-quests/"
+    },
+    {
+      "id": "windfury",
+      "type": "milestone",
+      "title": "Skift til 2H + Windfury Weapon",
+      "minLevel": 30,
+      "where": "Indtil 30: 2H eller 1H+skjold med Rockbiter",
+      "reward": "",
+      "source": "https://www.method.gg/wow-forever/wow-forever-shaman-leveling-guide-and-talents"
+    }
+  ]
+}

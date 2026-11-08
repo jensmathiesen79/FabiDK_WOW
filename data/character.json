@@ -1,0 +1,21 @@
+{
+  "last_updated": "2026-11-08T13:58:54.328Z",
+  "source": "scrape",
+  "profile": {
+    "name": "Fabi",
+    "surname": "Stormhammer",
+    "level": 17,
+    "race": "Dwarf",
+    "class": "Shaman",
+    "faction": "Alliance",
+    "guild": "The Argent Dawn",
+    "ruleset": null,
+    "averageItemLevel": 8
+  },
+  "media": {
+    "main": null,
+    "avatar": null
+  },
+  "equipment": [],
+  "completed_quests": null
+}

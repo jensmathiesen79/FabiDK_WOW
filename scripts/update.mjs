@@ -65,7 +65,7 @@ export function makeApi({ region, locale, clientId, clientSecret, fetchImpl = fe
     throw new Error(`Gav op efter gentagne fejl på ${p}`);
   }
 
-  return { get };
+  return { get, init: getToken };
 }
 
 async function pool(items, size, fn) {
@@ -201,6 +201,7 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
   const { region, locale, character: slug } = cfg;
   if (!env.BNET_CLIENT_ID || !env.BNET_CLIENT_SECRET) throw new Error('Mangler BNET_CLIENT_ID / BNET_CLIENT_SECRET');
   const api = makeApi({ region, locale, clientId: env.BNET_CLIENT_ID, clientSecret: env.BNET_CLIENT_SECRET, fetchImpl });
+  await api.init(); // fejler tydeligt ved forkert Client ID/Secret
 
   const cachePath = path.join(DATA, 'item-cache.json');
   const itemCache = readJson(cachePath, {});

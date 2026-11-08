@@ -56,5 +56,6 @@ const result = await page.evaluate(() => {
 });
 
 await browser.close();
+fs.mkdirSync(path.join(ROOT, 'data'), { recursive: true });
 fs.writeFileSync(path.join(ROOT, 'data', 'scraped.json'), JSON.stringify(result, null, 2));
 console.log(`[scrape] ${result.equipment.length} items (initial state: ${result.fromState})`);

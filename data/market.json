@@ -1,6 +1,6 @@
 {
-  "last_updated": "2026-11-08T18:52:47.567Z",
-  "error": "Opgraderinger kræver stats fra API (fallback-data har ingen stats)",
+  "last_updated": "2026-11-08T19:17:04.000Z",
+  "error": "Ingen item-stats for dit udstyr – kan ikke sammenligne",
   "houses": [],
   "upgrades": []
 }

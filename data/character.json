@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-08T18:52:47.567Z",
+  "last_updated": "2026-11-08T19:17:04.000Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -13,9 +13,541 @@
     "averageItemLevel": 8
   },
   "media": {
-    "main": null,
-    "avatar": null
+    "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-sd-raw.png",
+    "avatar": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-avatar.jpg"
   },
   "equipment": [],
-  "completed_quests": null
+  "completed_quests": null,
+  "debug": {
+    "apiWarnings": [
+      "profile: 404",
+      "equipment: 404",
+      "character-media: 404",
+      "quests/completed: 404"
+    ],
+    "scrape": {
+      "equipmentSource": null,
+      "stateFound": true,
+      "stateShape": {
+        "character": {
+          "avatar": {
+            "url": "string"
+          },
+          "averageItemLevel": "number",
+          "class": {
+            "id": "number",
+            "name": "string",
+            "enum": "string",
+            "slug": "string"
+          },
+          "faction": {
+            "id": "number",
+            "name": "string",
+            "enum": "string",
+            "slug": "string"
+          },
+          "gear": {
+            "back": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "armor": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "is_subclass_hidden": "boolean"
+            },
+            "chest": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "foot": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "hand": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "leftFinger": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "is_subclass_hidden": "boolean"
+            },
+            "leg": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "offhand": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "shield_block": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "ranged": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "spells": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object"
+            },
+            "shirt": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "sell_price": "object",
+              "level": "object",
+              "is_subclass_hidden": "boolean"
+            },
+            "waist": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "weapon": {
+              "id": "number",
+              "item": "object",
+              "enchantments": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "weapon": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "wrist": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "sell_price": "object",
+              "level": "object",
+              "durability": "object"
+            }
+          },
+          "gender": {
+            "id": "number",
+            "name": "string",
+            "enum": "string",
+            "slug": "string"
+          },
+          "guild": {
+            "faction": {
+              "id": "number",
+              "name": "string",
+              "enum": "string",
+              "slug": "string"
+            },
+            "name": "string",
+            "region": "string",
+            "slug": "string"
+          },
+          "isRemix": "boolean",
+          "lastUpdatedTimestamp": {
+            "epoch": "number",
+            "iso8601": "string"
+          },
+          "level": "number",
+          "media": {
+            "main-sd-raw": {
+              "url": "string"
+            },
+            "avatar-sd": {
+              "url": "string"
+            },
+            "main-raw": {
+              "url": "string"
+            },
+            "avatar": {
+              "url": "string"
+            }
+          },
+          "name": "string",
+          "professions": {
+            "primaries": [
+              2,
+              "object"
+            ],
+            "secondaries": [
+              3,
+              "object"
+            ]
+          },
+          "pvp": {
+            "honorableKills": {
+              "tier": "number",
+              "value": "number"
+            },
+            "rank": {
+              "value": "number"
+            },
+            "region": "string"
+          },
+          "race": {
+            "id": "number",
+            "name": "string",
+            "enum": "string",
+            "slug": "string"
+          },
+          "region": "string",
+          "ruleset": {
+            "name": "string",
+            "rulesetId": "number",
+            "slug": "string"
+          },
+          "slug": "string",
+          "specs": [
+            1,
+            {
+              "active": "boolean",
+              "icon": "object",
+              "id": "string",
+              "name": "string",
+              "spentPoints": "number",
+              "talents": "object"
+            }
+          ],
+          "stats": {
+            "basic": {
+              "primary": "object",
+              "secondary": "object"
+            },
+            "groups": [
+              6,
+              "object"
+            ],
+            "overview": [
+              8,
+              "object"
+            ]
+          },
+          "surname": "string",
+          "url": "string",
+          "render": {
+            "staticFallback": {
+              "url": "string"
+            },
+            "foregroundFallback": {
+              "url": "string"
+            },
+            "background": {
+              "url": "string",
+              "color": "object"
+            },
+            "shadow": {
+              "url": "string"
+            },
+            "foreground": {
+              "url": "string"
+            },
+            "foregroundSd": {
+              "url": "string"
+            }
+          },
+          "achievementUrl": "string",
+          "isOutdated": "boolean",
+          "showRangedSlot": "boolean"
+        },
+        "summary": {
+          "character": {
+            "avatar": {
+              "url": "string"
+            },
+            "averageItemLevel": "number",
+            "class": {
+              "id": "number",
+              "name": "string",
+              "enum": "string",
+              "slug": "string"
+            },
+            "faction": {
+              "id": "number",
+              "name": "string",
+              "enum": "string",
+              "slug": "string"
+            },
+            "gear": {
+              "back": "object",
+              "chest": "object",
+              "foot": "object",
+              "hand": "object",
+              "leftFinger": "object",
+              "leg": "object",
+              "offhand": "object",
+              "ranged": "object",
+              "shirt": "object",
+              "waist": "object",
+              "weapon": "object",
+              "wrist": "object"
+            },
+            "gender": {
+              "id": "number",
+              "name": "string",
+              "enum": "string",
+              "slug": "string"
+            },
+            "guild": {
+              "faction": "object",
+              "name": "string",
+              "region": "string",
+              "slug": "string"
+            },
+            "isRemix": "boolean",
+            "lastUpdatedTimestamp": {
+              "epoch": "number",
+              "iso8601": "string"
+            },
+            "level": "number",
+            "media": {
+              "main-sd-raw": "object",
+              "avatar-sd": "object",
+              "main-raw": "object",
+              "avatar": "object"
+            },
+            "name": "string",
+            "professions": {
+              "primaries": "object",
+              "secondaries": "object"
+            },
+            "pvp": {
+              "honorableKills": "object",
+              "rank": "object",
+              "region": "string"
+            },
+            "race": {
+              "id": "number",
+              "name": "string",
+              "enum": "string",
+              "slug": "string"
+            },
+            "region": "string",
+            "ruleset": {
+              "name": "string",
+              "rulesetId": "number",
+              "slug": "string"
+            },
+            "slug": "string",
+            "specs": [
+              1,
+              "object"
+            ],
+            "stats": {
+              "basic": "object",
+              "groups": "object",
+              "overview": "object"
+            },
+            "surname": "string",
+            "url": "string",
+            "render": {
+              "staticFallback": "object",
+              "foregroundFallback": "object",
+              "background": "object",
+              "shadow": "object",
+              "foreground": "object",
+              "foregroundSd": "object"
+            },
+            "achievementUrl": "string",
+            "isOutdated": "boolean",
+            "showRangedSlot": "boolean"
+          },
+          "pets": [
+            0,
+            null
+          ],
+          "raids": [
+            0,
+            null
+          ],
+          "pvp": {
+            "honorableKills": {
+              "tier": "number",
+              "value": "number"
+            },
+            "rank": {
+              "value": "number"
+            },
+            "region": "string",
+            "ratings": {
+              "2v2": "object",
+              "3v3": "object",
+              "battlegrounds": "object",
+              "shuffle": "object",
+              "blitz": "object"
+            }
+          },
+          "region": "string",
+          "mythicKeystoneDungeons": {
+            "dungeons": [
+              0,
+              null
+            ]
+          }
+        },
+        "supportedArmoryTabs": [
+          5,
+          "string"
+        ]
+      },
+      "xhrUrls": [
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
+        "https://navbar.blizzard.com/base-api/v1/en-us/nav",
+        "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
+        "https://geo.battle.net/",
+        "https://navbar.blizzard.com/base-api/v1/themes/nav",
+        "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
+        "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-2509-7974-8c3e-c9d9de5bcc5e/en.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
+      ],
+      "domItems": 0
+    }
+  }
 }

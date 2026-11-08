@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T14:21:08.660Z",
+  "last_updated": "2026-11-08T04:44:05.741Z",
   "profile": {
     "name": "Fabi",
     "level": 14,
@@ -46,8 +46,8 @@
         }
       },
       {
-        "name": "Spellbinder Bracers",
-        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132605.jpg",
+        "name": "Burnt Hide Bracers",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132607.jpg",
         "slot": {
           "name": "Gear"
         },
@@ -116,8 +116,8 @@
         }
       },
       {
-        "name": "Dwarven Defender",
-        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134951.jpg",
+        "name": "Ironplate Buckler",
+        "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg",
         "slot": {
           "name": "Gear"
         },

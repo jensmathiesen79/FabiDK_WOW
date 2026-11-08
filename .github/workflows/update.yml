@@ -1,0 +1,53 @@
+name: Update character + AH data
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'   # hver 6. time (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Hent data via Battle.net API
+        id: api
+        env:
+          BNET_CLIENT_ID: ${{ secrets.BNET_CLIENT_ID }}
+          BNET_CLIENT_SECRET: ${{ secrets.BNET_CLIENT_SECRET }}
+        run: node scripts/update.mjs
+
+      - name: Fallback - scrape Armory
+        if: steps.api.outputs.needs_scrape == 'true'
+        env:
+          BNET_CLIENT_ID: ${{ secrets.BNET_CLIENT_ID }}
+          BNET_CLIENT_SECRET: ${{ secrets.BNET_CLIENT_SECRET }}
+          USE_SCRAPED: '1'
+        run: |
+          npm install --no-save puppeteer
+          node scripts/scrape.mjs
+          node scripts/update.mjs
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/character.json data/market.json data/item-cache.json
+          if git diff --staged --quiet; then
+            echo "Ingen ændringer."
+          else
+            git commit -m "Data: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

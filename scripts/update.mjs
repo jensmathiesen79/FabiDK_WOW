@@ -254,7 +254,17 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
     charProfile = sc.profile;
     scrapeDebug = sc.debug || null;
     scrapedMedia = sc.media || null;
-    equipment = await enrichScraped(sc.equipment || []);
+    if (sc.equipmentFormat === 'api') {
+      // samme format som equipment-API'et -> fulde stats direkte
+      equipment = (sc.equipment || []).map((raw) => {
+        const e = normEquipped(raw);
+        e.icon = raw.media?.assets?.find((a) => a.key === 'icon')?.value || null;
+        return e;
+      });
+      await pool(equipment.filter((e) => !e.icon), 6, async (e) => { e.icon = await iconFor(e.mediaId); });
+    } else {
+      equipment = await enrichScraped(sc.equipment || []);
+    }
   } else {
     log('Profil/udstyr kunne ikke hentes via API -> fallback til scraping');
     if (env.GITHUB_OUTPUT) fs.appendFileSync(env.GITHUB_OUTPUT, 'needs_scrape=true\n');

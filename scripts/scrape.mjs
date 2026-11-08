@@ -130,8 +130,17 @@ function findMedia(root) {
 
 const st = fromPage.state;
 const c = st?.character || {};
-let equipment = st ? findEquipment(st) : [];
-let equipmentSource = equipment.length ? 'state' : null;
+let equipment = [];
+let equipmentSource = null;
+let equipmentFormat = 'scraped';
+// Armory-siden indlejrer udstyret som character.gear = { back: {...}, chest: {...}, ... }
+// i samme format som equipment-API'et (inkl. stats, armor, weapon).
+if (c.gear && typeof c.gear === 'object' && Object.keys(c.gear).length) {
+  equipment = Object.values(c.gear).filter((g) => g && g.slot);
+  equipmentSource = 'state:character.gear';
+  equipmentFormat = 'api';
+}
+if (!equipment.length && st) { equipment = findEquipment(st); equipmentSource = equipment.length ? 'state' : null; }
 if (!equipment.length) {
   for (const cap of captured) {
     const found = findEquipment(cap.body);
@@ -144,10 +153,15 @@ const result = {
   profile: {
     name: str(c.name) || 'Fabi', surname: str(c.surname) || 'Stormhammer',
     level: c.level ?? fromPage.level, race: str(c.race), class: str(c.class) || str(c.character_class),
-    faction: str(c.faction), guild: str(c.guild), ruleset: null,
+    faction: str(c.faction), guild: str(c.guild),
+    ruleset: c.ruleset ? { id: c.ruleset.rulesetId ?? c.ruleset.id ?? null, name: c.ruleset.name || null } : null,
     averageItemLevel: c.averageItemLevel ?? c.average_item_level ?? null,
   },
-  media: findMedia(st || {}),
+  media: {
+    main: c.media?.['main-raw']?.url || c.media?.['main-sd-raw']?.url || findMedia(st || {}).main || null,
+    avatar: c.avatar?.url || c.media?.avatar?.url || findMedia(st || {}).avatar || null,
+  },
+  equipmentFormat,
   equipment,
   debug: {
     equipmentSource,

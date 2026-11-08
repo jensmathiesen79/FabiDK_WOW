@@ -220,16 +220,18 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
 
   // --- Karakter ---
   const base = `/profile/wow/character/${slug}`;
-  const safe = (p) => p.catch((e) => { log('advarsel:', e.message); return null; });
+  const warnings = [];
+  const safe = (p, label) => p.then((r) => { if (r == null) warnings.push(`${label}: 404`); return r; })
+    .catch((e) => { warnings.push(`${label}: ${e.message}`); log('advarsel:', label, e.message); return null; });
   const [profile, equipRes, media, quests] = await Promise.all([
-    safe(api.get(base, 'profile')),
-    safe(api.get(`${base}/equipment`, 'profile')),
-    safe(api.get(`${base}/character-media`, 'profile')),
-    safe(api.get(`${base}/quests/completed`, 'profile')),
+    safe(api.get(base, 'profile'), 'profile'),
+    safe(api.get(`${base}/equipment`, 'profile'), 'equipment'),
+    safe(api.get(`${base}/character-media`, 'profile'), 'character-media'),
+    safe(api.get(`${base}/quests/completed`, 'profile'), 'quests/completed'),
   ]);
 
   let source = 'api';
-  let charProfile, equipment;
+  let charProfile, equipment, scrapeDebug = null, scrapedMedia = null;
   if (profile && equipRes) {
     charProfile = {
       name: profile.name,
@@ -250,11 +252,48 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
     const sc = readJson(path.join(DATA, 'scraped.json'));
     source = 'scrape';
     charProfile = sc.profile;
-    equipment = sc.equipment;
+    scrapeDebug = sc.debug || null;
+    scrapedMedia = sc.media || null;
+    equipment = await enrichScraped(sc.equipment || []);
   } else {
     log('Profil/udstyr kunne ikke hentes via API -> fallback til scraping');
     if (env.GITHUB_OUTPUT) fs.appendFileSync(env.GITHUB_OUTPUT, 'needs_scrape=true\n');
     return { needsScrape: true };
+  }
+
+  // Slå scrapede items op i item-API'et for at få slot, stats og ikon
+  async function enrichScraped(list) {
+    const used = new Set();
+    const out = [];
+    for (const e of list) {
+      let id = e.id;
+      if (!id && e.name) {
+        try {
+          const r = await api.get(`/data/wow/search/item?name.${locale}=${encodeURIComponent(e.name)}&orderby=id&_pageSize=20`, 'static');
+          const hit = (r?.results || []).find((x) => (x.data?.name?.[locale] || x.data?.name) === e.name);
+          id = hit?.data?.id || null;
+          if (!id) warnings.push(`item-search: intet match for "${e.name}"`);
+        } catch (err) { warnings.push(`item-search "${e.name}": ${err.message}`); }
+      }
+      let it = null;
+      if (id) {
+        try { const d = await api.get(`/data/wow/item/${id}`, 'static'); it = d ? normItem(d) : null; if (!d) warnings.push(`item ${id}: 404`); }
+        catch (err) { warnings.push(`item ${id}: ${err.message}`); }
+      }
+      let slot = e.slot;
+      if (!slot && it?.inv && INV_TO_SLOTS[it.inv]) {
+        slot = INV_TO_SLOTS[it.inv].find((s) => !used.has(s)) || INV_TO_SLOTS[it.inv][0];
+      }
+      if (slot) used.add(slot);
+      out.push({
+        slot: slot || null, slotName: null, id: id || null, name: e.name,
+        quality: it?.q || e.quality || 'common', inv: it?.inv || null, c: it?.c, sc: it?.sc,
+        ilvl: e.ilvl ?? it?.il ?? null, st: it?.st || {}, ar: it?.ar || 0, dps: it?.dps || 0,
+        mediaId: it?.m ?? id, icon: e.icon || (id ? await iconFor(it?.m ?? id) : null),
+        enriched: !!it,
+      });
+    }
+    return out;
   }
 
   const mediaAssets = Object.fromEntries((media?.assets || []).map((a) => [a.key, a.value]));
@@ -262,9 +301,13 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
     last_updated: now.toISOString(),
     source,
     profile: charProfile,
-    media: { main: mediaAssets['main-raw'] || mediaAssets.main || null, avatar: mediaAssets.avatar || null },
+    media: {
+      main: mediaAssets['main-raw'] || mediaAssets.main || scrapedMedia?.main || null,
+      avatar: mediaAssets.avatar || scrapedMedia?.avatar || null,
+    },
     equipment,
     completed_quests: quests?.quests ? quests.quests.map((q) => ({ id: q.id, name: q.name })) : null,
+    debug: { apiWarnings: warnings, scrape: scrapeDebug },
   };
   writeJson(path.join(DATA, 'character.json'), character);
   log(`character.json skrevet (${source}, level ${charProfile.level}, ${equipment.length} items)`);
@@ -272,7 +315,7 @@ export async function main({ fetchImpl = fetch, env = process.env } = {}) {
   // --- Auktionshus ---
   let market = { last_updated: now.toISOString(), error: null, houses: [], upgrades: [] };
   try {
-    if (source !== 'api') throw new Error('Opgraderinger kræver stats fra API (fallback-data har ingen stats)');
+    if (!equipment.some((e) => e.c != null)) throw new Error('Ingen item-stats for dit udstyr – kan ikke sammenligne');
     const rulesetId = charProfile.ruleset?.id ?? cfg.auction.rulesetIdFallback;
     const index = await api.get(`/data/wow/ruleset/${rulesetId}/auctions/`, 'dynamic');
     if (!index?.auctions?.length) throw new Error('Auktionshus-indeks tomt eller utilgængeligt');

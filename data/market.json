@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-09T19:02:07.755Z",
+  "last_updated": "2026-11-10T01:11:10.687Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 150597
+      "auctions": 139862
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 169239
+      "auctions": 160710
     },
     {
       "id": 112,
@@ -20,15 +20,43 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 18582
+      "auctions": 18234
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 12433
+      "auctions": 12095
     }
   ],
   "upgrades": [
+    {
+      "id": 7958,
+      "name": "Bronze Battle Axe",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 22,
+      "usableNow": false,
+      "itemLevel": 27,
+      "stats": {
+        "STRENGTH": 10
+      },
+      "armor": 0,
+      "dps": 18.333332,
+      "score": 119,
+      "delta": 35.1,
+      "current": {
+        "name": "Durgen's Crescent Axe + Ironplate Buckler",
+        "score": 83.89999999999999
+      },
+      "price": {
+        "copper": 2700,
+        "houseId": 111,
+        "listings": 60
+      },
+      "mediaId": 7958,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
+    },
     {
       "id": 7956,
       "name": "Bronze Warhammer",
@@ -53,7 +81,7 @@
       "price": {
         "copper": 1600,
         "houseId": 110,
-        "listings": 193
+        "listings": 181
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
@@ -80,69 +108,12 @@
         "score": 77.3
       },
       "price": {
-        "copper": 8900,
-        "houseId": 111,
-        "listings": 59
+        "copper": 8800,
+        "houseId": 110,
+        "listings": 41
       },
       "mediaId": 2194,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
-    },
-    {
-      "id": 2236,
-      "name": "Blackfang",
-      "quality": "rare",
-      "inv": "WEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 20,
-      "usableNow": false,
-      "itemLevel": 25,
-      "stats": {
-        "SHADOW_RESISTANCE": 5,
-        "SPIRIT": 2
-      },
-      "armor": 0,
-      "dps": 16.333332,
-      "score": 98.2,
-      "delta": 20.9,
-      "current": {
-        "name": "Durgen's Crescent Axe",
-        "score": 77.3
-      },
-      "price": {
-        "copper": 6500,
-        "houseId": 110,
-        "listings": 77
-      },
-      "mediaId": 2236,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135638.jpg"
-    },
-    {
-      "id": 10518,
-      "name": "Parachute Cloak",
-      "quality": "uncommon",
-      "inv": "CLOAK",
-      "slotGroup": "BACK",
-      "requiredLevel": 0,
-      "usableNow": true,
-      "itemLevel": 45,
-      "stats": {
-        "AGILITY": 8
-      },
-      "armor": 30,
-      "dps": 0,
-      "score": 8.6,
-      "delta": 8.4,
-      "current": {
-        "name": "Soldier's Cloak",
-        "score": 0.2
-      },
-      "price": {
-        "copper": 49900,
-        "houseId": 111,
-        "listings": 1
-      },
-      "mediaId": 10518,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
     },
     {
       "id": 6468,
@@ -169,10 +140,40 @@
       "price": {
         "copper": 13900,
         "houseId": 111,
-        "listings": 62
+        "listings": 51
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
+    },
+    {
+      "id": 4253,
+      "name": "Toughened Leather Gloves",
+      "quality": "rare",
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 22,
+      "usableNow": false,
+      "itemLevel": 27,
+      "stats": {
+        "AGILITY": 6,
+        "STRENGTH": 6,
+        "STAMINA": 3
+      },
+      "armor": 61,
+      "dps": 0,
+      "score": 14.1,
+      "delta": 7.6,
+      "current": {
+        "name": "Flamefist Grips",
+        "score": 6.5
+      },
+      "price": {
+        "copper": 2900,
+        "houseId": 111,
+        "listings": 204
+      },
+      "mediaId": 4253,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
     },
     {
       "id": 4821,
@@ -196,9 +197,9 @@
         "score": 6.6
       },
       "price": {
-        "copper": 7000,
+        "copper": 6600,
         "houseId": 110,
-        "listings": 9
+        "listings": 18
       },
       "mediaId": 4821,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -227,10 +228,38 @@
       "price": {
         "copper": 1400,
         "houseId": 111,
-        "listings": 82
+        "listings": 65
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
+    },
+    {
+      "id": 10518,
+      "name": "Parachute Cloak",
+      "quality": "uncommon",
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 0,
+      "usableNow": true,
+      "itemLevel": 45,
+      "stats": {
+        "AGILITY": 8
+      },
+      "armor": 30,
+      "dps": 0,
+      "score": 8.6,
+      "delta": 6.3,
+      "current": {
+        "name": "Cloak of the People's Militia",
+        "score": 2.3
+      },
+      "price": {
+        "copper": 44900,
+        "houseId": 111,
+        "listings": 2
+      },
+      "mediaId": 10518,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
     },
     {
       "id": 10499,
@@ -254,69 +283,12 @@
         "score": 0
       },
       "price": {
-        "copper": 9400,
+        "copper": 8100,
         "houseId": 111,
-        "listings": 5
+        "listings": 21
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
-    },
-    {
-      "id": 10504,
-      "name": "Green Lens",
-      "quality": "rare",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 0,
-      "usableNow": true,
-      "itemLevel": 49,
-      "stats": {
-        "STAMINA": 10
-      },
-      "armor": 57,
-      "dps": 0,
-      "score": 6.1,
-      "delta": 6.1,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 51700,
-        "houseId": 110,
-        "listings": 1
-      },
-      "mediaId": 10504,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
-    },
-    {
-      "id": 4831,
-      "name": "Stalking Pants",
-      "quality": "uncommon",
-      "inv": "LEGS",
-      "slotGroup": "LEGS",
-      "requiredLevel": 21,
-      "usableNow": false,
-      "itemLevel": 26,
-      "stats": {
-        "AGILITY": 6,
-        "STAMINA": 6
-      },
-      "armor": 76,
-      "dps": 0,
-      "score": 10.5,
-      "delta": 5.9,
-      "current": {
-        "name": "Deepgrave Trousers",
-        "score": 4.6
-      },
-      "price": {
-        "copper": 9900,
-        "houseId": 110,
-        "listings": 9
-      },
-      "mediaId": 4831,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
     },
     {
       "id": 2317,
@@ -339,9 +311,9 @@
         "score": 2.2
       },
       "price": {
-        "copper": 1100,
+        "copper": 1200,
         "houseId": 110,
-        "listings": 309
+        "listings": 254
       },
       "mediaId": 2317,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
@@ -368,9 +340,9 @@
         "score": 0
       },
       "price": {
-        "copper": 2300,
+        "copper": 2000,
         "houseId": 111,
-        "listings": 80
+        "listings": 139
       },
       "mediaId": 4385,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -397,9 +369,9 @@
         "score": 0.5
       },
       "price": {
-        "copper": 4900,
-        "houseId": 111,
-        "listings": 3
+        "copper": 6300,
+        "houseId": 110,
+        "listings": 14
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -428,39 +400,66 @@
       "price": {
         "copper": 5000,
         "houseId": 110,
-        "listings": 13
+        "listings": 8
       },
       "mediaId": 4820,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
     },
     {
-      "id": 2316,
-      "name": "Dark Leather Cloak",
+      "id": 2315,
+      "name": "Gray Leather Boots",
       "quality": "uncommon",
-      "inv": "CLOAK",
-      "slotGroup": "BACK",
-      "requiredLevel": 17,
+      "inv": "FEET",
+      "slotGroup": "FEET",
+      "requiredLevel": 15,
       "usableNow": true,
-      "itemLevel": 22,
+      "itemLevel": 20,
       "stats": {
-        "AGILITY": 3,
-        "STRENGTH": 2
+        "AGILITY": 5
       },
-      "armor": 18,
+      "armor": 53,
       "dps": 0,
-      "score": 5.2,
-      "delta": 5,
+      "score": 6.1,
+      "delta": 5.1,
       "current": {
-        "name": "Soldier's Cloak",
-        "score": 0.2
+        "name": "Bard's Boots of Power",
+        "score": 1
       },
       "price": {
-        "copper": 500,
+        "copper": 400,
         "houseId": 110,
-        "listings": 3423
+        "listings": 3953
       },
-      "mediaId": 2316,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg"
+      "mediaId": 2315,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+    },
+    {
+      "id": 4788,
+      "name": "Agile Boots",
+      "quality": "uncommon",
+      "inv": "FEET",
+      "slotGroup": "FEET",
+      "requiredLevel": 15,
+      "usableNow": true,
+      "itemLevel": 20,
+      "stats": {
+        "AGILITY": 5
+      },
+      "armor": 53,
+      "dps": 0,
+      "score": 6.1,
+      "delta": 5.1,
+      "current": {
+        "name": "Bard's Boots of Power",
+        "score": 1
+      },
+      "price": {
+        "copper": 1500,
+        "houseId": 111,
+        "listings": 98
+      },
+      "mediaId": 4788,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
     },
     {
       "id": 4243,
@@ -484,40 +483,69 @@
         "score": 2.2
       },
       "price": {
-        "copper": 600,
+        "copper": 500,
         "houseId": 110,
-        "listings": 165
+        "listings": 141
       },
       "mediaId": 4243,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132724.jpg"
     },
     {
-      "id": 5961,
-      "name": "Dark Leather Pants",
+      "id": 7352,
+      "name": "Earthen Leather Shoulders",
       "quality": "uncommon",
-      "inv": "LEGS",
-      "slotGroup": "LEGS",
-      "requiredLevel": 18,
-      "usableNow": true,
-      "itemLevel": 23,
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 22,
+      "usableNow": false,
+      "itemLevel": 27,
       "stats": {
-        "AGILITY": 8
+        "STAMINA": 7
       },
-      "armor": 72,
+      "armor": 67,
       "dps": 0,
-      "score": 9.4,
+      "score": 4.8,
       "delta": 4.8,
       "current": {
-        "name": "Deepgrave Trousers",
-        "score": 4.6
+        "name": null,
+        "score": 0
       },
       "price": {
-        "copper": 1100,
+        "copper": 3500,
         "houseId": 110,
-        "listings": 409
+        "listings": 42
       },
-      "mediaId": 5961,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134589.jpg"
+      "mediaId": 7352,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
+    },
+    {
+      "id": 281927,
+      "name": "Boulderheart Band",
+      "quality": "uncommon",
+      "inv": "FINGER",
+      "slotGroup": "FINGER",
+      "requiredLevel": 22,
+      "usableNow": false,
+      "itemLevel": 27,
+      "stats": {
+        "STRENGTH": 4,
+        "STAMINA": 2
+      },
+      "armor": 0,
+      "dps": 0,
+      "score": 4.6,
+      "delta": 4.6,
+      "current": {
+        "name": "Avala's Binding",
+        "score": 0
+      },
+      "price": {
+        "copper": 9000,
+        "houseId": 110,
+        "listings": 15
+      },
+      "mediaId": 281927,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
     },
     {
       "id": 4251,
@@ -543,10 +571,39 @@
       "price": {
         "copper": 800,
         "houseId": 110,
-        "listings": 1324
+        "listings": 1254
       },
       "mediaId": 4251,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
+    },
+    {
+      "id": 2307,
+      "name": "Fine Leather Boots",
+      "quality": "uncommon",
+      "inv": "FEET",
+      "slotGroup": "FEET",
+      "requiredLevel": 13,
+      "usableNow": true,
+      "itemLevel": 18,
+      "stats": {
+        "AGILITY": 3,
+        "STAMINA": 2
+      },
+      "armor": 51,
+      "dps": 0,
+      "score": 5,
+      "delta": 4,
+      "current": {
+        "name": "Bard's Boots of Power",
+        "score": 1
+      },
+      "price": {
+        "copper": 300,
+        "houseId": 110,
+        "listings": 346
+      },
+      "mediaId": 2307,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
     },
     {
       "id": 4822,
@@ -571,7 +628,7 @@
       "price": {
         "copper": 3500,
         "houseId": 110,
-        "listings": 11
+        "listings": 14
       },
       "mediaId": 4822,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -600,68 +657,68 @@
       "price": {
         "copper": 800,
         "houseId": 110,
-        "listings": 1813
+        "listings": 1815
       },
       "mediaId": 4249,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132492.jpg"
     },
     {
-      "id": 7282,
-      "name": "Light Leather Pants",
+      "id": 2316,
+      "name": "Dark Leather Cloak",
       "quality": "uncommon",
-      "inv": "LEGS",
-      "slotGroup": "LEGS",
-      "requiredLevel": 14,
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 17,
       "usableNow": true,
-      "itemLevel": 19,
+      "itemLevel": 22,
       "stats": {
-        "AGILITY": 5,
-        "STAMINA": 3
+        "AGILITY": 3,
+        "STRENGTH": 2
       },
-      "armor": 66,
+      "armor": 18,
       "dps": 0,
-      "score": 7.8,
-      "delta": 3.2,
+      "score": 5.2,
+      "delta": 2.9,
       "current": {
-        "name": "Deepgrave Trousers",
-        "score": 4.6
+        "name": "Cloak of the People's Militia",
+        "score": 2.3
       },
       "price": {
         "copper": 500,
         "houseId": 110,
-        "listings": 934
+        "listings": 2962
       },
-      "mediaId": 7282,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134582.jpg"
+      "mediaId": 2316,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg"
     },
     {
-      "id": 6466,
-      "name": "Deviate Scale Cloak",
+      "id": 4368,
+      "name": "Flying Tiger Goggles",
       "quality": "uncommon",
-      "inv": "CLOAK",
-      "slotGroup": "BACK",
-      "requiredLevel": 13,
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 0,
       "usableNow": true,
-      "itemLevel": 18,
+      "itemLevel": 20,
       "stats": {
-        "AGILITY": 2,
-        "STAMINA": 2
+        "STAMINA": 4,
+        "SPIRIT": 4
       },
-      "armor": 16,
+      "armor": 27,
       "dps": 0,
-      "score": 3.3,
-      "delta": 3.1,
+      "score": 2.9,
+      "delta": 2.9,
       "current": {
-        "name": "Soldier's Cloak",
-        "score": 0.2
+        "name": null,
+        "score": 0
       },
       "price": {
-        "copper": 700,
-        "houseId": 111,
-        "listings": 73
+        "copper": 500,
+        "houseId": 110,
+        "listings": 422
       },
-      "mediaId": 6466,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134305.jpg"
+      "mediaId": 4368,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
     },
     {
       "id": 4795,
@@ -684,9 +741,9 @@
         "score": 0.5
       },
       "price": {
-        "copper": 2800,
+        "copper": 2600,
         "houseId": 111,
-        "listings": 26
+        "listings": 24
       },
       "mediaId": 4795,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
@@ -715,7 +772,7 @@
       "price": {
         "copper": 400,
         "houseId": 110,
-        "listings": 1853
+        "listings": 1062
       },
       "mediaId": 4314,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
@@ -744,7 +801,7 @@
       "price": {
         "copper": 200,
         "houseId": 110,
-        "listings": 772
+        "listings": 736
       },
       "mediaId": 7281,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -771,41 +828,12 @@
         "score": 3.8
       },
       "price": {
-        "copper": 1000,
+        "copper": 800,
         "houseId": 111,
-        "listings": 150
+        "listings": 122
       },
       "mediaId": 5780,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
-    },
-    {
-      "id": 4315,
-      "name": "Reinforced Woolen Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 19,
-      "usableNow": false,
-      "itemLevel": 24,
-      "stats": {
-        "INTELLECT": 4,
-        "SPELL_POWER": 5
-      },
-      "armor": 28,
-      "dps": 0,
-      "score": 1.6,
-      "delta": 1.6,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 1900,
-        "houseId": 110,
-        "listings": 242
-      },
-      "mediaId": 4315,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135040.jpg"
     },
     {
       "id": 1077,
@@ -829,68 +857,70 @@
         "score": 0
       },
       "price": {
-        "copper": 6000,
-        "houseId": 110,
-        "listings": 9
+        "copper": 7000,
+        "houseId": 111,
+        "listings": 11
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
     },
     {
-      "id": 2315,
-      "name": "Gray Leather Boots",
+      "id": 4831,
+      "name": "Stalking Pants",
       "quality": "uncommon",
-      "inv": "FEET",
-      "slotGroup": "FEET",
-      "requiredLevel": 15,
-      "usableNow": true,
-      "itemLevel": 20,
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 21,
+      "usableNow": false,
+      "itemLevel": 26,
       "stats": {
-        "AGILITY": 5
+        "AGILITY": 6,
+        "STAMINA": 6
       },
-      "armor": 53,
+      "armor": 76,
       "dps": 0,
-      "score": 6.1,
+      "score": 10.5,
       "delta": 1.1,
       "current": {
-        "name": "Fine Leather Boots",
-        "score": 5
+        "name": "Dark Leather Pants",
+        "score": 9.4
       },
       "price": {
-        "copper": 400,
+        "copper": 8500,
         "houseId": 110,
-        "listings": 4369
+        "listings": 13
       },
-      "mediaId": 2315,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+      "mediaId": 4831,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
     },
     {
-      "id": 4788,
-      "name": "Agile Boots",
+      "id": 6466,
+      "name": "Deviate Scale Cloak",
       "quality": "uncommon",
-      "inv": "FEET",
-      "slotGroup": "FEET",
-      "requiredLevel": 15,
+      "inv": "CLOAK",
+      "slotGroup": "BACK",
+      "requiredLevel": 13,
       "usableNow": true,
-      "itemLevel": 20,
+      "itemLevel": 18,
       "stats": {
-        "AGILITY": 5
+        "AGILITY": 2,
+        "STAMINA": 2
       },
-      "armor": 53,
+      "armor": 16,
       "dps": 0,
-      "score": 6.1,
-      "delta": 1.1,
+      "score": 3.3,
+      "delta": 1,
       "current": {
-        "name": "Fine Leather Boots",
-        "score": 5
+        "name": "Cloak of the People's Militia",
+        "score": 2.3
       },
       "price": {
-        "copper": 1900,
-        "houseId": 123,
-        "listings": 122
+        "copper": 700,
+        "houseId": 110,
+        "listings": 68
       },
-      "mediaId": 4788,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+      "mediaId": 6466,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134305.jpg"
     },
     {
       "id": 7285,
@@ -899,7 +929,7 @@
       "inv": "HAND",
       "slotGroup": "HANDS",
       "requiredLevel": 19,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 24,
       "stats": {
         "AGILITY": 4,
@@ -916,15 +946,15 @@
       "price": {
         "copper": 600,
         "houseId": 110,
-        "listings": 932
+        "listings": 907
       },
       "mediaId": 7285,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 3992,
-  "unknownItems": 2112,
+  "scannedItems": 4086,
+  "unknownItems": 2175,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

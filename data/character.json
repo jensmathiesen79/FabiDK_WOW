@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-09T19:02:07.755Z",
+  "last_updated": "2026-11-10T01:11:10.687Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 18,
+    "level": 19,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 8
+    "averageItemLevel": 9
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -23,18 +23,20 @@
     {
       "slot": "BACK",
       "slotName": "Back",
-      "id": 6549,
-      "name": "Soldier's Cloak",
-      "quality": "common",
+      "id": 3511,
+      "name": "Cloak of the People's Militia",
+      "quality": "uncommon",
       "inv": "CLOAK",
       "c": 4,
       "sc": 1,
-      "ilvl": 14,
-      "st": {},
-      "ar": 12,
+      "ilvl": 15,
+      "st": {
+        "AGILITY": 2
+      },
+      "ar": 14,
       "dps": 0,
-      "mediaId": 6549,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133769.jpg"
+      "mediaId": 3511,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg"
     },
     {
       "slot": "CHEST",
@@ -57,21 +59,20 @@
     {
       "slot": "FEET",
       "slotName": "Feet",
-      "id": 2307,
-      "name": "Fine Leather Boots",
+      "id": 6557,
+      "name": "Bard's Boots of Power",
       "quality": "uncommon",
       "inv": "FEET",
       "c": 4,
       "sc": 2,
-      "ilvl": 18,
+      "ilvl": 16,
       "st": {
-        "AGILITY": 3,
-        "STAMINA": 2
+        "ATTACK_POWER": 6
       },
-      "ar": 51,
+      "ar": 49,
       "dps": 0,
-      "mediaId": 2307,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+      "mediaId": 6557,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
     },
     {
       "slot": "HANDS",
@@ -113,21 +114,20 @@
     {
       "slot": "LEGS",
       "slotName": "Legs",
-      "id": 279900,
-      "name": "Deepgrave Trousers",
+      "id": 5961,
+      "name": "Dark Leather Pants",
       "quality": "uncommon",
       "inv": "LEGS",
       "c": 4,
       "sc": 2,
-      "ilvl": 17,
+      "ilvl": 23,
       "st": {
-        "AGILITY": 3,
-        "SPIRIT": 3
+        "AGILITY": 8
       },
-      "ar": 64,
+      "ar": 72,
       "dps": 0,
-      "mediaId": 279900,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134581.jpg"
+      "mediaId": 5961,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134589.jpg"
     },
     {
       "slot": "OFF_HAND",
@@ -238,8 +238,8 @@
     "apiWarnings": [
       "profile: 404",
       "equipment: 404",
-      "character-media: 404",
-      "quests/completed: 404"
+      "quests/completed: 404",
+      "character-media: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -275,9 +275,10 @@
               "item_class": "object",
               "item_subclass": "object",
               "inventory_type": "object",
+              "binding": "object",
               "armor": "object",
+              "stats": "object",
               "sell_price": "object",
-              "requirements": "object",
               "level": "object",
               "is_subclass_hidden": "boolean"
             },
@@ -303,8 +304,11 @@
             "foot": {
               "id": "number",
               "item": "object",
+              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
+              "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -362,7 +366,6 @@
               "item": "object",
               "slot": "object",
               "quantity": "number",
-              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -373,6 +376,7 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "level": "object",
               "durability": "object"
             },

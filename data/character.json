@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T13:12:01.598Z",
+  "last_updated": "2026-11-10T19:02:03.669Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -236,8 +236,8 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "profile: 404",
       "equipment: 404",
+      "profile: 404",
       "quests/completed: 404",
       "character-media: 404"
     ],

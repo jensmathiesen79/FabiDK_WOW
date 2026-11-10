@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-10T07:18:34.742Z",
+  "last_updated": "2026-11-10T13:12:01.598Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 86745
+      "auctions": 108507
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 101255
+      "auctions": 128698
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 12264
+      "auctions": 14304
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 7705
+      "auctions": 9100
     }
   ],
   "upgrades": [
@@ -50,9 +50,9 @@
         "score": 83.89999999999999
       },
       "price": {
-        "copper": 2700,
-        "houseId": 111,
-        "listings": 33
+        "copper": 2900,
+        "houseId": 110,
+        "listings": 51
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -64,7 +64,7 @@
       "inv": "TWOHWEAPON",
       "slotGroup": "MAIN_HAND",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "STRENGTH": 6,
@@ -81,7 +81,7 @@
       "price": {
         "copper": 1600,
         "houseId": 110,
-        "listings": 184
+        "listings": 391
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
@@ -93,7 +93,7 @@
       "inv": "WEAPON",
       "slotGroup": "MAIN_HAND",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "STRENGTH": 3,
@@ -108,12 +108,40 @@
         "score": 77.3
       },
       "price": {
-        "copper": 8500,
+        "copper": 8000,
         "houseId": 110,
-        "listings": 31
+        "listings": 24
       },
       "mediaId": 2194,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
+    },
+    {
+      "id": 4252,
+      "name": "Dark Leather Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 23,
+      "usableNow": false,
+      "itemLevel": 28,
+      "stats": {
+        "AGILITY": 7
+      },
+      "armor": 68,
+      "dps": 0,
+      "score": 8.4,
+      "delta": 8.4,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 2900,
+        "houseId": 111,
+        "listings": 235
+      },
+      "mediaId": 4252,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
     },
     {
       "id": 6468,
@@ -138,9 +166,9 @@
         "score": 3.8
       },
       "price": {
-        "copper": 13500,
+        "copper": 10000,
         "houseId": 119,
-        "listings": 39
+        "listings": 47
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -168,9 +196,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2900,
-        "houseId": 111,
-        "listings": 144
+        "copper": 3000,
+        "houseId": 110,
+        "listings": 154
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -199,7 +227,7 @@
       "price": {
         "copper": 6900,
         "houseId": 110,
-        "listings": 10
+        "listings": 11
       },
       "mediaId": 4821,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -226,9 +254,9 @@
         "score": 2.2
       },
       "price": {
-        "copper": 1100,
+        "copper": 1400,
         "houseId": 110,
-        "listings": 26
+        "listings": 53
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
@@ -283,9 +311,9 @@
         "score": 0
       },
       "price": {
-        "copper": 8100,
+        "copper": 8000,
         "houseId": 111,
-        "listings": 10
+        "listings": 18
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -313,7 +341,7 @@
       "price": {
         "copper": 40000,
         "houseId": 110,
-        "listings": 8
+        "listings": 4
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
@@ -339,9 +367,9 @@
         "score": 2.2
       },
       "price": {
-        "copper": 1000,
-        "houseId": 123,
-        "listings": 154
+        "copper": 900,
+        "houseId": 111,
+        "listings": 174
       },
       "mediaId": 2317,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
@@ -368,9 +396,9 @@
         "score": 0
       },
       "price": {
-        "copper": 1600,
-        "houseId": 111,
-        "listings": 85
+        "copper": 2000,
+        "houseId": 110,
+        "listings": 82
       },
       "mediaId": 4385,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -382,7 +410,7 @@
       "inv": "WRIST",
       "slotGroup": "WRIST",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "AGILITY": 4,
@@ -398,8 +426,8 @@
       },
       "price": {
         "copper": 6400,
-        "houseId": 111,
-        "listings": 3
+        "houseId": 110,
+        "listings": 9
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -411,7 +439,7 @@
       "inv": "SHIELD",
       "slotGroup": "OFF_HAND",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "STAMINA": 3,
@@ -426,9 +454,9 @@
         "score": 6.6
       },
       "price": {
-        "copper": 5000,
+        "copper": 4500,
         "houseId": 110,
-        "listings": 7
+        "listings": 11
       },
       "mediaId": 4820,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
@@ -454,9 +482,9 @@
         "score": 1
       },
       "price": {
-        "copper": 400,
+        "copper": 300,
         "houseId": 110,
-        "listings": 2584
+        "listings": 3053
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -482,12 +510,40 @@
         "score": 1
       },
       "price": {
-        "copper": 1400,
+        "copper": 1300,
         "houseId": 111,
-        "listings": 56
+        "listings": 69
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+    },
+    {
+      "id": 7352,
+      "name": "Earthen Leather Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 22,
+      "usableNow": false,
+      "itemLevel": 27,
+      "stats": {
+        "STAMINA": 7
+      },
+      "armor": 67,
+      "dps": 0,
+      "score": 4.8,
+      "delta": 4.8,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 3300,
+        "houseId": 110,
+        "listings": 80
+      },
+      "mediaId": 7352,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
     },
     {
       "id": 4243,
@@ -511,40 +567,12 @@
         "score": 2.2
       },
       "price": {
-        "copper": 500,
-        "houseId": 110,
-        "listings": 67
+        "copper": 700,
+        "houseId": 111,
+        "listings": 209
       },
       "mediaId": 4243,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132724.jpg"
-    },
-    {
-      "id": 7352,
-      "name": "Earthen Leather Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 22,
-      "usableNow": false,
-      "itemLevel": 27,
-      "stats": {
-        "STAMINA": 7
-      },
-      "armor": 67,
-      "dps": 0,
-      "score": 4.8,
-      "delta": 4.8,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 3500,
-        "houseId": 110,
-        "listings": 58
-      },
-      "mediaId": 7352,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
     },
     {
       "id": 281927,
@@ -570,7 +598,7 @@
       "price": {
         "copper": 9200,
         "houseId": 110,
-        "listings": 21
+        "listings": 25
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -598,8 +626,8 @@
       },
       "price": {
         "copper": 800,
-        "houseId": 111,
-        "listings": 1052
+        "houseId": 110,
+        "listings": 808
       },
       "mediaId": 4251,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
@@ -628,7 +656,7 @@
       "price": {
         "copper": 300,
         "houseId": 110,
-        "listings": 349
+        "listings": 284
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
@@ -656,7 +684,7 @@
       "price": {
         "copper": 3500,
         "houseId": 110,
-        "listings": 3
+        "listings": 7
       },
       "mediaId": 4822,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -668,7 +696,7 @@
       "inv": "WAIST",
       "slotGroup": "WAIST",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "AGILITY": 4,
@@ -685,7 +713,7 @@
       "price": {
         "copper": 800,
         "houseId": 110,
-        "listings": 964
+        "listings": 1362
       },
       "mediaId": 4249,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132492.jpg"
@@ -714,7 +742,7 @@
       "price": {
         "copper": 500,
         "houseId": 110,
-        "listings": 1857
+        "listings": 2437
       },
       "mediaId": 2316,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg"
@@ -726,7 +754,7 @@
       "inv": "WRIST",
       "slotGroup": "WRIST",
       "requiredLevel": 20,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 25,
       "stats": {
         "STAMINA": 5
@@ -742,39 +770,38 @@
       "price": {
         "copper": 2400,
         "houseId": 111,
-        "listings": 11
+        "listings": 10
       },
       "mediaId": 4795,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
     },
     {
-      "id": 4314,
-      "name": "Double-Stitched Woolen Shoulders",
+      "id": 7358,
+      "name": "Pilferer's Gloves",
       "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 17,
-      "usableNow": true,
-      "itemLevel": 22,
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 23,
+      "usableNow": false,
+      "itemLevel": 28,
       "stats": {
-        "STAMINA": 4,
-        "SPELL_POWER": 4
+        "AGILITY": 8
       },
-      "armor": 27,
+      "armor": 56,
       "dps": 0,
-      "score": 2.5,
-      "delta": 2.5,
+      "score": 9.1,
+      "delta": 2.6,
       "current": {
-        "name": null,
-        "score": 0
+        "name": "Flamefist Grips",
+        "score": 6.5
       },
       "price": {
-        "copper": 400,
-        "houseId": 111,
-        "listings": 627
+        "copper": 2000,
+        "houseId": 110,
+        "listings": 86
       },
-      "mediaId": 4314,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
+      "mediaId": 7358,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "id": 7281,
@@ -800,7 +827,7 @@
       "price": {
         "copper": 200,
         "houseId": 110,
-        "listings": 382
+        "listings": 508
       },
       "mediaId": 7281,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -828,8 +855,8 @@
       },
       "price": {
         "copper": 900,
-        "houseId": 111,
-        "listings": 39
+        "houseId": 110,
+        "listings": 31
       },
       "mediaId": 5780,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
@@ -858,7 +885,7 @@
       "price": {
         "copper": 6900,
         "houseId": 111,
-        "listings": 14
+        "listings": 17
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
@@ -887,7 +914,7 @@
       "price": {
         "copper": 9900,
         "houseId": 111,
-        "listings": 10
+        "listings": 19
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
@@ -914,9 +941,9 @@
         "score": 2.3
       },
       "price": {
-        "copper": 700,
+        "copper": 800,
         "houseId": 111,
-        "listings": 11
+        "listings": 54
       },
       "mediaId": 6466,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134305.jpg"
@@ -945,15 +972,15 @@
       "price": {
         "copper": 600,
         "houseId": 110,
-        "listings": 483
+        "listings": 648
       },
       "mediaId": 7285,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 4105,
-  "unknownItems": 2186,
+  "scannedItems": 4246,
+  "unknownItems": 2280,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

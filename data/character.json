@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T01:11:10.687Z",
+  "last_updated": "2026-11-10T07:18:34.742Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -236,10 +236,10 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "profile: 404",
+      "character-media: 404",
       "equipment: 404",
       "quests/completed: 404",
-      "character-media: 404"
+      "profile: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -758,8 +758,8 @@
       },
       "xhrUrls": [
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",

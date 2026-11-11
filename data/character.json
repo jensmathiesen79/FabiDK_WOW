@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-10T19:02:03.669Z",
+  "last_updated": "2026-11-11T01:13:22.945Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 20,
+    "level": 21,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 9
+    "averageItemLevel": 13
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -23,38 +23,40 @@
     {
       "slot": "BACK",
       "slotName": "Back",
-      "id": 3511,
-      "name": "Cloak of the People's Militia",
+      "id": 9805,
+      "name": "Superior Cloak of the Tiger",
       "quality": "uncommon",
       "inv": "CLOAK",
       "c": 4,
       "sc": 1,
-      "ilvl": 15,
+      "ilvl": 24,
       "st": {
-        "AGILITY": 2
+        "AGILITY": 3,
+        "STRENGTH": 3
       },
-      "ar": 14,
+      "ar": 19,
       "dps": 0,
-      "mediaId": 3511,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg"
+      "mediaId": 9805,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg"
     },
     {
       "slot": "CHEST",
       "slotName": "Chest",
-      "id": 2817,
-      "name": "Soft Leather Tunic",
+      "id": 14172,
+      "name": "Buccaneer's Robes of the Monkey",
       "quality": "uncommon",
-      "inv": "CHEST",
+      "inv": "ROBE",
       "c": 4,
-      "sc": 2,
-      "ilvl": 12,
+      "sc": 1,
+      "ilvl": 23,
       "st": {
-        "STAMINA": 2
+        "AGILITY": 5,
+        "STAMINA": 5
       },
-      "ar": 62,
+      "ar": 37,
       "dps": 0,
-      "mediaId": 2817,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135014.jpg"
+      "mediaId": 14172,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132659.jpg"
     },
     {
       "slot": "FEET",
@@ -180,23 +182,42 @@
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133766.jpg"
     },
     {
+      "slot": "SHOULDER",
+      "slotName": "Shoulders",
+      "id": 4251,
+      "name": "Hillman's Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "c": 4,
+      "sc": 2,
+      "ilvl": 26,
+      "st": {
+        "STAMINA": 5,
+        "SPIRIT": 3
+      },
+      "ar": 65,
+      "dps": 0,
+      "mediaId": 4251,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
+    },
+    {
       "slot": "WAIST",
       "slotName": "Waist",
-      "id": 4246,
-      "name": "Fine Leather Belt",
+      "id": 4249,
+      "name": "Dark Leather Belt",
       "quality": "uncommon",
       "inv": "WAIST",
       "c": 4,
       "sc": 2,
-      "ilvl": 16,
+      "ilvl": 25,
       "st": {
-        "AGILITY": 2,
-        "STAMINA": 2
+        "AGILITY": 4,
+        "STAMINA": 4
       },
-      "ar": 40,
+      "ar": 48,
       "dps": 0,
-      "mediaId": 4246,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132493.jpg"
+      "mediaId": 4249,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132492.jpg"
     },
     {
       "slot": "MAIN_HAND",
@@ -219,25 +240,27 @@
     {
       "slot": "WRIST",
       "slotName": "Wrist",
-      "id": 3158,
-      "name": "Burnt Hide Bracers",
-      "quality": "common",
+      "id": 9793,
+      "name": "Ivycloth Bracelets of Stamina",
+      "quality": "uncommon",
       "inv": "WRIST",
       "c": 4,
-      "sc": 2,
-      "ilvl": 12,
-      "st": {},
-      "ar": 26,
+      "sc": 1,
+      "ilvl": 25,
+      "st": {
+        "STAMINA": 5
+      },
+      "ar": 17,
       "dps": 0,
-      "mediaId": 3158,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132607.jpg"
+      "mediaId": 9793,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg"
     }
   ],
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "equipment: 404",
       "profile: 404",
+      "equipment: 404",
       "quests/completed: 404",
       "character-media: 404"
     ],
@@ -269,6 +292,7 @@
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -279,6 +303,7 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "level": "object",
               "is_subclass_hidden": "boolean"
             },
@@ -288,6 +313,7 @@
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -298,6 +324,7 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "level": "object",
               "durability": "object"
             },
@@ -434,6 +461,25 @@
               "level": "object",
               "is_subclass_hidden": "boolean"
             },
+            "shoulder": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
             "waist": {
               "id": "number",
               "item": "object",
@@ -480,6 +526,7 @@
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -488,7 +535,9 @@
               "inventory_type": "object",
               "binding": "object",
               "armor": "object",
+              "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "level": "object",
               "durability": "object"
             }
@@ -644,6 +693,7 @@
               "offhand": "object",
               "ranged": "object",
               "shirt": "object",
+              "shoulder": "object",
               "waist": "object",
               "weapon": "object",
               "wrist": "object"
@@ -760,12 +810,12 @@
         "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
-        "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",
+        "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
       ],
       "domItems": 0
     }

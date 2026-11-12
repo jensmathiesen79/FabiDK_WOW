@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-12T07:29:01.478Z",
+  "last_updated": "2026-11-12T13:23:01.524Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 102228
+      "auctions": 116383
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 112112
+      "auctions": 124838
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 13844
+      "auctions": 15946
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 9434
+      "auctions": 11508
     }
   ],
   "upgrades": [
@@ -52,7 +52,7 @@
       "price": {
         "copper": 2699,
         "houseId": 111,
-        "listings": 75
+        "listings": 157
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -81,7 +81,7 @@
       "price": {
         "copper": 1550,
         "houseId": 110,
-        "listings": 280
+        "listings": 358
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
@@ -108,9 +108,9 @@
         "score": 77.3
       },
       "price": {
-        "copper": 8000,
+        "copper": 7900,
         "houseId": 110,
-        "listings": 43
+        "listings": 65
       },
       "mediaId": 2194,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
@@ -138,7 +138,7 @@
       "price": {
         "copper": 86500,
         "houseId": 110,
-        "listings": 6
+        "listings": 9
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -166,9 +166,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 3500,
-        "houseId": 111,
-        "listings": 124
+        "copper": 3300,
+        "houseId": 110,
+        "listings": 185
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -195,9 +195,9 @@
         "score": 6.6
       },
       "price": {
-        "copper": 4354,
+        "copper": 4500,
         "houseId": 111,
-        "listings": 8
+        "listings": 4
       },
       "mediaId": 4821,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -224,9 +224,9 @@
         "score": 0
       },
       "price": {
-        "copper": 3199,
+        "copper": 3000,
         "houseId": 111,
-        "listings": 9
+        "listings": 27
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -253,8 +253,8 @@
       },
       "price": {
         "copper": 20000,
-        "houseId": 110,
-        "listings": 14
+        "houseId": 111,
+        "listings": 32
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
@@ -281,9 +281,9 @@
         "score": 6.6
       },
       "price": {
-        "copper": 5900,
-        "houseId": 111,
-        "listings": 4
+        "copper": 2500,
+        "houseId": 110,
+        "listings": 6
       },
       "mediaId": 4820,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
@@ -309,9 +309,9 @@
         "score": 1
       },
       "price": {
-        "copper": 309,
+        "copper": 307,
         "houseId": 111,
-        "listings": 2249
+        "listings": 2224
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -337,9 +337,9 @@
         "score": 1
       },
       "price": {
-        "copper": 1900,
-        "houseId": 110,
-        "listings": 24
+        "copper": 1200,
+        "houseId": 111,
+        "listings": 26
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -369,7 +369,7 @@
       "price": {
         "copper": 12000,
         "houseId": 111,
-        "listings": 44
+        "listings": 35
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -396,9 +396,9 @@
         "score": 0
       },
       "price": {
-        "copper": 3900,
-        "houseId": 119,
-        "listings": 11
+        "copper": 4500,
+        "houseId": 123,
+        "listings": 30
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -424,9 +424,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 3600,
-        "houseId": 110,
-        "listings": 175
+        "copper": 2600,
+        "houseId": 111,
+        "listings": 325
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -453,9 +453,9 @@
         "score": 1
       },
       "price": {
-        "copper": 300,
-        "houseId": 110,
-        "listings": 271
+        "copper": 289,
+        "houseId": 111,
+        "listings": 347
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
@@ -481,9 +481,9 @@
         "score": 6.6
       },
       "price": {
-        "copper": 4500,
-        "houseId": 111,
-        "listings": 4
+        "copper": 2100,
+        "houseId": 110,
+        "listings": 6
       },
       "mediaId": 4822,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
@@ -510,9 +510,9 @@
         "score": 2.8
       },
       "price": {
-        "copper": 6190,
-        "houseId": 110,
-        "listings": 30
+        "copper": 4400,
+        "houseId": 111,
+        "listings": 37
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -538,9 +538,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2400,
+        "copper": 2095,
         "houseId": 110,
-        "listings": 104
+        "listings": 191
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -595,9 +595,9 @@
         "score": 0
       },
       "price": {
-        "copper": 6400,
-        "houseId": 110,
-        "listings": 7
+        "copper": 7500,
+        "houseId": 119,
+        "listings": 12
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
@@ -624,8 +624,8 @@
         "score": 9.4
       },
       "price": {
-        "copper": 13900,
-        "houseId": 119,
+        "copper": 9800,
+        "houseId": 111,
         "listings": 1
       },
       "mediaId": 4831,
@@ -653,9 +653,9 @@
         "score": 8.2
       },
       "price": {
-        "copper": 1300,
+        "copper": 900,
         "houseId": 110,
-        "listings": 44
+        "listings": 45
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
@@ -681,9 +681,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 3500,
-        "houseId": 111,
-        "listings": 17
+        "copper": 5800,
+        "houseId": 110,
+        "listings": 47
       },
       "mediaId": 7352,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
@@ -710,9 +710,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 598,
-        "houseId": 111,
-        "listings": 393
+        "copper": 590,
+        "houseId": 110,
+        "listings": 496
       },
       "mediaId": 7285,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -740,15 +740,15 @@
       "price": {
         "copper": 3600,
         "houseId": 110,
-        "listings": 5
+        "listings": 8
       },
       "mediaId": 4795,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 4887,
-  "unknownItems": 2625,
+  "scannedItems": 5007,
+  "unknownItems": 2692,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

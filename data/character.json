@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T13:18:02.428Z",
+  "last_updated": "2026-11-13T19:01:09.579Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -259,9 +259,9 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
+      "equipment: 404",
       "profile: 404",
       "character-media: 404",
-      "equipment: 404",
       "quests/completed: 404"
     ],
     "scrape": {
@@ -502,7 +502,6 @@
             "weapon": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",

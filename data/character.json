@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-14T12:59:14.760Z",
+  "last_updated": "2026-11-14T18:53:07.678Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 22,
+    "level": 23,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 15
+    "averageItemLevel": 14
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -98,20 +98,21 @@
     {
       "slot": "FINGER_1",
       "slotName": "Ring 1",
-      "id": 286737,
-      "name": "Avala's Binding",
-      "quality": "common",
+      "id": 1319,
+      "name": "Ring of Iron Will",
+      "quality": "uncommon",
       "inv": "FINGER",
       "c": 4,
       "sc": 0,
-      "ilvl": 8,
+      "ilvl": 25,
       "st": {
-        "FROST_RESISTANCE": 1
+        "STAMINA": 4,
+        "SPIRIT": 2
       },
       "ar": 0,
       "dps": 0,
-      "mediaId": 286737,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133349.jpg"
+      "mediaId": 1319,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132520.jpg"
     },
     {
       "slot": "LEGS",
@@ -223,21 +224,20 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 3193,
-      "name": "Oak Mallet of the Gorilla",
-      "quality": "uncommon",
+      "id": 6365,
+      "name": "Strong Fishing Pole",
+      "quality": "common",
       "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 5,
-      "ilvl": 21,
+      "sc": 20,
+      "ilvl": 10,
       "st": {
-        "INTELLECT": 5,
-        "STRENGTH": 5
+        "BONUS_STAT_FISHING_SKILL,": 5
       },
       "ar": 0,
-      "dps": 13.714285,
-      "mediaId": 3193,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133052.jpg"
+      "dps": 5.666666,
+      "mediaId": 6365,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132932.jpg"
     },
     {
       "slot": "WRIST",
@@ -261,8 +261,8 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "equipment: 404",
       "profile: 404",
+      "equipment: 404",
       "character-media: 404",
       "quests/completed: 404"
     ],
@@ -355,6 +355,7 @@
             "hand": {
               "id": "number",
               "item": "object",
+              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
@@ -393,6 +394,7 @@
             "leg": {
               "id": "number",
               "item": "object",
+              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "quality": "object",
@@ -506,14 +508,12 @@
               "slot": "object",
               "quantity": "number",
               "context": "number",
-              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
               "item_class": "object",
               "item_subclass": "object",
               "inventory_type": "object",
-              "binding": "object",
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
@@ -809,8 +809,8 @@
       },
       "xhrUrls": [
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",

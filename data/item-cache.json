@@ -363,6 +363,20 @@
     "cls": [],
     "m": 202
   },
+  "203": {
+    "n": "Thick Cloth Gloves",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "HAND",
+    "il": 22,
+    "rl": 17,
+    "st": {},
+    "ar": 21,
+    "dps": 0,
+    "cls": [],
+    "m": 203
+  },
   "236": {
     "n": "Cured Leather Armor",
     "q": "common",
@@ -2129,6 +2143,20 @@
   },
   "1484": {
     "miss": "2026-11-08T19:23:16.618Z"
+  },
+  "1485": {
+    "n": "Pitchfork",
+    "q": "poor",
+    "c": 2,
+    "sc": 6,
+    "inv": "TWOHWEAPON",
+    "il": 25,
+    "rl": 20,
+    "st": {},
+    "ar": 0,
+    "dps": 9.999999,
+    "cls": [],
+    "m": 1485
   },
   "1486": {
     "miss": "2026-11-08T19:23:16.618Z"
@@ -11026,6 +11054,34 @@
     "cls": [],
     "m": 3968
   },
+  "3971": {
+    "n": "Smooth Leather Bracers",
+    "q": "poor",
+    "c": 4,
+    "sc": 2,
+    "inv": "WRIST",
+    "il": 59,
+    "rl": 54,
+    "st": {},
+    "ar": 60,
+    "dps": 0,
+    "cls": [],
+    "m": 3971
+  },
+  "3972": {
+    "n": "Smooth Cloak",
+    "q": "poor",
+    "c": 4,
+    "sc": 1,
+    "inv": "CLOAK",
+    "il": 56,
+    "rl": 51,
+    "st": {},
+    "ar": 33,
+    "dps": 0,
+    "cls": [],
+    "m": 3972
+  },
   "3974": {
     "n": "Smooth Leather Pants",
     "q": "poor",
@@ -11068,6 +11124,20 @@
     "cls": [],
     "m": 3989
   },
+  "3993": {
+    "n": "Laminated Scale Boots",
+    "q": "poor",
+    "c": 4,
+    "sc": 3,
+    "inv": "FEET",
+    "il": 53,
+    "rl": 48,
+    "st": {},
+    "ar": 178,
+    "dps": 0,
+    "cls": [],
+    "m": 3993
+  },
   "3994": {
     "n": "Laminated Scale Bracers",
     "q": "poor",
@@ -11095,6 +11165,20 @@
     "dps": 0,
     "cls": [],
     "m": 4000
+  },
+  "4001": {
+    "n": "Overlinked Chain Boots",
+    "q": "poor",
+    "c": 4,
+    "sc": 3,
+    "inv": "FEET",
+    "il": 46,
+    "rl": 41,
+    "st": {},
+    "ar": 157,
+    "dps": 0,
+    "cls": [],
+    "m": 4001
   },
   "4002": {
     "n": "Overlinked Chain Bracers",
@@ -17155,6 +17239,9 @@
   },
   "6433": {
     "miss": "2026-11-08T19:23:16.618Z"
+  },
+  "6440": {
+    "miss": "2026-11-14T18:53:07.678Z"
   },
   "6454": {
     "n": "Manual: Strong Anti-Venom",
@@ -25017,6 +25104,9 @@
   "10251": {
     "miss": "2026-11-13T19:01:09.579Z"
   },
+  "10252": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "10253": {
     "miss": "2026-11-13T01:18:36.521Z"
   },
@@ -25034,6 +25124,9 @@
   },
   "10259": {
     "miss": "2026-11-12T01:22:13.824Z"
+  },
+  "10260": {
+    "miss": "2026-11-14T18:53:07.678Z"
   },
   "10261": {
     "miss": "2026-11-12T01:22:13.824Z"
@@ -27749,6 +27842,20 @@
     "cls": [],
     "m": 12429
   },
+  "12445": {
+    "n": "Felnok's Package",
+    "q": "common",
+    "c": 12,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 12445
+  },
   "12527": {
     "miss": "2026-11-11T19:06:00.268Z"
   },
@@ -27837,6 +27944,26 @@
     "dps": 0,
     "cls": [],
     "m": 12632
+  },
+  "12633": {
+    "n": "Whitesoul Helm",
+    "q": "rare",
+    "c": 4,
+    "sc": 4,
+    "inv": "HEAD",
+    "il": 60,
+    "rl": 55,
+    "st": {
+      "INTELLECT": 15,
+      "SPELL_DAMAGE_DONE": 12,
+      "SPELL_HEALING_DONE": 35,
+      "EXTRA_ARMOR": 120,
+      "SPIRIT": 15
+    },
+    "ar": 509,
+    "dps": 0,
+    "cls": [],
+    "m": 12633
   },
   "12682": {
     "n": "Plans: Thorium Armor",
@@ -28062,6 +28189,20 @@
     "cls": [],
     "m": 12713
   },
+  "12716": {
+    "n": "Pattern: Helm of the Great Chief",
+    "q": "rare",
+    "c": 9,
+    "sc": 1,
+    "inv": "NON_EQUIP",
+    "il": 61,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 12716
+  },
   "12717": {
     "n": "Plans: Lionheart Helm",
     "q": "epic",
@@ -28103,6 +28244,20 @@
     "dps": 0,
     "cls": [],
     "m": 12728
+  },
+  "12792": {
+    "n": "Volcanic Hammer",
+    "q": "uncommon",
+    "c": 2,
+    "sc": 4,
+    "inv": "WEAPON",
+    "il": 58,
+    "rl": 53,
+    "st": {},
+    "ar": 0,
+    "dps": 34.6,
+    "cls": [],
+    "m": 12792
   },
   "12827": {
     "n": "Plans: Serenity",
@@ -28229,6 +28384,20 @@
     "dps": 0,
     "cls": [],
     "m": 12838
+  },
+  "12839": {
+    "n": "Plans: Heartseeker",
+    "q": "rare",
+    "c": 9,
+    "sc": 4,
+    "inv": "NON_EQUIP",
+    "il": 63,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 12839
   },
   "12845": {
     "n": "Medallion of Faith",
@@ -30319,6 +30488,23 @@
     "cls": [],
     "m": 14142
   },
+  "14144": {
+    "n": "Ghostweave Pants",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "LEGS",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "SPELL_POWER": 26,
+      "SPIRIT": 20
+    },
+    "ar": 66,
+    "dps": 0,
+    "cls": [],
+    "m": 14144
+  },
   "14155": {
     "n": "Mooncloth Bag",
     "q": "uncommon",
@@ -30881,6 +31067,9 @@
   "14331": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
+  "14335": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "14337": {
     "miss": "2026-11-12T07:29:01.478Z"
   },
@@ -31336,6 +31525,20 @@
     "dps": 0,
     "cls": [],
     "m": 14484
+  },
+  "14485": {
+    "n": "Pattern: Wizardweave Leggings",
+    "q": "uncommon",
+    "c": 9,
+    "sc": 2,
+    "inv": "NON_EQUIP",
+    "il": 55,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 14485
   },
   "14489": {
     "n": "Pattern: Frostweave Pants",
@@ -32288,6 +32491,9 @@
   "14855": {
     "miss": "2026-11-11T13:19:30.411Z"
   },
+  "14856": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "14857": {
     "miss": "2026-11-10T19:02:03.669Z"
   },
@@ -32891,6 +33097,24 @@
     "dps": 0,
     "cls": [],
     "m": 15067
+  },
+  "15070": {
+    "n": "Frostsaber Gloves",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "HAND",
+    "il": 59,
+    "rl": 54,
+    "st": {
+      "STAMINA": 7,
+      "FROST_RESISTANCE": 13,
+      "SHADOW_RESISTANCE": 13
+    },
+    "ar": 95,
+    "dps": 0,
+    "cls": [],
+    "m": 15070
   },
   "15075": {
     "n": "Chimeric Vest",
@@ -33504,6 +33728,9 @@
   "15246": {
     "miss": "2026-11-11T13:19:30.411Z"
   },
+  "15247": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "15248": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
@@ -33629,6 +33856,9 @@
   },
   "15295": {
     "miss": "2026-11-09T01:16:28.500Z"
+  },
+  "15296": {
+    "miss": "2026-11-14T18:53:07.678Z"
   },
   "15297": {
     "n": "Grizzly Bracers",
@@ -33769,6 +33999,20 @@
   },
   "15325": {
     "miss": "2026-11-12T01:22:13.824Z"
+  },
+  "15327": {
+    "n": "Wicked Throwing Dagger",
+    "q": "common",
+    "c": 2,
+    "sc": 16,
+    "inv": "THROWN",
+    "il": 40,
+    "rl": 35,
+    "st": {},
+    "ar": 0,
+    "dps": 18.333332,
+    "cls": [],
+    "m": 15327
   },
   "15329": {
     "miss": "2026-11-08T19:23:16.618Z"
@@ -34014,6 +34258,9 @@
   },
   "15437": {
     "miss": "2026-11-12T19:04:18.930Z"
+  },
+  "15438": {
+    "miss": "2026-11-14T18:53:07.678Z"
   },
   "15472": {
     "n": "Charger's Belt",
@@ -35405,6 +35652,20 @@
     "cls": [],
     "m": 15810
   },
+  "15811": {
+    "n": "Heavy Spear",
+    "q": "common",
+    "c": 2,
+    "sc": 6,
+    "inv": "TWOHWEAPON",
+    "il": 35,
+    "rl": 30,
+    "st": {},
+    "ar": 0,
+    "dps": 22.36842,
+    "cls": [],
+    "m": 15811
+  },
   "15846": {
     "n": "Salt Shaker",
     "q": "common",
@@ -35619,6 +35880,24 @@
     "dps": 0,
     "cls": [],
     "m": 15930
+  },
+  "15931": {
+    "n": "Arcane Star",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 0,
+    "inv": "HOLDABLE",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "INTELLECT": 10,
+      "STAMINA": 5,
+      "SPIRIT": 8
+    },
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 15931
   },
   "15932": {
     "n": "Disciple's Stein",
@@ -37332,6 +37611,9 @@
   "18340": {
     "miss": "2026-11-11T07:24:25.822Z"
   },
+  "18343": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "18344": {
     "miss": "2026-11-13T19:01:09.579Z"
   },
@@ -37479,6 +37761,20 @@
     ],
     "m": 18364
   },
+  "18365": {
+    "n": "A Thoroughly Read Copy of \"Nat Pagle's Extreme' Anglin.\"",
+    "q": "poor",
+    "c": 15,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 18365
+  },
   "18401": {
     "n": "Nostro's Compendium of Dragon Slaying",
     "q": "epic",
@@ -37523,6 +37819,25 @@
     "dps": 0,
     "cls": [],
     "m": 18487
+  },
+  "18510": {
+    "n": "Hide of the Wild",
+    "q": "epic",
+    "c": 4,
+    "sc": 1,
+    "inv": "CLOAK",
+    "il": 62,
+    "rl": 57,
+    "st": {
+      "INTELLECT": 10,
+      "STAMINA": 8,
+      "SPELL_DAMAGE_DONE": 14,
+      "SPELL_HEALING_DONE": 42
+    },
+    "ar": 48,
+    "dps": 0,
+    "cls": [],
+    "m": 18510
   },
   "18517": {
     "n": "Pattern: Chromatic Cloak",
@@ -37755,6 +38070,9 @@
     "cls": [],
     "m": 18731
   },
+  "18736": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "18741": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
@@ -37927,6 +38245,25 @@
     "dps": 0,
     "cls": [],
     "m": 18986
+  },
+  "19047": {
+    "n": "Wisdom of the Timbermaw",
+    "q": "rare",
+    "c": 4,
+    "sc": 1,
+    "inv": "WAIST",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "INTELLECT": 14,
+      "SPELL_DAMAGE_DONE": 11,
+      "SPELL_HEALING_DONE": 31,
+      "SPIRIT": 9
+    },
+    "ar": 46,
+    "dps": 0,
+    "cls": [],
+    "m": 19047
   },
   "19051": {
     "n": "Girdle of the Dawn",
@@ -40404,6 +40741,24 @@
     "cls": [],
     "m": 252481
   },
+  "252483": {
+    "n": "Dawn Armor",
+    "q": "epic",
+    "c": 4,
+    "sc": 2,
+    "inv": "CHEST",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "AGILITY": 37,
+      "HIT_RATING": 10,
+      "CRIT_RATING": 14
+    },
+    "ar": 187,
+    "dps": 0,
+    "cls": [],
+    "m": 252483
+  },
   "252484": {
     "n": "Timbermaw Tunic",
     "q": "epic",
@@ -40655,6 +41010,24 @@
     "dps": 0,
     "cls": [],
     "m": 252582
+  },
+  "252592": {
+    "n": "Supple Scorpid Shoulders",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 3,
+    "inv": "SHOULDER",
+    "il": 56,
+    "rl": 51,
+    "st": {
+      "STRENGTH": 8,
+      "STAMINA": 12,
+      "SPELL_POWER": 9
+    },
+    "ar": 227,
+    "dps": 0,
+    "cls": [],
+    "m": 252592
   },
   "252593": {
     "n": "Charged Scorpid Bracers",
@@ -41602,6 +41975,20 @@
     "dps": 0,
     "cls": [],
     "m": 252891
+  },
+  "252892": {
+    "n": "Pattern: Dawn Armor",
+    "q": "epic",
+    "c": 9,
+    "sc": 1,
+    "inv": "NON_EQUIP",
+    "il": 60,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 252892
   },
   "252893": {
     "n": "Pattern: Timbermaw Tunic",
@@ -48023,6 +48410,9 @@
   "284067": {
     "miss": "2026-11-09T19:02:07.755Z"
   },
+  "284072": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "284154": {
     "miss": "2026-11-13T07:26:05.380Z"
   },
@@ -48501,6 +48891,9 @@
   "287037": {
     "miss": "2026-11-14T01:10:29.009Z"
   },
+  "287038": {
+    "miss": "2026-11-14T18:53:07.678Z"
+  },
   "287045": {
     "miss": "2026-11-14T07:10:17.976Z"
   },
@@ -48593,5 +48986,9 @@
   "m9793": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg",
   "m1449": "https://render.worldofwarcraft.com/forever-eu/icons/56/133355.jpg",
   "m3193": "https://render.worldofwarcraft.com/forever-eu/icons/56/133052.jpg",
-  "m4254": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+  "m4254": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg",
+  "m1319": "https://render.worldofwarcraft.com/forever-eu/icons/56/132520.jpg",
+  "m6365": "https://render.worldofwarcraft.com/forever-eu/icons/56/132932.jpg",
+  "m12249": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg",
+  "m4255": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
 }

@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-14T12:59:14.760Z",
+  "last_updated": "2026-11-14T18:53:07.678Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 105818
+      "auctions": 140330
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 110654
+      "auctions": 150618
     },
     {
       "id": 112,
@@ -20,15 +20,43 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 18151
+      "auctions": 21526
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 12746
+      "auctions": 15954
     }
   ],
   "upgrades": [
+    {
+      "id": 12249,
+      "name": "Merciless Axe",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 26,
+      "usableNow": false,
+      "itemLevel": 31,
+      "stats": {
+        "STRENGTH": 12
+      },
+      "armor": 0,
+      "dps": 21.09375,
+      "score": 137.4,
+      "delta": 103.4,
+      "current": {
+        "name": "Strong Fishing Pole",
+        "score": 34
+      },
+      "price": {
+        "copper": 24000,
+        "houseId": 111,
+        "listings": 8
+      },
+      "mediaId": 12249,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
+    },
     {
       "id": 7958,
       "name": "Bronze Battle Axe",
@@ -44,15 +72,15 @@
       "armor": 0,
       "dps": 18.333332,
       "score": 119,
-      "delta": 31,
+      "delta": 85,
       "current": {
-        "name": "Oak Mallet of the Gorilla",
-        "score": 88
+        "name": "Strong Fishing Pole",
+        "score": 34
       },
       "price": {
-        "copper": 2800,
+        "copper": 2799,
         "houseId": 111,
-        "listings": 46
+        "listings": 86
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -73,47 +101,18 @@
       "armor": 0,
       "dps": 16.857141,
       "score": 109.5,
-      "delta": 21.5,
+      "delta": 75.5,
       "current": {
-        "name": "Oak Mallet of the Gorilla",
-        "score": 88
+        "name": "Strong Fishing Pole",
+        "score": 34
       },
       "price": {
-        "copper": 1541,
+        "copper": 1542,
         "houseId": 110,
-        "listings": 496
+        "listings": 483
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
-    },
-    {
-      "id": 2194,
-      "name": "Diamond Hammer",
-      "quality": "rare",
-      "inv": "WEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 20,
-      "usableNow": true,
-      "itemLevel": 25,
-      "stats": {
-        "STRENGTH": 3,
-        "STAMINA": 4
-      },
-      "armor": 0,
-      "dps": 16.2,
-      "score": 101.9,
-      "delta": 13.9,
-      "current": {
-        "name": "Oak Mallet of the Gorilla",
-        "score": 88
-      },
-      "price": {
-        "copper": 7499,
-        "houseId": 123,
-        "listings": 60
-      },
-      "mediaId": 2194,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
     },
     {
       "id": 10588,
@@ -136,9 +135,9 @@
         "score": 0
       },
       "price": {
-        "copper": 59999,
+        "copper": 53999,
         "houseId": 110,
-        "listings": 14
+        "listings": 13
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -166,9 +165,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2899,
+        "copper": 2818,
         "houseId": 111,
-        "listings": 309
+        "listings": 293
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -195,9 +194,9 @@
         "score": 0
       },
       "price": {
-        "copper": 2900,
-        "houseId": 110,
-        "listings": 10
+        "copper": 5900,
+        "houseId": 111,
+        "listings": 65
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -225,7 +224,7 @@
       "price": {
         "copper": 19890,
         "houseId": 111,
-        "listings": 47
+        "listings": 64
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
@@ -251,9 +250,9 @@
         "score": 1
       },
       "price": {
-        "copper": 300,
+        "copper": 319,
         "houseId": 111,
-        "listings": 432
+        "listings": 825
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -281,7 +280,7 @@
       "price": {
         "copper": 1498,
         "houseId": 110,
-        "listings": 26
+        "listings": 41
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -309,9 +308,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 1600,
-        "houseId": 111,
-        "listings": 207
+        "copper": 1919,
+        "houseId": 110,
+        "listings": 371
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -339,12 +338,40 @@
         "score": 7
       },
       "price": {
-        "copper": 10000,
-        "houseId": 119,
-        "listings": 104
+        "copper": 15399,
+        "houseId": 111,
+        "listings": 123
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
+    },
+    {
+      "id": 4252,
+      "name": "Dark Leather Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 23,
+      "usableNow": true,
+      "itemLevel": 28,
+      "stats": {
+        "AGILITY": 7
+      },
+      "armor": 68,
+      "dps": 0,
+      "score": 8.4,
+      "delta": 4.3,
+      "current": {
+        "name": "Hillman's Shoulders",
+        "score": 4.1
+      },
+      "price": {
+        "copper": 2500,
+        "houseId": 111,
+        "listings": 210
+      },
+      "mediaId": 4252,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
     },
     {
       "id": 281927,
@@ -362,46 +389,18 @@
       "armor": 0,
       "dps": 0,
       "score": 4.6,
-      "delta": 4.6,
+      "delta": 4.1,
       "current": {
-        "name": "Avala's Binding",
-        "score": 0
+        "name": "Minor Channeling Ring",
+        "score": 0.5
       },
       "price": {
-        "copper": 5000,
-        "houseId": 119,
-        "listings": 9
+        "copper": 7200,
+        "houseId": 111,
+        "listings": 28
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
-    },
-    {
-      "id": 4252,
-      "name": "Dark Leather Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 23,
-      "usableNow": false,
-      "itemLevel": 28,
-      "stats": {
-        "AGILITY": 7
-      },
-      "armor": 68,
-      "dps": 0,
-      "score": 8.4,
-      "delta": 4.3,
-      "current": {
-        "name": "Hillman's Shoulders",
-        "score": 4.1
-      },
-      "price": {
-        "copper": 2599,
-        "houseId": 119,
-        "listings": 121
-      },
-      "mediaId": 4252,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
     },
     {
       "id": 2307,
@@ -425,12 +424,41 @@
         "score": 1
       },
       "price": {
-        "copper": 240,
-        "houseId": 111,
-        "listings": 226
+        "copper": 280,
+        "houseId": 110,
+        "listings": 407
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+    },
+    {
+      "id": 4255,
+      "name": "Green Leather Armor",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 26,
+      "usableNow": false,
+      "itemLevel": 31,
+      "stats": {
+        "INTELLECT": 8,
+        "AGILITY": 8
+      },
+      "armor": 95,
+      "dps": 0,
+      "score": 11.9,
+      "delta": 3.7,
+      "current": {
+        "name": "Buccaneer's Robes of the Monkey",
+        "score": 8.2
+      },
+      "price": {
+        "copper": 3400,
+        "houseId": 111,
+        "listings": 236
+      },
+      "mediaId": 4255,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
     },
     {
       "id": 4794,
@@ -454,9 +482,9 @@
         "score": 2.8
       },
       "price": {
-        "copper": 5999,
-        "houseId": 123,
-        "listings": 36
+        "copper": 6999,
+        "houseId": 110,
+        "listings": 40
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -468,7 +496,7 @@
       "inv": "HAND",
       "slotGroup": "HANDS",
       "requiredLevel": 23,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 28,
       "stats": {
         "AGILITY": 8
@@ -482,9 +510,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2800,
+        "copper": 2740,
         "houseId": 110,
-        "listings": 115
+        "listings": 114
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -510,41 +538,12 @@
         "score": 6.1
       },
       "price": {
-        "copper": 26499,
+        "copper": 15500,
         "houseId": 110,
-        "listings": 13
+        "listings": 28
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
-    },
-    {
-      "id": 1077,
-      "name": "Defias Mage Ring",
-      "quality": "uncommon",
-      "inv": "FINGER",
-      "slotGroup": "FINGER",
-      "requiredLevel": 21,
-      "usableNow": true,
-      "itemLevel": 26,
-      "stats": {
-        "INTELLECT": 4,
-        "SPIRIT": 3
-      },
-      "armor": 0,
-      "dps": 0,
-      "score": 1.3,
-      "delta": 1.3,
-      "current": {
-        "name": "Avala's Binding",
-        "score": 0
-      },
-      "price": {
-        "copper": 5000,
-        "houseId": 110,
-        "listings": 16
-      },
-      "mediaId": 1077,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
     },
     {
       "id": 4831,
@@ -568,12 +567,41 @@
         "score": 9.4
       },
       "price": {
-        "copper": 7800,
-        "houseId": 123,
-        "listings": 28
+        "copper": 8998,
+        "houseId": 110,
+        "listings": 31
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
+    },
+    {
+      "id": 1077,
+      "name": "Defias Mage Ring",
+      "quality": "uncommon",
+      "inv": "FINGER",
+      "slotGroup": "FINGER",
+      "requiredLevel": 21,
+      "usableNow": true,
+      "itemLevel": 26,
+      "stats": {
+        "INTELLECT": 4,
+        "SPIRIT": 3
+      },
+      "armor": 0,
+      "dps": 0,
+      "score": 1.3,
+      "delta": 0.8,
+      "current": {
+        "name": "Minor Channeling Ring",
+        "score": 0.5
+      },
+      "price": {
+        "copper": 6095,
+        "houseId": 111,
+        "listings": 37
+      },
+      "mediaId": 1077,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
     },
     {
       "id": 5781,
@@ -597,9 +625,9 @@
         "score": 8.2
       },
       "price": {
-        "copper": 1500,
+        "copper": 1399,
         "houseId": 110,
-        "listings": 89
+        "listings": 108
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
@@ -625,9 +653,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 3500,
+        "copper": 4600,
         "houseId": 111,
-        "listings": 49
+        "listings": 70
       },
       "mediaId": 7352,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
@@ -655,15 +683,15 @@
       "price": {
         "copper": 3000,
         "houseId": 111,
-        "listings": 15
+        "listings": 23
       },
       "mediaId": 4795,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5408,
-  "unknownItems": 2917,
+  "scannedItems": 5477,
+  "unknownItems": 2951,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

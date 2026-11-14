@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-14T07:10:17.976Z",
+  "last_updated": "2026-11-14T12:59:14.760Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 21,
+    "level": 22,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 13
+    "averageItemLevel": 15
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -132,24 +132,6 @@
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134589.jpg"
     },
     {
-      "slot": "OFF_HAND",
-      "slotName": "Off Hand",
-      "id": 3160,
-      "name": "Ironplate Buckler",
-      "quality": "uncommon",
-      "inv": "SHIELD",
-      "c": 4,
-      "sc": 6,
-      "ilvl": 15,
-      "st": {
-        "SPELL_POWER": 2
-      },
-      "ar": 328,
-      "dps": 0,
-      "mediaId": 3160,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
-    },
-    {
       "slot": "RANGED",
       "slotName": "Ranged",
       "id": 263412,
@@ -164,6 +146,25 @@
       "dps": 0,
       "mediaId": 263412,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134919.jpg"
+    },
+    {
+      "slot": "FINGER_2",
+      "slotName": "Ring 2",
+      "id": 1449,
+      "name": "Minor Channeling Ring",
+      "quality": "uncommon",
+      "inv": "FINGER",
+      "c": 4,
+      "sc": 0,
+      "ilvl": 24,
+      "st": {
+        "INTELLECT": 2,
+        "SPELL_POWER": 5
+      },
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 1449,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133355.jpg"
     },
     {
       "slot": "SHIRT",
@@ -222,20 +223,21 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 270256,
-      "name": "Durgen's Crescent Axe",
-      "quality": "rare",
-      "inv": "WEAPONMAINHAND",
+      "id": 3193,
+      "name": "Oak Mallet of the Gorilla",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 0,
-      "ilvl": 18,
+      "sc": 5,
+      "ilvl": 21,
       "st": {
-        "STRENGTH": 4
+        "INTELLECT": 5,
+        "STRENGTH": 5
       },
       "ar": 0,
-      "dps": 12.291666,
-      "mediaId": 270256,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132409.jpg"
+      "dps": 13.714285,
+      "mediaId": 3193,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133052.jpg"
     },
     {
       "slot": "WRIST",
@@ -407,26 +409,6 @@
               "level": "object",
               "durability": "object"
             },
-            "offhand": {
-              "id": "number",
-              "item": "object",
-              "slot": "object",
-              "quantity": "number",
-              "context": "number",
-              "quality": "object",
-              "name": "string",
-              "media": "object",
-              "item_class": "object",
-              "item_subclass": "object",
-              "inventory_type": "object",
-              "binding": "object",
-              "armor": "object",
-              "shield_block": "object",
-              "stats": "object",
-              "sell_price": "object",
-              "level": "object",
-              "durability": "object"
-            },
             "ranged": {
               "id": "number",
               "item": "object",
@@ -444,6 +426,24 @@
               "sell_price": "object",
               "requirements": "object",
               "level": "object"
+            },
+            "rightFinger": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "is_subclass_hidden": "boolean"
             },
             "shirt": {
               "id": "number",
@@ -502,9 +502,11 @@
             "weapon": {
               "id": "number",
               "item": "object",
+              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -689,8 +691,8 @@
               "hand": "object",
               "leftFinger": "object",
               "leg": "object",
-              "offhand": "object",
               "ranged": "object",
+              "rightFinger": "object",
               "shirt": "object",
               "shoulder": "object",
               "waist": "object",
@@ -813,8 +815,8 @@
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],
       "domItems": 0
     }

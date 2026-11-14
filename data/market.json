@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-14T07:10:17.976Z",
+  "last_updated": "2026-11-14T12:59:14.760Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 99167
+      "auctions": 105818
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 101096
+      "auctions": 110654
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 15618
+      "auctions": 18151
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 11517
+      "auctions": 12746
     }
   ],
   "upgrades": [
@@ -36,7 +36,7 @@
       "inv": "TWOHWEAPON",
       "slotGroup": "MAIN_HAND",
       "requiredLevel": 22,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 27,
       "stats": {
         "STRENGTH": 10
@@ -44,15 +44,15 @@
       "armor": 0,
       "dps": 18.333332,
       "score": 119,
-      "delta": 35.1,
+      "delta": 31,
       "current": {
-        "name": "Durgen's Crescent Axe + Ironplate Buckler",
-        "score": 83.89999999999999
+        "name": "Oak Mallet of the Gorilla",
+        "score": 88
       },
       "price": {
-        "copper": 2855,
-        "houseId": 110,
-        "listings": 43
+        "copper": 2800,
+        "houseId": 111,
+        "listings": 46
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -73,15 +73,15 @@
       "armor": 0,
       "dps": 16.857141,
       "score": 109.5,
-      "delta": 25.6,
+      "delta": 21.5,
       "current": {
-        "name": "Durgen's Crescent Axe + Ironplate Buckler",
-        "score": 83.89999999999999
+        "name": "Oak Mallet of the Gorilla",
+        "score": 88
       },
       "price": {
         "copper": 1541,
         "houseId": 110,
-        "listings": 476
+        "listings": 496
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
@@ -102,15 +102,15 @@
       "armor": 0,
       "dps": 16.2,
       "score": 101.9,
-      "delta": 24.6,
+      "delta": 13.9,
       "current": {
-        "name": "Durgen's Crescent Axe",
-        "score": 77.3
+        "name": "Oak Mallet of the Gorilla",
+        "score": 88
       },
       "price": {
-        "copper": 7021,
+        "copper": 7499,
         "houseId": 123,
-        "listings": 64
+        "listings": 60
       },
       "mediaId": 2194,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133043.jpg"
@@ -136,9 +136,9 @@
         "score": 0
       },
       "price": {
-        "copper": 69999,
+        "copper": 59999,
         "houseId": 110,
-        "listings": 15
+        "listings": 14
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -150,7 +150,7 @@
       "inv": "HAND",
       "slotGroup": "HANDS",
       "requiredLevel": 22,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 27,
       "stats": {
         "AGILITY": 6,
@@ -166,41 +166,12 @@
         "score": 6.5
       },
       "price": {
-        "copper": 3000,
+        "copper": 2899,
         "houseId": 111,
-        "listings": 248
+        "listings": 309
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
-    },
-    {
-      "id": 4821,
-      "name": "Bear Buckler",
-      "quality": "uncommon",
-      "inv": "SHIELD",
-      "slotGroup": "OFF_HAND",
-      "requiredLevel": 18,
-      "usableNow": true,
-      "itemLevel": 23,
-      "stats": {
-        "STRENGTH": 3,
-        "STAMINA": 3
-      },
-      "armor": 461,
-      "dps": 0,
-      "score": 13.4,
-      "delta": 6.8,
-      "current": {
-        "name": "Ironplate Buckler",
-        "score": 6.6
-      },
-      "price": {
-        "copper": 7900,
-        "houseId": 111,
-        "listings": 11
-      },
-      "mediaId": 4821,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
     },
     {
       "id": 10499,
@@ -226,7 +197,7 @@
       "price": {
         "copper": 2900,
         "houseId": 110,
-        "listings": 34
+        "listings": 10
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -254,39 +225,10 @@
       "price": {
         "copper": 19890,
         "houseId": 111,
-        "listings": 37
+        "listings": 47
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
-    },
-    {
-      "id": 4820,
-      "name": "Guardian Buckler",
-      "quality": "uncommon",
-      "inv": "SHIELD",
-      "slotGroup": "OFF_HAND",
-      "requiredLevel": 20,
-      "usableNow": true,
-      "itemLevel": 25,
-      "stats": {
-        "STAMINA": 3,
-        "SPIRIT": 3
-      },
-      "armor": 495,
-      "dps": 0,
-      "score": 11.7,
-      "delta": 5.1,
-      "current": {
-        "name": "Ironplate Buckler",
-        "score": 6.6
-      },
-      "price": {
-        "copper": 5000,
-        "houseId": 111,
-        "listings": 3
-      },
-      "mediaId": 4820,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134956.jpg"
     },
     {
       "id": 2315,
@@ -309,9 +251,9 @@
         "score": 1
       },
       "price": {
-        "copper": 302,
-        "houseId": 110,
-        "listings": 450
+        "copper": 300,
+        "houseId": 111,
+        "listings": 432
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -337,12 +279,42 @@
         "score": 1
       },
       "price": {
-        "copper": 1849,
-        "houseId": 111,
-        "listings": 24
+        "copper": 1498,
+        "houseId": 110,
+        "listings": 26
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+    },
+    {
+      "id": 4254,
+      "name": "Barbaric Gloves",
+      "quality": "uncommon",
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 25,
+      "usableNow": false,
+      "itemLevel": 30,
+      "stats": {
+        "AGILITY": 4,
+        "STRENGTH": 4,
+        "STAMINA": 5
+      },
+      "armor": 58,
+      "dps": 0,
+      "score": 11.3,
+      "delta": 4.8,
+      "current": {
+        "name": "Flamefist Grips",
+        "score": 6.5
+      },
+      "price": {
+        "copper": 1600,
+        "houseId": 111,
+        "listings": 207
+      },
+      "mediaId": 4254,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "id": 6468,
@@ -369,7 +341,7 @@
       "price": {
         "copper": 10000,
         "houseId": 119,
-        "listings": 142
+        "listings": 104
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -381,7 +353,7 @@
       "inv": "FINGER",
       "slotGroup": "FINGER",
       "requiredLevel": 22,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 27,
       "stats": {
         "STRENGTH": 4,
@@ -398,7 +370,7 @@
       "price": {
         "copper": 5000,
         "houseId": 119,
-        "listings": 7
+        "listings": 9
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -424,9 +396,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 2485,
-        "houseId": 111,
-        "listings": 171
+        "copper": 2599,
+        "houseId": 119,
+        "listings": 121
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -453,40 +425,12 @@
         "score": 1
       },
       "price": {
-        "copper": 225,
+        "copper": 240,
         "houseId": 111,
-        "listings": 400
+        "listings": 226
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
-    },
-    {
-      "id": 4822,
-      "name": "Owl's Disk",
-      "quality": "uncommon",
-      "inv": "SHIELD",
-      "slotGroup": "OFF_HAND",
-      "requiredLevel": 18,
-      "usableNow": true,
-      "itemLevel": 23,
-      "stats": {
-        "INTELLECT": 4
-      },
-      "armor": 461,
-      "dps": 0,
-      "score": 10.2,
-      "delta": 3.6,
-      "current": {
-        "name": "Ironplate Buckler",
-        "score": 6.6
-      },
-      "price": {
-        "copper": 3598,
-        "houseId": 111,
-        "listings": 8
-      },
-      "mediaId": 4822,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134955.jpg"
     },
     {
       "id": 4794,
@@ -510,9 +454,9 @@
         "score": 2.8
       },
       "price": {
-        "copper": 6638,
-        "houseId": 119,
-        "listings": 22
+        "copper": 5999,
+        "houseId": 123,
+        "listings": 36
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -538,9 +482,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 3000,
-        "houseId": 111,
-        "listings": 81
+        "copper": 2800,
+        "houseId": 110,
+        "listings": 115
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -566,9 +510,9 @@
         "score": 6.1
       },
       "price": {
-        "copper": 26500,
+        "copper": 26499,
         "houseId": 110,
-        "listings": 9
+        "listings": 13
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
@@ -595,9 +539,9 @@
         "score": 0
       },
       "price": {
-        "copper": 7000,
-        "houseId": 123,
-        "listings": 17
+        "copper": 5000,
+        "houseId": 110,
+        "listings": 16
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
@@ -624,9 +568,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 10000,
-        "houseId": 111,
-        "listings": 17
+        "copper": 7800,
+        "houseId": 123,
+        "listings": 28
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
@@ -655,7 +599,7 @@
       "price": {
         "copper": 1500,
         "houseId": 110,
-        "listings": 71
+        "listings": 89
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
@@ -667,7 +611,7 @@
       "inv": "SHOULDER",
       "slotGroup": "SHOULDER",
       "requiredLevel": 22,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 27,
       "stats": {
         "STAMINA": 7
@@ -681,41 +625,12 @@
         "score": 4.1
       },
       "price": {
-        "copper": 4000,
+        "copper": 3500,
         "houseId": 111,
-        "listings": 29
+        "listings": 49
       },
       "mediaId": 7352,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
-    },
-    {
-      "id": 7285,
-      "name": "Nimble Leather Gloves",
-      "quality": "uncommon",
-      "inv": "HAND",
-      "slotGroup": "HANDS",
-      "requiredLevel": 19,
-      "usableNow": true,
-      "itemLevel": 24,
-      "stats": {
-        "AGILITY": 4,
-        "STAMINA": 4
-      },
-      "armor": 52,
-      "dps": 0,
-      "score": 7,
-      "delta": 0.5,
-      "current": {
-        "name": "Flamefist Grips",
-        "score": 6.5
-      },
-      "price": {
-        "copper": 585,
-        "houseId": 110,
-        "listings": 311
-      },
-      "mediaId": 7285,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "id": 4795,
@@ -738,17 +653,17 @@
         "score": 2.8
       },
       "price": {
-        "copper": 1922,
+        "copper": 3000,
         "houseId": 111,
-        "listings": 9
+        "listings": 15
       },
       "mediaId": 4795,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5357,
-  "unknownItems": 2894,
+  "scannedItems": 5408,
+  "unknownItems": 2917,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

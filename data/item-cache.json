@@ -1729,6 +1729,20 @@
     "cls": [],
     "m": 1395
   },
+  "1396": {
+    "n": "Acolyte's Pants",
+    "q": "poor",
+    "c": 4,
+    "sc": 1,
+    "inv": "LEGS",
+    "il": 1,
+    "rl": 1,
+    "st": {},
+    "ar": 2,
+    "dps": 0,
+    "cls": [],
+    "m": 1396
+  },
   "1405": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
@@ -8496,6 +8510,20 @@
   "3315": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
+  "3321": {
+    "n": "Gray Fur Booties",
+    "q": "common",
+    "c": 4,
+    "sc": 2,
+    "inv": "FEET",
+    "il": 9,
+    "rl": 4,
+    "st": {},
+    "ar": 34,
+    "dps": 0,
+    "cls": [],
+    "m": 3321
+  },
   "3325": {
     "n": "Vile Fin Battle Axe",
     "q": "common",
@@ -9214,6 +9242,20 @@
     "dps": 0,
     "cls": [],
     "m": 3590
+  },
+  "3591": {
+    "n": "Padded Belt",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "WAIST",
+    "il": 27,
+    "rl": 22,
+    "st": {},
+    "ar": 22,
+    "dps": 0,
+    "cls": [],
+    "m": 3591
   },
   "3593": {
     "n": "Russet Belt",
@@ -20518,6 +20560,20 @@
     "cls": [],
     "m": 8080
   },
+  "8085": {
+    "n": "Light Plate Pants",
+    "q": "poor",
+    "c": 4,
+    "sc": 4,
+    "inv": "LEGS",
+    "il": 55,
+    "rl": 50,
+    "st": {},
+    "ar": 413,
+    "dps": 0,
+    "cls": [],
+    "m": 8085
+  },
   "8088": {
     "n": "Platemail Belt",
     "q": "common",
@@ -24955,6 +25011,9 @@
     "cls": [],
     "m": 10249
   },
+  "10250": {
+    "miss": "2026-11-14T12:59:14.760Z"
+  },
   "10251": {
     "miss": "2026-11-13T19:01:09.579Z"
   },
@@ -24966,6 +25025,9 @@
   },
   "10256": {
     "miss": "2026-11-12T01:22:13.824Z"
+  },
+  "10257": {
+    "miss": "2026-11-14T12:59:14.760Z"
   },
   "10258": {
     "miss": "2026-11-12T01:22:13.824Z"
@@ -27710,6 +27772,9 @@
   "12531": {
     "miss": "2026-11-10T19:02:03.669Z"
   },
+  "12532": {
+    "miss": "2026-11-14T12:59:14.760Z"
+  },
   "12535": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
@@ -29067,6 +29132,34 @@
     "cls": [],
     "m": 13522
   },
+  "13819": {
+    "n": "Balanced War Axe",
+    "q": "poor",
+    "c": 2,
+    "sc": 1,
+    "inv": "TWOHWEAPON",
+    "il": 59,
+    "rl": 54,
+    "st": {},
+    "ar": 0,
+    "dps": 27.6,
+    "cls": [],
+    "m": 13819
+  },
+  "13820": {
+    "n": "Clout Mace",
+    "q": "poor",
+    "c": 2,
+    "sc": 4,
+    "inv": "WEAPONMAINHAND",
+    "il": 54,
+    "rl": 49,
+    "st": {},
+    "ar": 0,
+    "dps": 19.347824,
+    "cls": [],
+    "m": 13820
+  },
   "13821": {
     "n": "Bulky Maul",
     "q": "poor",
@@ -30209,6 +30302,23 @@
     "cls": [],
     "m": 14136
   },
+  "14142": {
+    "n": "Ghostweave Gloves",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "HAND",
+    "il": 54,
+    "rl": 49,
+    "st": {
+      "SPELL_POWER": 9,
+      "SPIRIT": 15
+    },
+    "ar": 44,
+    "dps": 0,
+    "cls": [],
+    "m": 14142
+  },
   "14155": {
     "n": "Mooncloth Bag",
     "q": "uncommon",
@@ -30979,6 +31089,9 @@
   },
   "14444": {
     "miss": "2026-11-09T01:16:28.500Z"
+  },
+  "14445": {
+    "miss": "2026-11-14T12:59:14.760Z"
   },
   "14446": {
     "miss": "2026-11-09T07:35:53.611Z"
@@ -31828,6 +31941,9 @@
   "14682": {
     "miss": "2026-11-13T07:26:05.380Z"
   },
+  "14683": {
+    "miss": "2026-11-14T12:59:14.760Z"
+  },
   "14684": {
     "miss": "2026-11-11T19:06:00.268Z"
   },
@@ -32057,6 +32173,9 @@
   },
   "14798": {
     "miss": "2026-11-11T13:19:30.411Z"
+  },
+  "14799": {
+    "miss": "2026-11-14T12:59:14.760Z"
   },
   "14801": {
     "miss": "2026-11-10T19:02:03.669Z"
@@ -32330,6 +32449,9 @@
   },
   "14934": {
     "miss": "2026-11-12T13:23:01.524Z"
+  },
+  "14935": {
+    "miss": "2026-11-14T12:59:14.760Z"
   },
   "14936": {
     "miss": "2026-11-12T13:23:01.524Z"
@@ -32641,6 +32763,26 @@
     "dps": 0,
     "cls": [],
     "m": 15046
+  },
+  "15060": {
+    "n": "Living Leggings",
+    "q": "rare",
+    "c": 4,
+    "sc": 2,
+    "inv": "LEGS",
+    "il": 57,
+    "rl": 52,
+    "st": {
+      "STAMINA": 8,
+      "SPELL_DAMAGE_DONE": 9,
+      "SPELL_HEALING_DONE": 26,
+      "NATURE_RESISTANCE": 5,
+      "SPIRIT": 25
+    },
+    "ar": 142,
+    "dps": 0,
+    "cls": [],
+    "m": 15060
   },
   "15062": {
     "n": "Devilsaur Leggings",
@@ -34597,6 +34739,9 @@
   "15668": {
     "miss": "2026-11-10T07:18:34.742Z"
   },
+  "15670": {
+    "miss": "2026-11-14T12:59:14.760Z"
+  },
   "15671": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
@@ -35457,6 +35602,24 @@
     "cls": [],
     "m": 15929
   },
+  "15930": {
+    "n": "Imperial Red Scepter",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 0,
+    "inv": "HOLDABLE",
+    "il": 56,
+    "rl": 51,
+    "st": {
+      "INTELLECT": 12,
+      "AGILITY": 2,
+      "STAMINA": 4
+    },
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 15930
+  },
   "15932": {
     "n": "Disciple's Stein",
     "q": "uncommon",
@@ -35724,6 +35887,24 @@
     "dps": 0,
     "cls": [],
     "m": 15966
+  },
+  "15967": {
+    "n": "Highborne Star",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 0,
+    "inv": "HOLDABLE",
+    "il": 59,
+    "rl": 54,
+    "st": {
+      "INTELLECT": 11,
+      "AGILITY": 3,
+      "STAMINA": 6
+    },
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 15967
   },
   "15969": {
     "n": "Beaded Orb",
@@ -37040,6 +37221,20 @@
     "cls": [],
     "m": 18046
   },
+  "18232": {
+    "n": "Field Repair Bot 74A",
+    "q": "common",
+    "c": 0,
+    "sc": 14,
+    "inv": "NON_EQUIP",
+    "il": 60,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 18232
+  },
   "18238": {
     "n": "Shadowskin Gloves",
     "q": "rare",
@@ -37480,6 +37675,20 @@
     "cls": [],
     "m": 18655
   },
+  "18657": {
+    "n": "Schematic: Hyper-Radiant Flame Reflector",
+    "q": "uncommon",
+    "c": 9,
+    "sc": 3,
+    "inv": "NON_EQUIP",
+    "il": 58,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 18657
+  },
   "18658": {
     "n": "Schematic: Ultra-Flash Shadow Reflector",
     "q": "uncommon",
@@ -37749,6 +37958,20 @@
     "dps": 0,
     "cls": [],
     "m": 19227
+  },
+  "19228": {
+    "n": "Beasts Deck",
+    "q": "epic",
+    "c": 12,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 1,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 19228
   },
   "19230": {
     "n": "Two of Beasts",
@@ -38644,6 +38867,20 @@
     "cls": [],
     "m": 21548
   },
+  "21939": {
+    "n": "Fel Elemental Rod",
+    "q": "common",
+    "c": 12,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 21939
+  },
   "22246": {
     "n": "Enchanted Mageweave Pouch",
     "q": "uncommon",
@@ -39224,6 +39461,22 @@
     "cls": [],
     "m": 249234
   },
+  "249237": {
+    "n": "Greater Eternal Wand",
+    "q": "uncommon",
+    "c": 2,
+    "sc": 19,
+    "inv": "RANGEDRIGHT",
+    "il": 60,
+    "rl": 55,
+    "st": {
+      "SPELL_POWER": 9
+    },
+    "ar": 0,
+    "dps": 53.33333,
+    "cls": [],
+    "m": 249237
+  },
   "250363": {
     "n": "Recipe: Potion of Predatory Senses",
     "q": "common",
@@ -39767,6 +40020,24 @@
     "dps": 0,
     "cls": [],
     "m": 250592
+  },
+  "250593": {
+    "n": "Blessed Plate Helm",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 4,
+    "inv": "HEAD",
+    "il": 60,
+    "rl": 55,
+    "st": {
+      "STRENGTH": 11,
+      "STAMINA": 7,
+      "SPELL_POWER": 23
+    },
+    "ar": 463,
+    "dps": 0,
+    "cls": [],
+    "m": 250593
   },
   "250594": {
     "n": "Blessed Plate Chest",
@@ -41681,6 +41952,20 @@
     "dps": 0,
     "cls": [],
     "m": 252935
+  },
+  "252936": {
+    "n": "Pattern: Charged Scorpid Boots",
+    "q": "uncommon",
+    "c": 9,
+    "sc": 1,
+    "inv": "NON_EQUIP",
+    "il": 60,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 252936
   },
   "252937": {
     "n": "Pattern: Red Dragonscale Leggings",
@@ -47171,6 +47456,9 @@
   "277064": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
+  "277065": {
+    "miss": "2026-11-14T12:59:14.760Z"
+  },
   "277066": {
     "miss": "2026-11-11T07:24:25.822Z"
   },
@@ -47544,6 +47832,9 @@
   },
   "282020": {
     "miss": "2026-11-09T19:02:07.755Z"
+  },
+  "282021": {
+    "miss": "2026-11-14T12:59:14.760Z"
   },
   "282023": {
     "miss": "2026-11-09T19:02:07.755Z"
@@ -48299,5 +48590,8 @@
   "m10588": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg",
   "m14172": "https://render.worldofwarcraft.com/forever-eu/icons/56/132659.jpg",
   "m9805": "https://render.worldofwarcraft.com/forever-eu/icons/56/133762.jpg",
-  "m9793": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg"
+  "m9793": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg",
+  "m1449": "https://render.worldofwarcraft.com/forever-eu/icons/56/133355.jpg",
+  "m3193": "https://render.worldofwarcraft.com/forever-eu/icons/56/133052.jpg",
+  "m4254": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
 }

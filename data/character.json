@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T01:10:29.009Z",
+  "last_updated": "2026-11-14T07:10:17.976Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -260,9 +260,9 @@
   "debug": {
     "apiWarnings": [
       "equipment: 404",
-      "quests/completed: 404",
+      "profile: 404",
       "character-media: 404",
-      "profile: 404"
+      "quests/completed: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -813,8 +813,8 @@
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
       ],
       "domItems": 0
     }

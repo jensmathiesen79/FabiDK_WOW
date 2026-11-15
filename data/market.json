@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-15T07:13:00.488Z",
+  "last_updated": "2026-11-15T13:00:55.657Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 106036
+      "auctions": 117492
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 107113
+      "auctions": 129928
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 17551
+      "auctions": 20508
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 11878
+      "auctions": 14293
     }
   ],
   "upgrades": [
@@ -44,13 +44,13 @@
       "armor": 0,
       "dps": 21.09375,
       "score": 137.4,
-      "delta": 38.6,
+      "delta": 103.4,
       "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
+        "name": "Strong Fishing Pole",
+        "score": 34
       },
       "price": {
-        "copper": 24000,
+        "copper": 20000,
         "houseId": 111,
         "listings": 3
       },
@@ -72,15 +72,15 @@
       "armor": 0,
       "dps": 18.333332,
       "score": 119,
-      "delta": 20.2,
+      "delta": 85,
       "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
+        "name": "Strong Fishing Pole",
+        "score": 34
       },
       "price": {
-        "copper": 2699,
+        "copper": 2698,
         "houseId": 111,
-        "listings": 59
+        "listings": 96
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -101,48 +101,78 @@
       "armor": 0,
       "dps": 16.857141,
       "score": 109.5,
-      "delta": 10.7,
+      "delta": 75.5,
       "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
+        "name": "Strong Fishing Pole",
+        "score": 34
       },
       "price": {
         "copper": 1543,
         "houseId": 111,
-        "listings": 202
+        "listings": 522
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
     },
     {
-      "id": 18948,
-      "name": "Barbaric Bracers",
+      "id": 4253,
+      "name": "Toughened Leather Gloves",
       "quality": "rare",
-      "inv": "WRIST",
-      "slotGroup": "WRIST",
-      "requiredLevel": 27,
-      "usableNow": false,
-      "itemLevel": 32,
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 22,
+      "usableNow": true,
+      "itemLevel": 27,
+      "stats": {
+        "AGILITY": 6,
+        "STRENGTH": 6,
+        "STAMINA": 3
+      },
+      "armor": 61,
+      "dps": 0,
+      "score": 14.1,
+      "delta": 13,
+      "current": {
+        "name": "Superior Gloves of Power",
+        "score": 1.1
+      },
+      "price": {
+        "copper": 3469,
+        "houseId": 110,
+        "listings": 548
+      },
+      "mediaId": 4253,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
+    },
+    {
+      "id": 4254,
+      "name": "Barbaric Gloves",
+      "quality": "uncommon",
+      "inv": "HAND",
+      "slotGroup": "HANDS",
+      "requiredLevel": 25,
+      "usableNow": true,
+      "itemLevel": 30,
       "stats": {
         "AGILITY": 4,
         "STRENGTH": 4,
-        "STAMINA": 6
+        "STAMINA": 5
       },
-      "armor": 47,
+      "armor": 58,
       "dps": 0,
-      "score": 11.5,
-      "delta": 8.7,
+      "score": 11.3,
+      "delta": 10.2,
       "current": {
-        "name": "Ivycloth Bracelets of Stamina",
-        "score": 2.8
+        "name": "Superior Gloves of Power",
+        "score": 1.1
       },
       "price": {
-        "copper": 9200,
-        "houseId": 110,
-        "listings": 97
+        "copper": 1420,
+        "houseId": 111,
+        "listings": 149
       },
-      "mediaId": 18948,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
+      "mediaId": 4254,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "id": 10588,
@@ -165,42 +195,70 @@
         "score": 0
       },
       "price": {
-        "copper": 53508,
+        "copper": 53505,
         "houseId": 110,
-        "listings": 6
+        "listings": 3
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
     },
     {
-      "id": 4253,
-      "name": "Toughened Leather Gloves",
-      "quality": "rare",
+      "id": 7358,
+      "name": "Pilferer's Gloves",
+      "quality": "uncommon",
       "inv": "HAND",
       "slotGroup": "HANDS",
-      "requiredLevel": 22,
+      "requiredLevel": 23,
       "usableNow": true,
-      "itemLevel": 27,
+      "itemLevel": 28,
       "stats": {
-        "AGILITY": 6,
-        "STRENGTH": 6,
-        "STAMINA": 3
+        "AGILITY": 8
       },
-      "armor": 61,
+      "armor": 56,
       "dps": 0,
-      "score": 14.1,
-      "delta": 7.6,
+      "score": 9.1,
+      "delta": 8,
       "current": {
-        "name": "Flamefist Grips",
-        "score": 6.5
+        "name": "Superior Gloves of Power",
+        "score": 1.1
       },
       "price": {
-        "copper": 3700,
-        "houseId": 110,
-        "listings": 236
+        "copper": 4600,
+        "houseId": 111,
+        "listings": 105
       },
-      "mediaId": 4253,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
+      "mediaId": 7358,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "id": 18948,
+      "name": "Barbaric Bracers",
+      "quality": "rare",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 27,
+      "usableNow": false,
+      "itemLevel": 32,
+      "stats": {
+        "AGILITY": 4,
+        "STRENGTH": 4,
+        "STAMINA": 6
+      },
+      "armor": 47,
+      "dps": 0,
+      "score": 11.5,
+      "delta": 6.3,
+      "current": {
+        "name": "Robust Bracers of Strength",
+        "score": 5.2
+      },
+      "price": {
+        "copper": 9850,
+        "houseId": 111,
+        "listings": 141
+      },
+      "mediaId": 18948,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
     },
     {
       "id": 10499,
@@ -224,9 +282,9 @@
         "score": 0
       },
       "price": {
-        "copper": 2500,
+        "copper": 2497,
         "houseId": 110,
-        "listings": 52
+        "listings": 55
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -252,12 +310,40 @@
         "score": 0
       },
       "price": {
-        "copper": 18998,
+        "copper": 19598,
         "houseId": 110,
-        "listings": 99
+        "listings": 132
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
+    },
+    {
+      "id": 7373,
+      "name": "Dusky Leather Leggings",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 28,
+      "usableNow": false,
+      "itemLevel": 33,
+      "stats": {
+        "AGILITY": 13
+      },
+      "armor": 86,
+      "dps": 0,
+      "score": 14.7,
+      "delta": 5.3,
+      "current": {
+        "name": "Dark Leather Pants",
+        "score": 9.4
+      },
+      "price": {
+        "copper": 3300,
+        "houseId": 111,
+        "listings": 175
+      },
+      "mediaId": 7373,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
     },
     {
       "id": 2315,
@@ -280,9 +366,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 304,
+        "copper": 300,
         "houseId": 110,
-        "listings": 996
+        "listings": 1032
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -308,42 +394,12 @@
         "score": 1.2
       },
       "price": {
-        "copper": 1300,
+        "copper": 1800,
         "houseId": 111,
-        "listings": 28
+        "listings": 49
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
-    },
-    {
-      "id": 4254,
-      "name": "Barbaric Gloves",
-      "quality": "uncommon",
-      "inv": "HAND",
-      "slotGroup": "HANDS",
-      "requiredLevel": 25,
-      "usableNow": false,
-      "itemLevel": 30,
-      "stats": {
-        "AGILITY": 4,
-        "STRENGTH": 4,
-        "STAMINA": 5
-      },
-      "armor": 58,
-      "dps": 0,
-      "score": 11.3,
-      "delta": 4.8,
-      "current": {
-        "name": "Flamefist Grips",
-        "score": 6.5
-      },
-      "price": {
-        "copper": 1500,
-        "houseId": 111,
-        "listings": 160
-      },
-      "mediaId": 4254,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "id": 6468,
@@ -368,9 +424,9 @@
         "score": 7
       },
       "price": {
-        "copper": 13000,
+        "copper": 12900,
         "houseId": 111,
-        "listings": 69
+        "listings": 82
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -396,9 +452,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 2899,
+        "copper": 2660,
         "houseId": 111,
-        "listings": 205
+        "listings": 286
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -425,9 +481,9 @@
         "score": 0.5
       },
       "price": {
-        "copper": 7000,
-        "houseId": 110,
-        "listings": 8
+        "copper": 6999,
+        "houseId": 111,
+        "listings": 17
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -454,98 +510,41 @@
         "score": 1.2
       },
       "price": {
-        "copper": 268,
-        "houseId": 110,
-        "listings": 359
+        "copper": 240,
+        "houseId": 111,
+        "listings": 393
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
     },
     {
-      "id": 4255,
-      "name": "Green Leather Armor",
+      "id": 4456,
+      "name": "Raptor Hide Belt",
       "quality": "uncommon",
-      "inv": "CHEST",
-      "slotGroup": "CHEST",
-      "requiredLevel": 26,
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 28,
       "usableNow": false,
-      "itemLevel": 31,
+      "itemLevel": 33,
       "stats": {
-        "INTELLECT": 8,
-        "AGILITY": 8
+        "STRENGTH": 6,
+        "STAMINA": 6
       },
-      "armor": 95,
+      "armor": 55,
       "dps": 0,
-      "score": 11.9,
-      "delta": 3.7,
+      "score": 9.5,
+      "delta": 2.5,
       "current": {
-        "name": "Buccaneer's Robes of the Monkey",
-        "score": 8.2
+        "name": "Dark Leather Belt",
+        "score": 7
       },
       "price": {
-        "copper": 3930,
-        "houseId": 111,
-        "listings": 173
+        "copper": 2400,
+        "houseId": 110,
+        "listings": 73
       },
-      "mediaId": 4255,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
-    },
-    {
-      "id": 4794,
-      "name": "Wolf Bracers",
-      "quality": "uncommon",
-      "inv": "WRIST",
-      "slotGroup": "WRIST",
-      "requiredLevel": 20,
-      "usableNow": true,
-      "itemLevel": 25,
-      "stats": {
-        "AGILITY": 4,
-        "STAMINA": 2
-      },
-      "armor": 37,
-      "dps": 0,
-      "score": 5.7,
-      "delta": 2.9,
-      "current": {
-        "name": "Ivycloth Bracelets of Stamina",
-        "score": 2.8
-      },
-      "price": {
-        "copper": 5049,
-        "houseId": 111,
-        "listings": 33
-      },
-      "mediaId": 4794,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
-    },
-    {
-      "id": 7358,
-      "name": "Pilferer's Gloves",
-      "quality": "uncommon",
-      "inv": "HAND",
-      "slotGroup": "HANDS",
-      "requiredLevel": 23,
-      "usableNow": true,
-      "itemLevel": 28,
-      "stats": {
-        "AGILITY": 8
-      },
-      "armor": 56,
-      "dps": 0,
-      "score": 9.1,
-      "delta": 2.6,
-      "current": {
-        "name": "Flamefist Grips",
-        "score": 6.5
-      },
-      "price": {
-        "copper": 4400,
-        "houseId": 111,
-        "listings": 56
-      },
-      "mediaId": 7358,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+      "mediaId": 4456,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
     },
     {
       "id": 10518,
@@ -570,7 +569,7 @@
       "price": {
         "copper": 19989,
         "houseId": 111,
-        "listings": 11
+        "listings": 16
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
@@ -599,7 +598,7 @@
       "price": {
         "copper": 1500,
         "houseId": 110,
-        "listings": 88
+        "listings": 238
       },
       "mediaId": 4257,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
@@ -626,12 +625,41 @@
         "score": 9.4
       },
       "price": {
-        "copper": 8888,
+        "copper": 8887,
         "houseId": 110,
-        "listings": 8
+        "listings": 9
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
+    },
+    {
+      "id": 4255,
+      "name": "Green Leather Armor",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 26,
+      "usableNow": false,
+      "itemLevel": 31,
+      "stats": {
+        "INTELLECT": 8,
+        "AGILITY": 8
+      },
+      "armor": 95,
+      "dps": 0,
+      "score": 11.9,
+      "delta": 1.1,
+      "current": {
+        "name": "Superior Tunic of Strength",
+        "score": 10.8
+      },
+      "price": {
+        "copper": 3765,
+        "houseId": 111,
+        "listings": 234
+      },
+      "mediaId": 4255,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
     },
     {
       "id": 1077,
@@ -655,41 +683,12 @@
         "score": 0.5
       },
       "price": {
-        "copper": 4901,
-        "houseId": 111,
-        "listings": 17
+        "copper": 4569,
+        "houseId": 123,
+        "listings": 19
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
-    },
-    {
-      "id": 5781,
-      "name": "Murloc Scale Breastplate",
-      "quality": "uncommon",
-      "inv": "CHEST",
-      "slotGroup": "CHEST",
-      "requiredLevel": 14,
-      "usableNow": true,
-      "itemLevel": 19,
-      "stats": {
-        "AGILITY": 3,
-        "STRENGTH": 5
-      },
-      "armor": 76,
-      "dps": 0,
-      "score": 9,
-      "delta": 0.8,
-      "current": {
-        "name": "Buccaneer's Robes of the Monkey",
-        "score": 8.2
-      },
-      "price": {
-        "copper": 1497,
-        "houseId": 111,
-        "listings": 53
-      },
-      "mediaId": 5781,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
     },
     {
       "id": 7352,
@@ -712,16 +711,16 @@
         "score": 4.1
       },
       "price": {
-        "copper": 4600,
+        "copper": 4500,
         "houseId": 111,
-        "listings": 33
+        "listings": 68
       },
       "mediaId": 7352,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
     },
     {
-      "id": 4795,
-      "name": "Bear Bracers",
+      "id": 4794,
+      "name": "Wolf Bracers",
       "quality": "uncommon",
       "inv": "WRIST",
       "slotGroup": "WRIST",
@@ -729,28 +728,29 @@
       "usableNow": true,
       "itemLevel": 25,
       "stats": {
-        "STAMINA": 5
+        "AGILITY": 4,
+        "STAMINA": 2
       },
       "armor": 37,
       "dps": 0,
-      "score": 3.2,
-      "delta": 0.4,
+      "score": 5.7,
+      "delta": 0.5,
       "current": {
-        "name": "Ivycloth Bracelets of Stamina",
-        "score": 2.8
+        "name": "Robust Bracers of Strength",
+        "score": 5.2
       },
       "price": {
-        "copper": 2950,
+        "copper": 4545,
         "houseId": 111,
-        "listings": 20
+        "listings": 44
       },
-      "mediaId": 4795,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
+      "mediaId": 4794,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5488,
-  "unknownItems": 2956,
+  "scannedItems": 5543,
+  "unknownItems": 2986,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

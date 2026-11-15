@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-15T07:13:00.488Z",
+  "last_updated": "2026-11-15T13:00:55.657Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 24,
+    "level": 25,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 17
+    "averageItemLevel": 15
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -42,21 +42,20 @@
     {
       "slot": "CHEST",
       "slotName": "Chest",
-      "id": 14172,
-      "name": "Buccaneer's Robes of the Monkey",
+      "id": 9809,
+      "name": "Superior Tunic of Strength",
       "quality": "uncommon",
-      "inv": "ROBE",
+      "inv": "CHEST",
       "c": 4,
-      "sc": 1,
-      "ilvl": 23,
+      "sc": 2,
+      "ilvl": 28,
       "st": {
-        "AGILITY": 5,
-        "STAMINA": 5
+        "STRENGTH": 10
       },
-      "ar": 37,
+      "ar": 90,
       "dps": 0,
-      "mediaId": 14172,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132659.jpg"
+      "mediaId": 9809,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132725.jpg"
     },
     {
       "slot": "FEET",
@@ -80,21 +79,20 @@
     {
       "slot": "HANDS",
       "slotName": "Hands",
-      "id": 270231,
-      "name": "Flamefist Grips",
-      "quality": "rare",
+      "id": 9806,
+      "name": "Superior Gloves of Power",
+      "quality": "uncommon",
       "inv": "HAND",
       "c": 4,
       "sc": 2,
-      "ilvl": 18,
+      "ilvl": 27,
       "st": {
-        "AGILITY": 5,
-        "SPIRIT": 5
+        "ATTACK_POWER": 14
       },
-      "ar": 51,
+      "ar": 55,
       "dps": 0,
-      "mediaId": 270231,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132959.jpg"
+      "mediaId": 9806,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
     },
     {
       "slot": "FINGER_1",
@@ -225,38 +223,37 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 2175,
-      "name": "Shadowhide Battle Axe",
-      "quality": "uncommon",
+      "id": 6365,
+      "name": "Strong Fishing Pole",
+      "quality": "common",
       "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 1,
-      "ilvl": 23,
+      "sc": 20,
+      "ilvl": 10,
       "st": {
-        "STRENGTH": 6,
-        "STAMINA": 3
+        "BONUS_STAT_FISHING_SKILL,": 5
       },
       "ar": 0,
-      "dps": 15.3125,
-      "mediaId": 2175,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135424.jpg"
+      "dps": 5.666666,
+      "mediaId": 6365,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132932.jpg"
     },
     {
       "slot": "WRIST",
       "slotName": "Wrist",
-      "id": 9793,
-      "name": "Ivycloth Bracelets of Stamina",
+      "id": 15122,
+      "name": "Robust Bracers of Strength",
       "quality": "uncommon",
       "inv": "WRIST",
       "c": 4,
-      "sc": 1,
+      "sc": 2,
       "ilvl": 25,
       "st": {
-        "STAMINA": 5
+        "STRENGTH": 5
       },
-      "ar": 17,
+      "ar": 37,
       "dps": 0,
-      "mediaId": 9793,
+      "mediaId": 15122,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg"
     }
   ],
@@ -265,8 +262,8 @@
     "apiWarnings": [
       "equipment: 404",
       "profile: 404",
-      "character-media: 404",
-      "quests/completed: 404"
+      "quests/completed: 404",
+      "character-media: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -354,10 +351,10 @@
             "hand": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -506,13 +503,13 @@
               "enchantments": "object",
               "slot": "object",
               "quantity": "number",
+              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
               "item_class": "object",
               "item_subclass": "object",
               "inventory_type": "object",
-              "binding": "object",
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
@@ -814,8 +811,8 @@
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],
       "domItems": 0
     }

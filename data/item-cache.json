@@ -10973,6 +10973,20 @@
     "cls": [],
     "m": 3943
   },
+  "3944": {
+    "n": "Twill Belt",
+    "q": "poor",
+    "c": 4,
+    "sc": 1,
+    "inv": "WAIST",
+    "il": 53,
+    "rl": 48,
+    "st": {},
+    "ar": 35,
+    "dps": 0,
+    "cls": [],
+    "m": 3944
+  },
   "3949": {
     "n": "Twill Pants",
     "q": "poor",
@@ -21888,6 +21902,24 @@
     ],
     "m": 8345
   },
+  "8346": {
+    "n": "Gauntlets of the Sea",
+    "q": "rare",
+    "c": 4,
+    "sc": 2,
+    "inv": "HAND",
+    "il": 46,
+    "rl": 41,
+    "st": {
+      "AGILITY": 7,
+      "SPELL_DAMAGE_DONE": 18,
+      "SPELL_HEALING_DONE": 6
+    },
+    "ar": 85,
+    "dps": 0,
+    "cls": [],
+    "m": 8346
+  },
   "8347": {
     "n": "Dragonscale Gauntlets",
     "q": "rare",
@@ -25002,6 +25034,9 @@
   },
   "10161": {
     "miss": "2026-11-12T07:29:01.478Z"
+  },
+  "10162": {
+    "miss": "2026-11-15T13:00:55.657Z"
   },
   "10163": {
     "miss": "2026-11-12T01:22:13.824Z"
@@ -28121,6 +28156,9 @@
     "cls": [],
     "m": 12624
   },
+  "12628": {
+    "miss": "2026-11-15T13:00:55.657Z"
+  },
   "12632": {
     "n": "Storm Gauntlets",
     "q": "rare",
@@ -28158,6 +28196,24 @@
     "dps": 0,
     "cls": [],
     "m": 12633
+  },
+  "12636": {
+    "n": "Helm of the Great Chief",
+    "q": "rare",
+    "c": 4,
+    "sc": 3,
+    "inv": "HEAD",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "SPELL_DAMAGE_DONE": 15,
+      "SPELL_HEALING_DONE": 30,
+      "SPIRIT": 12
+    },
+    "ar": 292,
+    "dps": 0,
+    "cls": [],
+    "m": 12636
   },
   "12682": {
     "n": "Plans: Thorium Armor",
@@ -28452,6 +28508,20 @@
     "dps": 34.6,
     "cls": [],
     "m": 12792
+  },
+  "12794": {
+    "n": "Masterwork Stormhammer",
+    "q": "rare",
+    "c": 2,
+    "sc": 4,
+    "inv": "WEAPON",
+    "il": 63,
+    "rl": 57,
+    "st": {},
+    "ar": 0,
+    "dps": 41.25,
+    "cls": [],
+    "m": 12794
   },
   "12827": {
     "n": "Plans: Serenity",
@@ -30327,6 +30397,23 @@
     "dps": 0,
     "cls": [],
     "m": 14043
+  },
+  "14044": {
+    "n": "Cindercloth Cloak",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "CLOAK",
+    "il": 55,
+    "rl": 50,
+    "st": {
+      "INTELLECT": 8,
+      "BONUS_STAT_FIRE_DAMAGE_DONE": 13
+    },
+    "ar": 36,
+    "dps": 0,
+    "cls": [],
+    "m": 14044
   },
   "14045": {
     "n": "Cindercloth Pants",
@@ -32773,11 +32860,17 @@
   "14808": {
     "miss": "2026-11-14T01:10:29.009Z"
   },
+  "14810": {
+    "miss": "2026-11-15T13:00:55.657Z"
+  },
   "14813": {
     "miss": "2026-11-11T01:13:22.945Z"
   },
   "14815": {
     "miss": "2026-11-15T07:13:00.488Z"
+  },
+  "14816": {
+    "miss": "2026-11-15T13:00:55.657Z"
   },
   "14821": {
     "miss": "2026-11-08T19:23:16.618Z"
@@ -32907,6 +33000,9 @@
   },
   "14866": {
     "miss": "2026-11-13T19:01:09.579Z"
+  },
+  "14868": {
+    "miss": "2026-11-15T13:00:55.657Z"
   },
   "14869": {
     "miss": "2026-11-13T01:18:36.521Z"
@@ -33490,6 +33586,24 @@
     "dps": 0,
     "cls": [],
     "m": 15067
+  },
+  "15068": {
+    "n": "Frostsaber Tunic",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "CHEST",
+    "il": 62,
+    "rl": 57,
+    "st": {
+      "STAMINA": 12,
+      "FROST_RESISTANCE": 18,
+      "SHADOW_RESISTANCE": 18
+    },
+    "ar": 158,
+    "dps": 0,
+    "cls": [],
+    "m": 15068
   },
   "15070": {
     "n": "Frostsaber Gloves",
@@ -35921,6 +36035,20 @@
     "dps": 0,
     "cls": [],
     "m": 15773
+  },
+  "15774": {
+    "n": "Pattern: Heavy Scorpid Shoulders",
+    "q": "uncommon",
+    "c": 9,
+    "sc": 1,
+    "inv": "NON_EQUIP",
+    "il": 61,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 15774
   },
   "15775": {
     "n": "Pattern: Volcanic Shoulders",
@@ -43746,6 +43874,24 @@
     "cls": [],
     "m": 254076
   },
+  "254077": {
+    "n": "Earthenweave Cord",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "WAIST",
+    "il": 52,
+    "rl": 47,
+    "st": {
+      "SPELL_DAMAGE_DONE": 9,
+      "SPELL_HEALING_DONE": 26,
+      "SPIRIT": 11
+    },
+    "ar": 38,
+    "dps": 0,
+    "cls": [],
+    "m": 254077
+  },
   "254078": {
     "n": "Pattern: Earthenweave Cord",
     "q": "uncommon",
@@ -43953,6 +44099,24 @@
     "cls": [],
     "m": 254123
   },
+  "254125": {
+    "n": "Earthenweave Leggings",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "LEGS",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "SPELL_DAMAGE_DONE": 13,
+      "SPELL_HEALING_DONE": 37,
+      "SPIRIT": 16
+    },
+    "ar": 66,
+    "dps": 0,
+    "cls": [],
+    "m": 254125
+  },
   "254126": {
     "n": "Pattern: Earthenweave Leggings",
     "q": "uncommon",
@@ -44071,6 +44235,24 @@
     "dps": 0,
     "cls": [],
     "m": 254136
+  },
+  "254137": {
+    "n": "Earthenweave Crown",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "HEAD",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "SPELL_DAMAGE_DONE": 14,
+      "SPELL_HEALING_DONE": 40,
+      "SPIRIT": 18
+    },
+    "ar": 64,
+    "dps": 0,
+    "cls": [],
+    "m": 254137
   },
   "254138": {
     "n": "Pattern: Earthenweave Crown",
@@ -49100,8 +49282,14 @@
   "284067": {
     "miss": "2026-11-09T19:02:07.755Z"
   },
+  "284070": {
+    "miss": "2026-11-15T13:00:55.657Z"
+  },
   "284072": {
     "miss": "2026-11-14T18:53:07.678Z"
+  },
+  "284104": {
+    "miss": "2026-11-15T13:00:55.657Z"
   },
   "284105": {
     "miss": "2026-11-15T07:13:00.488Z"
@@ -49198,6 +49386,9 @@
   },
   "284697": {
     "miss": "2026-11-08T19:23:16.618Z"
+  },
+  "284699": {
+    "miss": "2026-11-15T13:00:55.657Z"
   },
   "284700": {
     "miss": "2026-11-09T13:22:17.099Z"
@@ -49699,5 +49890,10 @@
   "m2175": "https://render.worldofwarcraft.com/forever-eu/icons/56/135424.jpg",
   "m277226": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg",
   "m4257": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg",
-  "m18948": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
+  "m18948": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg",
+  "m15122": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg",
+  "m9806": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg",
+  "m9809": "https://render.worldofwarcraft.com/forever-eu/icons/56/132725.jpg",
+  "m4456": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg",
+  "m7373": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
 }

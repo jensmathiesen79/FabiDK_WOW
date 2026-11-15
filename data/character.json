@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-14T18:53:07.678Z",
+  "last_updated": "2026-11-15T01:15:43.701Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 23,
+    "level": 24,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 14
+    "averageItemLevel": 17
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -61,20 +61,21 @@
     {
       "slot": "FEET",
       "slotName": "Feet",
-      "id": 6557,
-      "name": "Bard's Boots of Power",
+      "id": 277226,
+      "name": "Disjointed Shoes",
       "quality": "uncommon",
       "inv": "FEET",
       "c": 4,
       "sc": 2,
-      "ilvl": 16,
+      "ilvl": 28,
       "st": {
-        "ATTACK_POWER": 6
+        "ATTACK_POWER": 12,
+        "SPELL_POWER": 5
       },
-      "ar": 49,
+      "ar": 62,
       "dps": 0,
-      "mediaId": 6557,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
+      "mediaId": 277226,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
     },
     {
       "slot": "HANDS",
@@ -224,20 +225,21 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 6365,
-      "name": "Strong Fishing Pole",
-      "quality": "common",
+      "id": 2175,
+      "name": "Shadowhide Battle Axe",
+      "quality": "uncommon",
       "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 20,
-      "ilvl": 10,
+      "sc": 1,
+      "ilvl": 23,
       "st": {
-        "BONUS_STAT_FISHING_SKILL,": 5
+        "STRENGTH": 6,
+        "STAMINA": 3
       },
       "ar": 0,
-      "dps": 5.666666,
-      "mediaId": 6365,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132932.jpg"
+      "dps": 15.3125,
+      "mediaId": 2175,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135424.jpg"
     },
     {
       "slot": "WRIST",
@@ -263,8 +265,8 @@
     "apiWarnings": [
       "profile: 404",
       "equipment: 404",
-      "character-media: 404",
-      "quests/completed: 404"
+      "quests/completed: 404",
+      "character-media: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -333,11 +335,9 @@
             "foot": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
-              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -348,7 +348,6 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
-              "requirements": "object",
               "level": "object",
               "durability": "object"
             },
@@ -507,13 +506,13 @@
               "enchantments": "object",
               "slot": "object",
               "quantity": "number",
-              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
               "item_class": "object",
               "item_subclass": "object",
               "inventory_type": "object",
+              "binding": "object",
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
@@ -809,14 +808,14 @@
       },
       "xhrUrls": [
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
-        "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
-        "https://navbar.blizzard.com/base-api/v1/themes/nav",
+        "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://geo.battle.net/",
+        "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
       ],
       "domItems": 0
     }

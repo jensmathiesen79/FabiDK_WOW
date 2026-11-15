@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-14T18:53:07.678Z",
+  "last_updated": "2026-11-15T01:15:43.701Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 140330
+      "auctions": 153525
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 150618
+      "auctions": 167019
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 21526
+      "auctions": 22834
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 15954
+      "auctions": 16225
     }
   ],
   "upgrades": [
@@ -44,15 +44,15 @@
       "armor": 0,
       "dps": 21.09375,
       "score": 137.4,
-      "delta": 103.4,
+      "delta": 38.6,
       "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
       },
       "price": {
         "copper": 24000,
         "houseId": 111,
-        "listings": 8
+        "listings": 7
       },
       "mediaId": 12249,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
@@ -72,15 +72,15 @@
       "armor": 0,
       "dps": 18.333332,
       "score": 119,
-      "delta": 85,
+      "delta": 20.2,
       "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
       },
       "price": {
-        "copper": 2799,
+        "copper": 2699,
         "houseId": 111,
-        "listings": 86
+        "listings": 123
       },
       "mediaId": 7958,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
@@ -101,18 +101,48 @@
       "armor": 0,
       "dps": 16.857141,
       "score": 109.5,
-      "delta": 75.5,
+      "delta": 10.7,
       "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
       },
       "price": {
-        "copper": 1542,
+        "copper": 1540,
         "houseId": 110,
-        "listings": 483
+        "listings": 357
       },
       "mediaId": 7956,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
+    },
+    {
+      "id": 18948,
+      "name": "Barbaric Bracers",
+      "quality": "rare",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 27,
+      "usableNow": false,
+      "itemLevel": 32,
+      "stats": {
+        "AGILITY": 4,
+        "STRENGTH": 4,
+        "STAMINA": 6
+      },
+      "armor": 47,
+      "dps": 0,
+      "score": 11.5,
+      "delta": 8.7,
+      "current": {
+        "name": "Ivycloth Bracelets of Stamina",
+        "score": 2.8
+      },
+      "price": {
+        "copper": 9400,
+        "houseId": 110,
+        "listings": 139
+      },
+      "mediaId": 18948,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
     },
     {
       "id": 10588,
@@ -135,9 +165,9 @@
         "score": 0
       },
       "price": {
-        "copper": 53999,
+        "copper": 53909,
         "houseId": 110,
-        "listings": 13
+        "listings": 4
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -165,9 +195,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2818,
-        "houseId": 111,
-        "listings": 293
+        "copper": 3400,
+        "houseId": 110,
+        "listings": 323
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -194,9 +224,9 @@
         "score": 0
       },
       "price": {
-        "copper": 5900,
-        "houseId": 111,
-        "listings": 65
+        "copper": 3000,
+        "houseId": 110,
+        "listings": 87
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -222,9 +252,9 @@
         "score": 0
       },
       "price": {
-        "copper": 19890,
+        "copper": 15089,
         "houseId": 111,
-        "listings": 64
+        "listings": 89
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
@@ -244,15 +274,15 @@
       "armor": 53,
       "dps": 0,
       "score": 6.1,
-      "delta": 5.1,
+      "delta": 4.9,
       "current": {
-        "name": "Bard's Boots of Power",
-        "score": 1
+        "name": "Disjointed Shoes",
+        "score": 1.2
       },
       "price": {
-        "copper": 319,
+        "copper": 306,
         "houseId": 111,
-        "listings": 825
+        "listings": 1482
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -272,15 +302,15 @@
       "armor": 53,
       "dps": 0,
       "score": 6.1,
-      "delta": 5.1,
+      "delta": 4.9,
       "current": {
-        "name": "Bard's Boots of Power",
-        "score": 1
+        "name": "Disjointed Shoes",
+        "score": 1.2
       },
       "price": {
-        "copper": 1498,
-        "houseId": 110,
-        "listings": 41
+        "copper": 1200,
+        "houseId": 111,
+        "listings": 43
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -308,9 +338,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 1919,
-        "houseId": 110,
-        "listings": 371
+        "copper": 1595,
+        "houseId": 111,
+        "listings": 324
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -338,9 +368,9 @@
         "score": 7
       },
       "price": {
-        "copper": 15399,
+        "copper": 12899,
         "houseId": 111,
-        "listings": 123
+        "listings": 115
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -366,9 +396,9 @@
         "score": 4.1
       },
       "price": {
-        "copper": 2500,
+        "copper": 3100,
         "houseId": 111,
-        "listings": 210
+        "listings": 264
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -395,9 +425,9 @@
         "score": 0.5
       },
       "price": {
-        "copper": 7200,
-        "houseId": 111,
-        "listings": 28
+        "copper": 7000,
+        "houseId": 110,
+        "listings": 22
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -418,15 +448,15 @@
       "armor": 51,
       "dps": 0,
       "score": 5,
-      "delta": 4,
+      "delta": 3.8,
       "current": {
-        "name": "Bard's Boots of Power",
-        "score": 1
+        "name": "Disjointed Shoes",
+        "score": 1.2
       },
       "price": {
-        "copper": 280,
+        "copper": 267,
         "houseId": 110,
-        "listings": 407
+        "listings": 731
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
@@ -453,9 +483,9 @@
         "score": 8.2
       },
       "price": {
-        "copper": 3400,
+        "copper": 3800,
         "houseId": 111,
-        "listings": 236
+        "listings": 278
       },
       "mediaId": 4255,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
@@ -482,9 +512,9 @@
         "score": 2.8
       },
       "price": {
-        "copper": 6999,
-        "houseId": 110,
-        "listings": 40
+        "copper": 5050,
+        "houseId": 111,
+        "listings": 49
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
@@ -510,9 +540,9 @@
         "score": 6.5
       },
       "price": {
-        "copper": 2740,
+        "copper": 2355,
         "houseId": 110,
-        "listings": 114
+        "listings": 144
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -538,12 +568,41 @@
         "score": 6.1
       },
       "price": {
-        "copper": 15500,
+        "copper": 17500,
         "houseId": 110,
-        "listings": 28
+        "listings": 23
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
+    },
+    {
+      "id": 4257,
+      "name": "Green Leather Belt",
+      "quality": "uncommon",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 27,
+      "usableNow": false,
+      "itemLevel": 32,
+      "stats": {
+        "INTELLECT": 6,
+        "AGILITY": 6
+      },
+      "armor": 54,
+      "dps": 0,
+      "score": 8.6,
+      "delta": 1.6,
+      "current": {
+        "name": "Dark Leather Belt",
+        "score": 7
+      },
+      "price": {
+        "copper": 1500,
+        "houseId": 110,
+        "listings": 96
+      },
+      "mediaId": 4257,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
     },
     {
       "id": 4831,
@@ -567,9 +626,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 8998,
+        "copper": 8888,
         "houseId": 110,
-        "listings": 31
+        "listings": 29
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
@@ -596,9 +655,9 @@
         "score": 0.5
       },
       "price": {
-        "copper": 6095,
-        "houseId": 111,
-        "listings": 37
+        "copper": 1500,
+        "houseId": 119,
+        "listings": 28
       },
       "mediaId": 1077,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
@@ -625,9 +684,9 @@
         "score": 8.2
       },
       "price": {
-        "copper": 1399,
-        "houseId": 110,
-        "listings": 108
+        "copper": 1497,
+        "houseId": 111,
+        "listings": 96
       },
       "mediaId": 5781,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
@@ -655,7 +714,7 @@
       "price": {
         "copper": 4600,
         "houseId": 111,
-        "listings": 70
+        "listings": 88
       },
       "mediaId": 7352,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
@@ -681,7 +740,7 @@
         "score": 2.8
       },
       "price": {
-        "copper": 3000,
+        "copper": 2950,
         "houseId": 111,
         "listings": 23
       },
@@ -690,8 +749,8 @@
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5477,
-  "unknownItems": 2951,
+  "scannedItems": 5545,
+  "unknownItems": 2985,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

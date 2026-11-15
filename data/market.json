@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-15T13:00:55.657Z",
+  "last_updated": "2026-11-15T18:54:40.952Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 117492
+      "auctions": 159719
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 129928
+      "auctions": 175554
     },
     {
       "id": 112,
@@ -20,15 +20,70 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 20508
+      "auctions": 25115
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 14293
+      "auctions": 17732
     }
   ],
   "upgrades": [
+    {
+      "id": 3852,
+      "name": "Golden Iron Destroyer",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 29,
+      "usableNow": false,
+      "itemLevel": 34,
+      "stats": {
+        "STRENGTH": 11,
+        "SPELL_POWER": 4
+      },
+      "armor": 0,
+      "dps": 22.878786,
+      "score": 147.2,
+      "delta": 48.4,
+      "current": {
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
+      },
+      "price": {
+        "copper": 16000,
+        "houseId": 111,
+        "listings": 39
+      },
+      "mediaId": 3852,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133041.jpg"
+    },
+    {
+      "id": 12250,
+      "name": "Midnight Axe",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 29,
+      "usableNow": false,
+      "itemLevel": 34,
+      "stats": {},
+      "armor": 0,
+      "dps": 22.962963,
+      "score": 137.8,
+      "delta": 39,
+      "current": {
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
+      },
+      "price": {
+        "copper": 44900,
+        "houseId": 110,
+        "listings": 5
+      },
+      "mediaId": 12250,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
+    },
     {
       "id": 12249,
       "name": "Merciless Axe",
@@ -36,7 +91,7 @@
       "inv": "TWOHWEAPON",
       "slotGroup": "MAIN_HAND",
       "requiredLevel": 26,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 31,
       "stats": {
         "STRENGTH": 12
@@ -44,75 +99,18 @@
       "armor": 0,
       "dps": 21.09375,
       "score": 137.4,
-      "delta": 103.4,
+      "delta": 38.6,
       "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
+        "name": "Shadowhide Battle Axe",
+        "score": 98.8
       },
       "price": {
         "copper": 20000,
         "houseId": 111,
-        "listings": 3
+        "listings": 6
       },
       "mediaId": 12249,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
-    },
-    {
-      "id": 7958,
-      "name": "Bronze Battle Axe",
-      "quality": "uncommon",
-      "inv": "TWOHWEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 22,
-      "usableNow": true,
-      "itemLevel": 27,
-      "stats": {
-        "STRENGTH": 10
-      },
-      "armor": 0,
-      "dps": 18.333332,
-      "score": 119,
-      "delta": 85,
-      "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
-      },
-      "price": {
-        "copper": 2698,
-        "houseId": 111,
-        "listings": 96
-      },
-      "mediaId": 7958,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132415.jpg"
-    },
-    {
-      "id": 7956,
-      "name": "Bronze Warhammer",
-      "quality": "uncommon",
-      "inv": "TWOHWEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 20,
-      "usableNow": true,
-      "itemLevel": 25,
-      "stats": {
-        "STRENGTH": 6,
-        "STAMINA": 6
-      },
-      "armor": 0,
-      "dps": 16.857141,
-      "score": 109.5,
-      "delta": 75.5,
-      "current": {
-        "name": "Strong Fishing Pole",
-        "score": 34
-      },
-      "price": {
-        "copper": 1543,
-        "houseId": 111,
-        "listings": 522
-      },
-      "mediaId": 7956,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133055.jpg"
     },
     {
       "id": 4253,
@@ -137,9 +135,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3469,
-        "houseId": 110,
-        "listings": 548
+        "copper": 3000,
+        "houseId": 119,
+        "listings": 404
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -167,12 +165,42 @@
         "score": 1.1
       },
       "price": {
-        "copper": 1420,
+        "copper": 1595,
         "houseId": 111,
-        "listings": 149
+        "listings": 333
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "id": 5963,
+      "name": "Barbaric Leggings",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 29,
+      "usableNow": false,
+      "itemLevel": 34,
+      "stats": {
+        "AGILITY": 7,
+        "STRENGTH": 7,
+        "STAMINA": 7
+      },
+      "armor": 87,
+      "dps": 0,
+      "score": 18.5,
+      "delta": 9.1,
+      "current": {
+        "name": "Dark Leather Pants",
+        "score": 9.4
+      },
+      "price": {
+        "copper": 3190,
+        "houseId": 110,
+        "listings": 142
+      },
+      "mediaId": 5963,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
     },
     {
       "id": 10588,
@@ -195,9 +223,9 @@
         "score": 0
       },
       "price": {
-        "copper": 53505,
-        "houseId": 110,
-        "listings": 3
+        "copper": 69927,
+        "houseId": 111,
+        "listings": 14
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -223,12 +251,40 @@
         "score": 1.1
       },
       "price": {
-        "copper": 4600,
+        "copper": 4074,
         "houseId": 111,
-        "listings": 105
+        "listings": 353
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "id": 4252,
+      "name": "Dark Leather Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 23,
+      "usableNow": true,
+      "itemLevel": 28,
+      "stats": {
+        "AGILITY": 7
+      },
+      "armor": 68,
+      "dps": 0,
+      "score": 8.4,
+      "delta": 6.3,
+      "current": {
+        "name": "Raptorclaw Shoulders",
+        "score": 2.1
+      },
+      "price": {
+        "copper": 3095,
+        "houseId": 111,
+        "listings": 170
+      },
+      "mediaId": 4252,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
     },
     {
       "id": 18948,
@@ -253,9 +309,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 9850,
+        "copper": 8999,
         "houseId": 111,
-        "listings": 141
+        "listings": 166
       },
       "mediaId": 18948,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
@@ -284,7 +340,7 @@
       "price": {
         "copper": 2497,
         "houseId": 110,
-        "listings": 55
+        "listings": 54
       },
       "mediaId": 10499,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
@@ -310,9 +366,9 @@
         "score": 0
       },
       "price": {
-        "copper": 19598,
-        "houseId": 110,
-        "listings": 132
+        "copper": 20900,
+        "houseId": 111,
+        "listings": 149
       },
       "mediaId": 10504,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
@@ -338,9 +394,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 3300,
-        "houseId": 111,
-        "listings": 175
+        "copper": 3373,
+        "houseId": 110,
+        "listings": 223
       },
       "mediaId": 7373,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
@@ -366,9 +422,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 300,
+        "copper": 299,
         "houseId": 110,
-        "listings": 1032
+        "listings": 1149
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -396,7 +452,7 @@
       "price": {
         "copper": 1800,
         "houseId": 111,
-        "listings": 49
+        "listings": 54
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -424,69 +480,12 @@
         "score": 7
       },
       "price": {
-        "copper": 12900,
+        "copper": 11900,
         "houseId": 111,
-        "listings": 82
+        "listings": 43
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
-    },
-    {
-      "id": 4252,
-      "name": "Dark Leather Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 23,
-      "usableNow": true,
-      "itemLevel": 28,
-      "stats": {
-        "AGILITY": 7
-      },
-      "armor": 68,
-      "dps": 0,
-      "score": 8.4,
-      "delta": 4.3,
-      "current": {
-        "name": "Hillman's Shoulders",
-        "score": 4.1
-      },
-      "price": {
-        "copper": 2660,
-        "houseId": 111,
-        "listings": 286
-      },
-      "mediaId": 4252,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
-    },
-    {
-      "id": 281927,
-      "name": "Boulderheart Band",
-      "quality": "uncommon",
-      "inv": "FINGER",
-      "slotGroup": "FINGER",
-      "requiredLevel": 22,
-      "usableNow": true,
-      "itemLevel": 27,
-      "stats": {
-        "STRENGTH": 4,
-        "STAMINA": 2
-      },
-      "armor": 0,
-      "dps": 0,
-      "score": 4.6,
-      "delta": 4.1,
-      "current": {
-        "name": "Minor Channeling Ring",
-        "score": 0.5
-      },
-      "price": {
-        "copper": 6999,
-        "houseId": 111,
-        "listings": 17
-      },
-      "mediaId": 281927,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
     },
     {
       "id": 2307,
@@ -510,12 +509,69 @@
         "score": 1.2
       },
       "price": {
-        "copper": 240,
+        "copper": 249,
         "houseId": 111,
-        "listings": 393
+        "listings": 516
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+    },
+    {
+      "id": 5782,
+      "name": "Thick Murloc Armor",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 29,
+      "usableNow": false,
+      "itemLevel": 34,
+      "stats": {
+        "STRENGTH": 9,
+        "STAMINA": 8
+      },
+      "armor": 100,
+      "dps": 0,
+      "score": 14.1,
+      "delta": 3.3,
+      "current": {
+        "name": "Superior Tunic of Strength",
+        "score": 10.8
+      },
+      "price": {
+        "copper": 4888,
+        "houseId": 111,
+        "listings": 51
+      },
+      "mediaId": 5782,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
+    },
+    {
+      "id": 7352,
+      "name": "Earthen Leather Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 22,
+      "usableNow": true,
+      "itemLevel": 27,
+      "stats": {
+        "STAMINA": 7
+      },
+      "armor": 67,
+      "dps": 0,
+      "score": 4.8,
+      "delta": 2.7,
+      "current": {
+        "name": "Raptorclaw Shoulders",
+        "score": 2.1
+      },
+      "price": {
+        "copper": 4200,
+        "houseId": 111,
+        "listings": 95
+      },
+      "mediaId": 7352,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
     },
     {
       "id": 4456,
@@ -539,9 +595,9 @@
         "score": 7
       },
       "price": {
-        "copper": 2400,
+        "copper": 2399,
         "houseId": 110,
-        "listings": 73
+        "listings": 179
       },
       "mediaId": 4456,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
@@ -567,12 +623,70 @@
         "score": 6.1
       },
       "price": {
-        "copper": 19989,
+        "copper": 16978,
         "houseId": 111,
-        "listings": 16
+        "listings": 35
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
+    },
+    {
+      "id": 281927,
+      "name": "Boulderheart Band",
+      "quality": "uncommon",
+      "inv": "FINGER",
+      "slotGroup": "FINGER",
+      "requiredLevel": 22,
+      "usableNow": true,
+      "itemLevel": 27,
+      "stats": {
+        "STRENGTH": 4,
+        "STAMINA": 2
+      },
+      "armor": 0,
+      "dps": 0,
+      "score": 4.6,
+      "delta": 2.4,
+      "current": {
+        "name": "Ring of Iron Will",
+        "score": 2.2
+      },
+      "price": {
+        "copper": 5555,
+        "houseId": 110,
+        "listings": 36
+      },
+      "mediaId": 281927,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
+    },
+    {
+      "id": 4251,
+      "name": "Hillman's Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 21,
+      "usableNow": true,
+      "itemLevel": 26,
+      "stats": {
+        "STAMINA": 5,
+        "SPIRIT": 3
+      },
+      "armor": 65,
+      "dps": 0,
+      "score": 4.1,
+      "delta": 2,
+      "current": {
+        "name": "Raptorclaw Shoulders",
+        "score": 2.1
+      },
+      "price": {
+        "copper": 770,
+        "houseId": 119,
+        "listings": 1440
+      },
+      "mediaId": 4251,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
     },
     {
       "id": 4257,
@@ -596,9 +710,9 @@
         "score": 7
       },
       "price": {
-        "copper": 1500,
-        "houseId": 110,
-        "listings": 238
+        "copper": 1579,
+        "houseId": 111,
+        "listings": 278
       },
       "mediaId": 4257,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
@@ -625,9 +739,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 8887,
+        "copper": 8879,
         "houseId": 110,
-        "listings": 9
+        "listings": 12
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
@@ -639,7 +753,7 @@
       "inv": "CHEST",
       "slotGroup": "CHEST",
       "requiredLevel": 26,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 31,
       "stats": {
         "INTELLECT": 8,
@@ -654,69 +768,12 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3765,
-        "houseId": 111,
-        "listings": 234
+        "copper": 3580,
+        "houseId": 110,
+        "listings": 203
       },
       "mediaId": 4255,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
-    },
-    {
-      "id": 1077,
-      "name": "Defias Mage Ring",
-      "quality": "uncommon",
-      "inv": "FINGER",
-      "slotGroup": "FINGER",
-      "requiredLevel": 21,
-      "usableNow": true,
-      "itemLevel": 26,
-      "stats": {
-        "INTELLECT": 4,
-        "SPIRIT": 3
-      },
-      "armor": 0,
-      "dps": 0,
-      "score": 1.3,
-      "delta": 0.8,
-      "current": {
-        "name": "Minor Channeling Ring",
-        "score": 0.5
-      },
-      "price": {
-        "copper": 4569,
-        "houseId": 123,
-        "listings": 19
-      },
-      "mediaId": 1077,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133356.jpg"
-    },
-    {
-      "id": 7352,
-      "name": "Earthen Leather Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 22,
-      "usableNow": true,
-      "itemLevel": 27,
-      "stats": {
-        "STAMINA": 7
-      },
-      "armor": 67,
-      "dps": 0,
-      "score": 4.8,
-      "delta": 0.7,
-      "current": {
-        "name": "Hillman's Shoulders",
-        "score": 4.1
-      },
-      "price": {
-        "copper": 4500,
-        "houseId": 111,
-        "listings": 68
-      },
-      "mediaId": 7352,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
     },
     {
       "id": 4794,
@@ -740,17 +797,17 @@
         "score": 5.2
       },
       "price": {
-        "copper": 4545,
+        "copper": 4400,
         "houseId": 111,
-        "listings": 44
+        "listings": 34
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5543,
-  "unknownItems": 2986,
+  "scannedItems": 5611,
+  "unknownItems": 3017,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

@@ -4863,6 +4863,20 @@
     "cls": [],
     "m": 2144
   },
+  "2145": {
+    "n": "Cuirboulli Gloves",
+    "q": "common",
+    "c": 4,
+    "sc": 2,
+    "inv": "HAND",
+    "il": 27,
+    "rl": 22,
+    "st": {},
+    "ar": 53,
+    "dps": 0,
+    "cls": [],
+    "m": 2145
+  },
   "2148": {
     "n": "Polished Scale Belt",
     "q": "common",
@@ -6259,6 +6273,20 @@
     "cls": [],
     "m": 2520
   },
+  "2521": {
+    "n": "Flamberge",
+    "q": "common",
+    "c": 2,
+    "sc": 8,
+    "inv": "TWOHWEAPON",
+    "il": 36,
+    "rl": 31,
+    "st": {},
+    "ar": 0,
+    "dps": 23.125,
+    "cls": [],
+    "m": 2521
+  },
   "2526": {
     "n": "Main Gauche",
     "q": "common",
@@ -6272,6 +6300,20 @@
     "dps": 16.5625,
     "cls": [],
     "m": 2526
+  },
+  "2527": {
+    "n": "Battle Staff",
+    "q": "common",
+    "c": 2,
+    "sc": 10,
+    "inv": "TWOHWEAPON",
+    "il": 36,
+    "rl": 31,
+    "st": {},
+    "ar": 0,
+    "dps": 22.941175,
+    "cls": [],
+    "m": 2527
   },
   "2531": {
     "n": "Great Axe",
@@ -11126,6 +11168,20 @@
     "dps": 0,
     "cls": [],
     "m": 3968
+  },
+  "3969": {
+    "n": "Smooth Leather Belt",
+    "q": "poor",
+    "c": 4,
+    "sc": 2,
+    "inv": "WAIST",
+    "il": 55,
+    "rl": 50,
+    "st": {},
+    "ar": 73,
+    "dps": 0,
+    "cls": [],
+    "m": 3969
   },
   "3971": {
     "n": "Smooth Leather Bracers",
@@ -17696,6 +17752,20 @@
     "cls": [],
     "m": 6521
   },
+  "6523": {
+    "n": "Buckled Harness",
+    "q": "common",
+    "c": 4,
+    "sc": 2,
+    "inv": "CHEST",
+    "il": 17,
+    "rl": 12,
+    "st": {},
+    "ar": 69,
+    "dps": 0,
+    "cls": [],
+    "m": 6523
+  },
   "6527": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
@@ -18984,6 +19054,20 @@
     "dps": 0,
     "cls": [],
     "m": 7338
+  },
+  "7341": {
+    "n": "Cubic Zirconia Ring",
+    "q": "common",
+    "c": 4,
+    "sc": 0,
+    "inv": "FINGER",
+    "il": 20,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 7341
   },
   "7348": {
     "n": "Fletcher's Gloves",
@@ -28159,6 +28243,22 @@
   "12628": {
     "miss": "2026-11-15T13:00:55.657Z"
   },
+  "12631": {
+    "n": "Fiery Plate Gauntlets",
+    "q": "rare",
+    "c": 4,
+    "sc": 4,
+    "inv": "HAND",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "FIRE_RESISTANCE": 10
+    },
+    "ar": 379,
+    "dps": 0,
+    "cls": [],
+    "m": 12631
+  },
   "12632": {
     "n": "Storm Gauntlets",
     "q": "rare",
@@ -30949,6 +31049,28 @@
     "cls": [],
     "m": 14144
   },
+  "14146": {
+    "n": "Gloves of Spell Mastery",
+    "q": "epic",
+    "c": 4,
+    "sc": 1,
+    "inv": "HAND",
+    "il": 62,
+    "rl": 57,
+    "st": {
+      "INTELLECT": 10,
+      "CRIT_RATING": 28,
+      "SPELL_POWER": 9
+    },
+    "ar": 60,
+    "dps": 0,
+    "cls": [
+      5,
+      8,
+      9
+    ],
+    "m": 14146
+  },
   "14155": {
     "n": "Mooncloth Bag",
     "q": "uncommon",
@@ -31454,6 +31576,9 @@
   "14307": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
+  "14308": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "14309": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
@@ -31480,6 +31605,9 @@
   },
   "14317": {
     "miss": "2026-11-11T01:13:22.945Z"
+  },
+  "14318": {
+    "miss": "2026-11-15T18:54:40.952Z"
   },
   "14319": {
     "miss": "2026-11-11T19:06:00.268Z"
@@ -32594,6 +32722,9 @@
   "14678": {
     "miss": "2026-11-11T13:19:30.411Z"
   },
+  "14681": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "14682": {
     "miss": "2026-11-13T07:26:05.380Z"
   },
@@ -32872,6 +33003,9 @@
   "14816": {
     "miss": "2026-11-15T13:00:55.657Z"
   },
+  "14817": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "14821": {
     "miss": "2026-11-08T19:23:16.618Z"
   },
@@ -32997,6 +33131,9 @@
     "dps": 0,
     "cls": [],
     "m": 14864
+  },
+  "14865": {
+    "miss": "2026-11-15T18:54:40.952Z"
   },
   "14866": {
     "miss": "2026-11-13T19:01:09.579Z"
@@ -33244,6 +33381,9 @@
   "14974": {
     "miss": "2026-11-10T19:02:03.669Z"
   },
+  "14976": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "14977": {
     "miss": "2026-11-13T13:18:02.428Z"
   },
@@ -33441,6 +33581,24 @@
     "cls": [],
     "m": 15046
   },
+  "15050": {
+    "n": "Black Dragonscale Breastplate",
+    "q": "rare",
+    "c": 4,
+    "sc": 3,
+    "inv": "CHEST",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "STAMINA": 8,
+      "ATTACK_POWER": 50,
+      "FIRE_RESISTANCE": 12
+    },
+    "ar": 344,
+    "dps": 0,
+    "cls": [],
+    "m": 15050
+  },
   "15058": {
     "n": "Stormshroud Shoulders",
     "q": "rare",
@@ -33605,6 +33763,24 @@
     "cls": [],
     "m": 15068
   },
+  "15069": {
+    "n": "Frostsaber Leggings",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "LEGS",
+    "il": 57,
+    "rl": 52,
+    "st": {
+      "STAMINA": 11,
+      "FIRE_RESISTANCE": 17,
+      "SHADOW_RESISTANCE": 17
+    },
+    "ar": 129,
+    "dps": 0,
+    "cls": [],
+    "m": 15069
+  },
   "15070": {
     "n": "Frostsaber Gloves",
     "q": "uncommon",
@@ -33622,6 +33798,42 @@
     "dps": 0,
     "cls": [],
     "m": 15070
+  },
+  "15071": {
+    "n": "Frostsaber Boots",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "FEET",
+    "il": 55,
+    "rl": 50,
+    "st": {
+      "STAMINA": 9,
+      "FIRE_RESISTANCE": 12,
+      "SHADOW_RESISTANCE": 12
+    },
+    "ar": 99,
+    "dps": 0,
+    "cls": [],
+    "m": 15071
+  },
+  "15073": {
+    "n": "Chimeric Boots",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "FEET",
+    "il": 55,
+    "rl": 50,
+    "st": {
+      "STAMINA": 9,
+      "NATURE_RESISTANCE": 12,
+      "ARCANE_RESISTANCE": 12
+    },
+    "ar": 99,
+    "dps": 0,
+    "cls": [],
+    "m": 15073
   },
   "15075": {
     "n": "Chimeric Vest",
@@ -33657,6 +33869,40 @@
     "dps": 0,
     "cls": [],
     "m": 15076
+  },
+  "15078": {
+    "n": "Heavy Scorpid Gauntlet",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 3,
+    "inv": "HAND",
+    "il": 55,
+    "rl": 50,
+    "st": {
+      "AGILITY": 12,
+      "STAMINA": 12
+    },
+    "ar": 186,
+    "dps": 0,
+    "cls": [],
+    "m": 15078
+  },
+  "15079": {
+    "n": "Heavy Scorpid Leggings",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 3,
+    "inv": "LEGS",
+    "il": 57,
+    "rl": 52,
+    "st": {
+      "AGILITY": 20,
+      "STAMINA": 12
+    },
+    "ar": 269,
+    "dps": 0,
+    "cls": [],
+    "m": 15079
   },
   "15082": {
     "n": "Heavy Scorpid Belt",
@@ -35475,6 +35721,9 @@
   "15659": {
     "miss": "2026-11-12T01:22:13.824Z"
   },
+  "15660": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "15661": {
     "miss": "2026-11-10T01:11:10.687Z"
   },
@@ -35496,6 +35745,9 @@
   "15668": {
     "miss": "2026-11-10T07:18:34.742Z"
   },
+  "15669": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "15670": {
     "miss": "2026-11-14T12:59:14.760Z"
   },
@@ -35510,6 +35762,9 @@
   },
   "15674": {
     "miss": "2026-11-12T01:22:13.824Z"
+  },
+  "15677": {
+    "miss": "2026-11-15T18:54:40.952Z"
   },
   "15679": {
     "miss": "2026-11-13T19:01:09.579Z"
@@ -39493,6 +39748,9 @@
     "cls": [],
     "m": 19484
   },
+  "19808": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "20075": {
     "n": "Recipe: Heavy Crocolisk Stew",
     "q": "common",
@@ -41196,6 +41454,24 @@
     "dps": 28.055555,
     "cls": [],
     "m": 250611
+  },
+  "250615": {
+    "n": "Thorium Poleaxe",
+    "q": "rare",
+    "c": 2,
+    "sc": 6,
+    "inv": "TWOHWEAPON",
+    "il": 57,
+    "rl": 52,
+    "st": {
+      "AGILITY": 25,
+      "STRENGTH": 13,
+      "STAMINA": 10
+    },
+    "ar": 0,
+    "dps": 48.97059,
+    "cls": [],
+    "m": 250615
   },
   "250976": {
     "n": "Recipe: Minor Spellblasting Potion",
@@ -44222,6 +44498,23 @@
     "cls": [],
     "m": 254133
   },
+  "254135": {
+    "n": "Ghostweave Hood",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "HEAD",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "SPELL_POWER": 21,
+      "SPIRIT": 18
+    },
+    "ar": 64,
+    "dps": 0,
+    "cls": [],
+    "m": 254135
+  },
   "254136": {
     "n": "Pattern: Ghostweave Hood",
     "q": "uncommon",
@@ -44505,6 +44798,20 @@
     "dps": 0,
     "cls": [],
     "m": 260810
+  },
+  "260820": {
+    "n": "SAF-T Emergency Ripper: Everlook",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 0,
+    "inv": "TRINKET",
+    "il": 60,
+    "rl": 55,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 260820
   },
   "260825": {
     "n": "Ultralight Goblin Glider",
@@ -49024,6 +49331,9 @@
   "281598": {
     "miss": "2026-11-11T13:19:30.411Z"
   },
+  "281599": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "281600": {
     "miss": "2026-11-09T19:02:07.755Z"
   },
@@ -49127,6 +49437,9 @@
   },
   "282070": {
     "miss": "2026-11-14T07:10:17.976Z"
+  },
+  "282071": {
+    "miss": "2026-11-15T18:54:40.952Z"
   },
   "282074": {
     "miss": "2026-11-10T07:18:34.742Z"
@@ -49577,6 +49890,9 @@
   "286612": {
     "miss": "2026-11-12T13:23:01.524Z"
   },
+  "286616": {
+    "miss": "2026-11-15T18:54:40.952Z"
+  },
   "286618": {
     "miss": "2026-11-10T19:02:03.669Z"
   },
@@ -49895,5 +50211,11 @@
   "m9806": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg",
   "m9809": "https://render.worldofwarcraft.com/forever-eu/icons/56/132725.jpg",
   "m4456": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg",
-  "m7373": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
+  "m7373": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg",
+  "m270039": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg",
+  "m281304": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg",
+  "m5782": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg",
+  "m12250": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg",
+  "m5963": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg",
+  "m3852": "https://render.worldofwarcraft.com/forever-eu/icons/56/133041.jpg"
 }

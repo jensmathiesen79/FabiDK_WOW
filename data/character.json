@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-15T18:54:40.952Z",
+  "last_updated": "2026-11-16T01:32:53.329Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -185,21 +185,21 @@
     {
       "slot": "SHOULDER",
       "slotName": "Shoulders",
-      "id": 270039,
-      "name": "Raptorclaw Shoulders",
+      "id": 2913,
+      "name": "Silk Mantle of Gamn",
       "quality": "uncommon",
       "inv": "SHOULDER",
       "c": 4,
-      "sc": 2,
-      "ilvl": 29,
+      "sc": 1,
+      "ilvl": 28,
       "st": {
-        "INTELLECT": 3,
-        "SPELL_POWER": 7
+        "INTELLECT": 6,
+        "SPIRIT": 4
       },
-      "ar": 69,
+      "ar": 31,
       "dps": 0,
-      "mediaId": 270039,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
+      "mediaId": 2913,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135036.jpg"
     },
     {
       "slot": "WAIST",
@@ -261,8 +261,8 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "equipment: 404",
       "profile: 404",
+      "equipment: 404",
       "quests/completed: 404",
       "character-media: 404"
     ],
@@ -812,8 +812,8 @@
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],
       "domItems": 0
     }

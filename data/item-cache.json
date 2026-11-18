@@ -1538,7 +1538,7 @@
     "miss": "2026-11-16T19:03:56.420Z"
   },
   "1355": {
-    "miss": "2026-11-09T01:16:28.500Z"
+    "miss": "2026-11-18T19:05:01.415Z"
   },
   "1357": {
     "n": "Captain Sander's Treasure Map",
@@ -21422,6 +21422,20 @@
     "cls": [],
     "m": 8081
   },
+  "8082": {
+    "n": "Light Plate Boots",
+    "q": "poor",
+    "c": 4,
+    "sc": 4,
+    "inv": "FEET",
+    "il": 52,
+    "rl": 47,
+    "st": {},
+    "ar": 308,
+    "dps": 0,
+    "cls": [],
+    "m": 8082
+  },
   "8083": {
     "n": "Light Plate Bracers",
     "q": "poor",
@@ -29036,6 +29050,22 @@
     "cls": [],
     "m": 12640
   },
+  "12641": {
+    "n": "Invulnerable Mail",
+    "q": "epic",
+    "c": 4,
+    "sc": 3,
+    "inv": "CHEST",
+    "il": 63,
+    "rl": 57,
+    "st": {
+      "STAMINA": 20
+    },
+    "ar": 404,
+    "dps": 0,
+    "cls": [],
+    "m": 12641
+  },
   "12682": {
     "n": "Plans: Thorium Armor",
     "q": "uncommon",
@@ -31202,6 +31232,20 @@
     "dps": 0,
     "cls": [],
     "m": 13915
+  },
+  "13916": {
+    "n": "92 Pound Mightfish",
+    "q": "common",
+    "c": 15,
+    "sc": 0,
+    "inv": "HOLDABLE",
+    "il": 55,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 13916
   },
   "13939": {
     "n": "Recipe: Spotted Yellowtail",
@@ -35054,6 +35098,23 @@
     "cls": [],
     "m": 15079
   },
+  "15080": {
+    "n": "Heavy Scorpid Helm",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 3,
+    "inv": "HEAD",
+    "il": 59,
+    "rl": 54,
+    "st": {
+      "AGILITY": 13,
+      "STAMINA": 20
+    },
+    "ar": 258,
+    "dps": 0,
+    "cls": [],
+    "m": 15080
+  },
   "15082": {
     "n": "Heavy Scorpid Belt",
     "q": "uncommon",
@@ -36918,6 +36979,9 @@
   },
   "15674": {
     "miss": "2026-11-12T01:22:13.824Z"
+  },
+  "15675": {
+    "miss": "2026-11-18T19:05:01.415Z"
   },
   "15676": {
     "miss": "2026-11-16T15:15:12.626Z"
@@ -40111,6 +40175,36 @@
   "18612": {
     "miss": "2026-11-16T01:32:53.329Z"
   },
+  "18637": {
+    "n": "Major Recombobulator",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 0,
+    "inv": "TRINKET",
+    "il": 55,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 18637
+  },
+  "18638": {
+    "n": "Hyper-Radiant Flame Reflector",
+    "q": "rare",
+    "c": 4,
+    "sc": 0,
+    "inv": "TRINKET",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "FIRE_RESISTANCE": 18
+    },
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 18638
+  },
   "18639": {
     "n": "Ultra-Flash Shadow Reflector",
     "q": "rare",
@@ -41573,6 +41667,23 @@
     "dps": 0,
     "cls": [],
     "m": 21219
+  },
+  "21278": {
+    "n": "Stormshroud Gloves",
+    "q": "rare",
+    "c": 4,
+    "sc": 2,
+    "inv": "HAND",
+    "il": 62,
+    "rl": 57,
+    "st": {
+      "HIT_RATING": 10,
+      "CRIT_RATING": 14
+    },
+    "ar": 109,
+    "dps": 0,
+    "cls": [],
+    "m": 21278
   },
   "21340": {
     "n": "Soul Pouch",
@@ -43075,6 +43186,23 @@
     "dps": 48.97059,
     "cls": [],
     "m": 250615
+  },
+  "250616": {
+    "n": "Bold Dirk",
+    "q": "uncommon",
+    "c": 2,
+    "sc": 15,
+    "inv": "WEAPON",
+    "il": 57,
+    "rl": 52,
+    "st": {
+      "AGILITY": 6,
+      "ATTACK_POWER": 16
+    },
+    "ar": 0,
+    "dps": 33.88889,
+    "cls": [],
+    "m": 250616
   },
   "250976": {
     "n": "Recipe: Minor Spellblasting Potion",
@@ -50877,7 +51005,7 @@
     "miss": "2026-11-17T01:21:14.041Z"
   },
   "277061": {
-    "miss": "2026-11-10T13:12:01.598Z"
+    "miss": "2026-11-18T19:05:01.415Z"
   },
   "277062": {
     "miss": "2026-11-11T19:06:00.268Z"
@@ -51471,7 +51599,7 @@
     "miss": "2026-11-16T01:32:53.329Z"
   },
   "284046": {
-    "miss": "2026-11-11T13:19:30.411Z"
+    "miss": "2026-11-18T19:05:01.415Z"
   },
   "284061": {
     "miss": "2026-11-16T19:03:56.420Z"

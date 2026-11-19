@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-18T19:05:01.415Z",
+  "last_updated": "2026-11-19T01:23:00.356Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 155955
+      "auctions": 167872
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 162576
+      "auctions": 175236
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 22790
+      "auctions": 24170
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 16759
+      "auctions": 17211
     }
   ],
   "upgrades": [
@@ -51,9 +51,9 @@
         "score": 98.8
       },
       "price": {
-        "copper": 11000,
+        "copper": 9900,
         "houseId": 119,
-        "listings": 8
+        "listings": 15
       },
       "mediaId": 3852,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133041.jpg"
@@ -79,7 +79,7 @@
       "price": {
         "copper": 59800,
         "houseId": 110,
-        "listings": 2
+        "listings": 4
       },
       "mediaId": 12250,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
@@ -105,12 +105,41 @@
         "score": 98.8
       },
       "price": {
-        "copper": 19800,
+        "copper": 19000,
         "houseId": 111,
         "listings": 1
       },
       "mediaId": 12249,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
+    },
+    {
+      "id": 277050,
+      "name": "Azure Gustwoven Hood",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 30,
+      "usableNow": false,
+      "itemLevel": 35,
+      "stats": {
+        "STRENGTH": 9,
+        "STAMINA": 9
+      },
+      "armor": 83,
+      "dps": 0,
+      "score": 14.3,
+      "delta": 14.3,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 19887,
+        "houseId": 110,
+        "listings": 34
+      },
+      "mediaId": 277050,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731376.jpg"
     },
     {
       "id": 4253,
@@ -135,12 +164,42 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3180,
-        "houseId": 110,
-        "listings": 428
+        "copper": 3154,
+        "houseId": 111,
+        "listings": 325
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
+    },
+    {
+      "id": 5964,
+      "name": "Barbaric Shoulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 30,
+      "usableNow": false,
+      "itemLevel": 35,
+      "stats": {
+        "AGILITY": 5,
+        "STRENGTH": 5,
+        "STAMINA": 6
+      },
+      "armor": 76,
+      "dps": 0,
+      "score": 14,
+      "delta": 11.7,
+      "current": {
+        "name": "Executioner Mantle",
+        "score": 2.3
+      },
+      "price": {
+        "copper": 2500,
+        "houseId": 119,
+        "listings": 654
+      },
+      "mediaId": 5964,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
     },
     {
       "id": 4254,
@@ -165,12 +224,41 @@
         "score": 1.1
       },
       "price": {
-        "copper": 2200,
+        "copper": 1800,
         "houseId": 111,
-        "listings": 124
+        "listings": 345
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "id": 277051,
+      "name": "Azure Gustwoven Spaulders",
+      "quality": "uncommon",
+      "inv": "SHOULDER",
+      "slotGroup": "SHOULDER",
+      "requiredLevel": 30,
+      "usableNow": false,
+      "itemLevel": 35,
+      "stats": {
+        "AGILITY": 7,
+        "STAMINA": 7
+      },
+      "armor": 76,
+      "dps": 0,
+      "score": 12,
+      "delta": 9.7,
+      "current": {
+        "name": "Executioner Mantle",
+        "score": 2.3
+      },
+      "price": {
+        "copper": 14900,
+        "houseId": 110,
+        "listings": 39
+      },
+      "mediaId": 277051,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731378.jpg"
     },
     {
       "id": 5963,
@@ -195,9 +283,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 3180,
+        "copper": 3159,
         "houseId": 111,
-        "listings": 177
+        "listings": 209
       },
       "mediaId": 5963,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
@@ -225,10 +313,39 @@
       "price": {
         "copper": 43300,
         "houseId": 110,
-        "listings": 13
+        "listings": 14
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
+    },
+    {
+      "id": 277052,
+      "name": "Azure Windraveled Cover",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 30,
+      "usableNow": false,
+      "itemLevel": 35,
+      "stats": {
+        "INTELLECT": 9,
+        "STAMINA": 9
+      },
+      "armor": 83,
+      "dps": 0,
+      "score": 8.4,
+      "delta": 8.4,
+      "current": {
+        "name": null,
+        "score": 0
+      },
+      "price": {
+        "copper": 19997,
+        "houseId": 110,
+        "listings": 19
+      },
+      "mediaId": 277052,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7734216.jpg"
     },
     {
       "id": 7358,
@@ -253,7 +370,7 @@
       "price": {
         "copper": 4300,
         "houseId": 123,
-        "listings": 249
+        "listings": 291
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -265,7 +382,7 @@
       "inv": "WRIST",
       "slotGroup": "WRIST",
       "requiredLevel": 27,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 32,
       "stats": {
         "AGILITY": 4,
@@ -281,69 +398,12 @@
         "score": 5.2
       },
       "price": {
-        "copper": 8499,
+        "copper": 7900,
         "houseId": 111,
-        "listings": 213
+        "listings": 65
       },
       "mediaId": 18948,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
-    },
-    {
-      "id": 10499,
-      "name": "Bright-Eye Goggles",
-      "quality": "uncommon",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 0,
-      "usableNow": true,
-      "itemLevel": 35,
-      "stats": {
-        "STAMINA": 9,
-        "SPIRIT": 9
-      },
-      "armor": 38,
-      "dps": 0,
-      "score": 6.2,
-      "delta": 6.2,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 3600,
-        "houseId": 110,
-        "listings": 62
-      },
-      "mediaId": 10499,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133149.jpg"
-    },
-    {
-      "id": 10504,
-      "name": "Green Lens",
-      "quality": "rare",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 0,
-      "usableNow": true,
-      "itemLevel": 49,
-      "stats": {
-        "STAMINA": 10
-      },
-      "armor": 57,
-      "dps": 0,
-      "score": 6.1,
-      "delta": 6.1,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 17499,
-        "houseId": 110,
-        "listings": 65
-      },
-      "mediaId": 10504,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133146.jpg"
     },
     {
       "id": 4252,
@@ -360,15 +420,15 @@
       "armor": 68,
       "dps": 0,
       "score": 8.4,
-      "delta": 5.9,
+      "delta": 6.1,
       "current": {
-        "name": "Silk Mantle of Gamn",
-        "score": 2.5
+        "name": "Executioner Mantle",
+        "score": 2.3
       },
       "price": {
-        "copper": 3335,
-        "houseId": 110,
-        "listings": 442
+        "copper": 2600,
+        "houseId": 111,
+        "listings": 218
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -394,12 +454,40 @@
         "score": 9.4
       },
       "price": {
-        "copper": 3100,
+        "copper": 3097,
         "houseId": 110,
-        "listings": 166
+        "listings": 139
       },
       "mediaId": 7373,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
+    },
+    {
+      "id": 7374,
+      "name": "Dusky Leather Armor",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 30,
+      "usableNow": false,
+      "itemLevel": 35,
+      "stats": {
+        "AGILITY": 14
+      },
+      "armor": 102,
+      "dps": 0,
+      "score": 16,
+      "delta": 5.2,
+      "current": {
+        "name": "Superior Tunic of Strength",
+        "score": 10.8
+      },
+      "price": {
+        "copper": 3765,
+        "houseId": 111,
+        "listings": 150
+      },
+      "mediaId": 7374,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
     },
     {
       "id": 2315,
@@ -422,9 +510,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 305,
-        "houseId": 110,
-        "listings": 786
+        "copper": 300,
+        "houseId": 111,
+        "listings": 911
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -450,42 +538,12 @@
         "score": 1.2
       },
       "price": {
-        "copper": 1400,
+        "copper": 1588,
         "houseId": 111,
-        "listings": 49
+        "listings": 41
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
-    },
-    {
-      "id": 6468,
-      "name": "Deviate Scale Belt",
-      "quality": "rare",
-      "inv": "WAIST",
-      "slotGroup": "WAIST",
-      "requiredLevel": 18,
-      "usableNow": true,
-      "itemLevel": 23,
-      "stats": {
-        "AGILITY": 5,
-        "STRENGTH": 3,
-        "STAMINA": 6
-      },
-      "armor": 51,
-      "dps": 0,
-      "score": 11.7,
-      "delta": 4.7,
-      "current": {
-        "name": "Dark Leather Belt",
-        "score": 7
-      },
-      "price": {
-        "copper": 12000,
-        "houseId": 111,
-        "listings": 47
-      },
-      "mediaId": 6468,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
     },
     {
       "id": 2307,
@@ -509,12 +567,42 @@
         "score": 1.2
       },
       "price": {
-        "copper": 250,
-        "houseId": 119,
-        "listings": 681
+        "copper": 246,
+        "houseId": 111,
+        "listings": 466
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+    },
+    {
+      "id": 6468,
+      "name": "Deviate Scale Belt",
+      "quality": "rare",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 18,
+      "usableNow": true,
+      "itemLevel": 23,
+      "stats": {
+        "AGILITY": 5,
+        "STRENGTH": 3,
+        "STAMINA": 6
+      },
+      "armor": 51,
+      "dps": 0,
+      "score": 11.7,
+      "delta": 3.4,
+      "current": {
+        "name": "Demolition Girdle",
+        "score": 8.3
+      },
+      "price": {
+        "copper": 14058,
+        "houseId": 111,
+        "listings": 72
+      },
+      "mediaId": 6468,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
     },
     {
       "id": 5782,
@@ -538,41 +626,12 @@
         "score": 10.8
       },
       "price": {
-        "copper": 4400,
+        "copper": 4200,
         "houseId": 110,
-        "listings": 52
+        "listings": 30
       },
       "mediaId": 5782,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
-    },
-    {
-      "id": 4456,
-      "name": "Raptor Hide Belt",
-      "quality": "uncommon",
-      "inv": "WAIST",
-      "slotGroup": "WAIST",
-      "requiredLevel": 28,
-      "usableNow": false,
-      "itemLevel": 33,
-      "stats": {
-        "STRENGTH": 6,
-        "STAMINA": 6
-      },
-      "armor": 55,
-      "dps": 0,
-      "score": 9.5,
-      "delta": 2.5,
-      "current": {
-        "name": "Dark Leather Belt",
-        "score": 7
-      },
-      "price": {
-        "copper": 1747,
-        "houseId": 110,
-        "listings": 113
-      },
-      "mediaId": 4456,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
     },
     {
       "id": 10518,
@@ -624,98 +683,41 @@
         "score": 2.2
       },
       "price": {
-        "copper": 5990,
+        "copper": 6590,
         "houseId": 110,
-        "listings": 20
+        "listings": 21
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
     },
     {
-      "id": 7352,
-      "name": "Earthen Leather Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 22,
-      "usableNow": true,
-      "itemLevel": 27,
-      "stats": {
-        "STAMINA": 7
-      },
-      "armor": 67,
-      "dps": 0,
-      "score": 4.8,
-      "delta": 2.3,
-      "current": {
-        "name": "Silk Mantle of Gamn",
-        "score": 2.5
-      },
-      "price": {
-        "copper": 3797,
-        "houseId": 110,
-        "listings": 123
-      },
-      "mediaId": 7352,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135037.jpg"
-    },
-    {
-      "id": 4251,
-      "name": "Hillman's Shoulders",
-      "quality": "uncommon",
-      "inv": "SHOULDER",
-      "slotGroup": "SHOULDER",
-      "requiredLevel": 21,
-      "usableNow": true,
-      "itemLevel": 26,
-      "stats": {
-        "STAMINA": 5,
-        "SPIRIT": 3
-      },
-      "armor": 65,
-      "dps": 0,
-      "score": 4.1,
-      "delta": 1.6,
-      "current": {
-        "name": "Silk Mantle of Gamn",
-        "score": 2.5
-      },
-      "price": {
-        "copper": 850,
-        "houseId": 111,
-        "listings": 1515
-      },
-      "mediaId": 4251,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
-    },
-    {
-      "id": 4257,
-      "name": "Green Leather Belt",
+      "id": 4456,
+      "name": "Raptor Hide Belt",
       "quality": "uncommon",
       "inv": "WAIST",
       "slotGroup": "WAIST",
-      "requiredLevel": 27,
+      "requiredLevel": 28,
       "usableNow": false,
-      "itemLevel": 32,
+      "itemLevel": 33,
       "stats": {
-        "INTELLECT": 6,
-        "AGILITY": 6
+        "STRENGTH": 6,
+        "STAMINA": 6
       },
-      "armor": 54,
+      "armor": 55,
       "dps": 0,
-      "score": 8.6,
-      "delta": 1.6,
+      "score": 9.5,
+      "delta": 1.2,
       "current": {
-        "name": "Dark Leather Belt",
-        "score": 7
+        "name": "Demolition Girdle",
+        "score": 8.3
       },
       "price": {
-        "copper": 1600,
-        "houseId": 111,
-        "listings": 221
+        "copper": 1699,
+        "houseId": 110,
+        "listings": 116
       },
-      "mediaId": 4257,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
+      "mediaId": 4456,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
     },
     {
       "id": 4831,
@@ -739,9 +741,9 @@
         "score": 9.4
       },
       "price": {
-        "copper": 9999,
+        "copper": 9998,
         "houseId": 111,
-        "listings": 10
+        "listings": 20
       },
       "mediaId": 4831,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
@@ -768,9 +770,9 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3400,
+        "copper": 3199,
         "houseId": 111,
-        "listings": 167
+        "listings": 109
       },
       "mediaId": 4255,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
@@ -799,15 +801,44 @@
       "price": {
         "copper": 4000,
         "houseId": 111,
-        "listings": 27
+        "listings": 26
       },
       "mediaId": 4794,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
+    },
+    {
+      "id": 4257,
+      "name": "Green Leather Belt",
+      "quality": "uncommon",
+      "inv": "WAIST",
+      "slotGroup": "WAIST",
+      "requiredLevel": 27,
+      "usableNow": true,
+      "itemLevel": 32,
+      "stats": {
+        "INTELLECT": 6,
+        "AGILITY": 6
+      },
+      "armor": 54,
+      "dps": 0,
+      "score": 8.6,
+      "delta": 0.3,
+      "current": {
+        "name": "Demolition Girdle",
+        "score": 8.3
+      },
+      "price": {
+        "copper": 1545,
+        "houseId": 111,
+        "listings": 169
+      },
+      "mediaId": 4257,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5815,
-  "unknownItems": 3079,
+  "scannedItems": 5831,
+  "unknownItems": 3077,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

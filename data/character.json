@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-18T19:05:01.415Z",
+  "last_updated": "2026-11-19T01:23:00.356Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 26,
+    "level": 27,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -185,40 +185,40 @@
     {
       "slot": "SHOULDER",
       "slotName": "Shoulders",
-      "id": 2913,
-      "name": "Silk Mantle of Gamn",
-      "quality": "uncommon",
+      "id": 273804,
+      "name": "Executioner Mantle",
+      "quality": "rare",
       "inv": "SHOULDER",
       "c": 4,
-      "sc": 1,
-      "ilvl": 28,
+      "sc": 2,
+      "ilvl": 26,
       "st": {
-        "INTELLECT": 6,
-        "SPIRIT": 4
+        "ATTACK_POWER": 10,
+        "SPIRIT": 9
       },
-      "ar": 31,
+      "ar": 72,
       "dps": 0,
-      "mediaId": 2913,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135036.jpg"
+      "mediaId": 273804,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
     },
     {
       "slot": "WAIST",
       "slotName": "Waist",
-      "id": 4249,
-      "name": "Dark Leather Belt",
-      "quality": "uncommon",
+      "id": 273807,
+      "name": "Demolition Girdle",
+      "quality": "rare",
       "inv": "WAIST",
       "c": 4,
       "sc": 2,
-      "ilvl": 25,
+      "ilvl": 29,
       "st": {
-        "AGILITY": 4,
-        "STAMINA": 4
+        "STRENGTH": 8,
+        "SPELL_DAMAGE_DONE": 9
       },
-      "ar": 48,
+      "ar": 57,
       "dps": 0,
-      "mediaId": 4249,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132492.jpg"
+      "mediaId": 273807,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132513.jpg"
     },
     {
       "slot": "MAIN_HAND",
@@ -476,6 +476,7 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "level": "object",
               "durability": "object"
             },
@@ -484,6 +485,7 @@
               "item": "object",
               "slot": "object",
               "quantity": "number",
+              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -501,7 +503,6 @@
             "weapon": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "quality": "object",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T01:23:00.356Z",
+  "last_updated": "2026-11-19T07:28:29.457Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -261,10 +261,10 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "profile: 404",
       "equipment: 404",
       "quests/completed: 404",
-      "character-media: 404"
+      "character-media: 404",
+      "profile: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",

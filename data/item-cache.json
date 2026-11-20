@@ -6530,6 +6530,20 @@
     "cls": [],
     "m": 2521
   },
+  "2523": {
+    "n": "Bullova",
+    "q": "common",
+    "c": 2,
+    "sc": 1,
+    "inv": "TWOHWEAPON",
+    "il": 35,
+    "rl": 30,
+    "st": {},
+    "ar": 0,
+    "dps": 22.36842,
+    "cls": [],
+    "m": 2523
+  },
   "2526": {
     "n": "Main Gauche",
     "q": "common",
@@ -21537,6 +21551,20 @@
     "cls": [],
     "m": 8085
   },
+  "8086": {
+    "n": "Light Plate Shoulderpads",
+    "q": "poor",
+    "c": 4,
+    "sc": 4,
+    "inv": "SHOULDER",
+    "il": 54,
+    "rl": 49,
+    "st": {},
+    "ar": 348,
+    "dps": 0,
+    "cls": [],
+    "m": 8086
+  },
   "8088": {
     "n": "Platemail Belt",
     "q": "common",
@@ -23664,7 +23692,7 @@
     "miss": "2026-11-19T19:09:05.215Z"
   },
   "9378": {
-    "miss": "2026-11-11T07:24:25.822Z"
+    "miss": "2026-11-20T01:17:26.962Z"
   },
   "9381": {
     "miss": "2026-11-16T01:32:53.329Z"
@@ -32702,6 +32730,9 @@
   "14335": {
     "miss": "2026-11-14T18:53:07.678Z"
   },
+  "14336": {
+    "miss": "2026-11-20T01:17:26.962Z"
+  },
   "14337": {
     "miss": "2026-11-19T13:27:13.053Z"
   },
@@ -39691,6 +39722,20 @@
     "cls": [],
     "m": 17188
   },
+  "17189": {
+    "n": "Metal Buckler",
+    "q": "common",
+    "c": 4,
+    "sc": 6,
+    "inv": "SHIELD",
+    "il": 34,
+    "rl": 29,
+    "st": {},
+    "ar": 599,
+    "dps": 0,
+    "cls": [],
+    "m": 17189
+  },
   "17192": {
     "n": "Reinforced Targe",
     "q": "common",
@@ -40159,6 +40204,23 @@
     "cls": [],
     "m": 18408
   },
+  "18413": {
+    "n": "Cloak of Warding",
+    "q": "rare",
+    "c": 4,
+    "sc": 1,
+    "inv": "CLOAK",
+    "il": 62,
+    "rl": 57,
+    "st": {
+      "DEFENSE_SKILL_RATING": 5,
+      "EXTRA_ARMOR": 170
+    },
+    "ar": 44,
+    "dps": 0,
+    "cls": [],
+    "m": 18413
+  },
   "18414": {
     "n": "Pattern: Belt of the Archmage",
     "q": "epic",
@@ -40486,6 +40548,9 @@
     "dps": 0,
     "cls": [],
     "m": 18661
+  },
+  "18672": {
+    "miss": "2026-11-20T01:17:26.962Z"
   },
   "18674": {
     "miss": "2026-11-16T01:32:53.329Z"
@@ -41432,6 +41497,20 @@
     "dps": 0,
     "cls": [],
     "m": 19295
+  },
+  "19483": {
+    "n": "Peeling the Onion",
+    "q": "common",
+    "c": 15,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 19483
   },
   "19484": {
     "n": "The Frostwolf Artichoke",
@@ -52477,5 +52556,13 @@
   "m7374": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg",
   "m277051": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731378.jpg",
   "m5964": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg",
-  "m1189": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
+  "m1189": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg",
+  "m282283": "https://render.worldofwarcraft.com/forever-eu/icons/56/1769008.jpg",
+  "m281309": "https://render.worldofwarcraft.com/forever-eu/icons/56/134586.jpg",
+  "m281321": "https://render.worldofwarcraft.com/forever-eu/icons/56/133302.jpg",
+  "m1264": "https://render.worldofwarcraft.com/forever-eu/icons/56/133482.jpg",
+  "m3855": "https://render.worldofwarcraft.com/forever-eu/icons/56/135423.jpg",
+  "m12251": "https://render.worldofwarcraft.com/forever-eu/icons/56/135158.jpg",
+  "m4259": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg",
+  "m7378": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
 }

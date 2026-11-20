@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-19T19:09:05.215Z",
+  "last_updated": "2026-11-20T01:17:26.962Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 160351
+      "auctions": 180835
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 162383
+      "auctions": 192551
     },
     {
       "id": 112,
@@ -20,98 +20,15 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 22979
+      "auctions": 24883
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 16648
+      "auctions": 18772
     }
   ],
   "upgrades": [
-    {
-      "id": 3852,
-      "name": "Golden Iron Destroyer",
-      "quality": "uncommon",
-      "inv": "TWOHWEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 29,
-      "usableNow": false,
-      "itemLevel": 34,
-      "stats": {
-        "STRENGTH": 11,
-        "SPELL_POWER": 4
-      },
-      "armor": 0,
-      "dps": 22.878786,
-      "score": 147.2,
-      "delta": 48.4,
-      "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
-      },
-      "price": {
-        "copper": 10023,
-        "houseId": 110,
-        "listings": 14
-      },
-      "mediaId": 3852,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133041.jpg"
-    },
-    {
-      "id": 12250,
-      "name": "Midnight Axe",
-      "quality": "uncommon",
-      "inv": "TWOHWEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 29,
-      "usableNow": false,
-      "itemLevel": 34,
-      "stats": {},
-      "armor": 0,
-      "dps": 22.962963,
-      "score": 137.8,
-      "delta": 39,
-      "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
-      },
-      "price": {
-        "copper": 59500,
-        "houseId": 110,
-        "listings": 2
-      },
-      "mediaId": 12250,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
-    },
-    {
-      "id": 12249,
-      "name": "Merciless Axe",
-      "quality": "uncommon",
-      "inv": "TWOHWEAPON",
-      "slotGroup": "MAIN_HAND",
-      "requiredLevel": 26,
-      "usableNow": true,
-      "itemLevel": 31,
-      "stats": {
-        "STRENGTH": 12
-      },
-      "armor": 0,
-      "dps": 21.09375,
-      "score": 137.4,
-      "delta": 38.6,
-      "current": {
-        "name": "Shadowhide Battle Axe",
-        "score": 98.8
-      },
-      "price": {
-        "copper": 49100,
-        "houseId": 110,
-        "listings": 1
-      },
-      "mediaId": 12249,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
-    },
     {
       "id": 277050,
       "name": "Azure Gustwoven Hood",
@@ -134,9 +51,9 @@
         "score": 0
       },
       "price": {
-        "copper": 20084,
+        "copper": 20087,
         "houseId": 110,
-        "listings": 25
+        "listings": 30
       },
       "mediaId": 277050,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731376.jpg"
@@ -164,12 +81,40 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3360,
-        "houseId": 111,
-        "listings": 457
+        "copper": 4290,
+        "houseId": 110,
+        "listings": 530
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
+    },
+    {
+      "id": 12251,
+      "name": "Big Stick",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 32,
+      "usableNow": false,
+      "itemLevel": 37,
+      "stats": {
+        "STRENGTH": 15
+      },
+      "armor": 0,
+      "dps": 25.666664,
+      "score": 167.5,
+      "delta": 12.2,
+      "current": {
+        "name": "Headbasher",
+        "score": 155.3
+      },
+      "price": {
+        "copper": 29099,
+        "houseId": 111,
+        "listings": 2
+      },
+      "mediaId": 12251,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135158.jpg"
     },
     {
       "id": 5964,
@@ -194,12 +139,41 @@
         "score": 2.3
       },
       "price": {
-        "copper": 2598,
-        "houseId": 111,
-        "listings": 898
+        "copper": 2600,
+        "houseId": 110,
+        "listings": 676
       },
       "mediaId": 5964,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
+    },
+    {
+      "id": 3855,
+      "name": "Massive Iron Axe",
+      "quality": "uncommon",
+      "inv": "TWOHWEAPON",
+      "slotGroup": "MAIN_HAND",
+      "requiredLevel": 32,
+      "usableNow": false,
+      "itemLevel": 37,
+      "stats": {
+        "STRENGTH": 11,
+        "STAMINA": 7
+      },
+      "armor": 0,
+      "dps": 25.571426,
+      "score": 166.8,
+      "delta": 11.5,
+      "current": {
+        "name": "Headbasher",
+        "score": 155.3
+      },
+      "price": {
+        "copper": 19599,
+        "houseId": 110,
+        "listings": 173
+      },
+      "mediaId": 3855,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135423.jpg"
     },
     {
       "id": 4254,
@@ -224,9 +198,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 1729,
-        "houseId": 110,
-        "listings": 290
+        "copper": 1490,
+        "houseId": 111,
+        "listings": 264
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -255,40 +229,10 @@
       "price": {
         "copper": 12000,
         "houseId": 111,
-        "listings": 38
+        "listings": 34
       },
       "mediaId": 277051,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731378.jpg"
-    },
-    {
-      "id": 5963,
-      "name": "Barbaric Leggings",
-      "quality": "uncommon",
-      "inv": "LEGS",
-      "slotGroup": "LEGS",
-      "requiredLevel": 29,
-      "usableNow": false,
-      "itemLevel": 34,
-      "stats": {
-        "AGILITY": 7,
-        "STRENGTH": 7,
-        "STAMINA": 7
-      },
-      "armor": 87,
-      "dps": 0,
-      "score": 18.5,
-      "delta": 9.1,
-      "current": {
-        "name": "Dark Leather Pants",
-        "score": 9.4
-      },
-      "price": {
-        "copper": 3150,
-        "houseId": 111,
-        "listings": 218
-      },
-      "mediaId": 5963,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
     },
     {
       "id": 10588,
@@ -311,9 +255,9 @@
         "score": 0
       },
       "price": {
-        "copper": 47596,
+        "copper": 45596,
         "houseId": 111,
-        "listings": 21
+        "listings": 16
       },
       "mediaId": 10588,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
@@ -340,9 +284,9 @@
         "score": 0
       },
       "price": {
-        "copper": 15900,
+        "copper": 14000,
         "houseId": 110,
-        "listings": 22
+        "listings": 27
       },
       "mediaId": 277052,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7734216.jpg"
@@ -368,9 +312,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 4280,
+        "copper": 3200,
         "houseId": 110,
-        "listings": 240
+        "listings": 361
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -398,9 +342,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 7826,
-        "houseId": 111,
-        "listings": 175
+        "copper": 9399,
+        "houseId": 110,
+        "listings": 200
       },
       "mediaId": 18948,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
@@ -426,40 +370,42 @@
         "score": 2.3
       },
       "price": {
-        "copper": 2785,
+        "copper": 2750,
         "houseId": 111,
-        "listings": 270
+        "listings": 246
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
     },
     {
-      "id": 7373,
-      "name": "Dusky Leather Leggings",
+      "id": 5963,
+      "name": "Barbaric Leggings",
       "quality": "uncommon",
       "inv": "LEGS",
       "slotGroup": "LEGS",
-      "requiredLevel": 28,
-      "usableNow": false,
-      "itemLevel": 33,
+      "requiredLevel": 29,
+      "usableNow": true,
+      "itemLevel": 34,
       "stats": {
-        "AGILITY": 13
+        "AGILITY": 7,
+        "STRENGTH": 7,
+        "STAMINA": 7
       },
-      "armor": 86,
+      "armor": 87,
       "dps": 0,
-      "score": 14.7,
-      "delta": 5.3,
+      "score": 18.5,
+      "delta": 5.9,
       "current": {
-        "name": "Dark Leather Pants",
-        "score": 9.4
+        "name": "Razormaw Shorts",
+        "score": 12.6
       },
       "price": {
-        "copper": 3097,
+        "copper": 3150,
         "houseId": 110,
-        "listings": 244
+        "listings": 246
       },
-      "mediaId": 7373,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
+      "mediaId": 5963,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
     },
     {
       "id": 7374,
@@ -482,9 +428,9 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3785,
-        "houseId": 110,
-        "listings": 180
+        "copper": 3780,
+        "houseId": 111,
+        "listings": 210
       },
       "mediaId": 7374,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
@@ -512,7 +458,7 @@
       "price": {
         "copper": 307,
         "houseId": 119,
-        "listings": 469
+        "listings": 748
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -538,9 +484,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 2000,
+        "copper": 1900,
         "houseId": 110,
-        "listings": 63
+        "listings": 78
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -567,12 +513,40 @@
         "score": 1.2
       },
       "price": {
-        "copper": 250,
+        "copper": 240,
         "houseId": 111,
-        "listings": 333
+        "listings": 416
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
+    },
+    {
+      "id": 7378,
+      "name": "Dusky Bracers",
+      "quality": "uncommon",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 32,
+      "usableNow": false,
+      "itemLevel": 37,
+      "stats": {
+        "AGILITY": 8
+      },
+      "armor": 46,
+      "dps": 0,
+      "score": 8.9,
+      "delta": 3.7,
+      "current": {
+        "name": "Robust Bracers of Strength",
+        "score": 5.2
+      },
+      "price": {
+        "copper": 2800,
+        "houseId": 111,
+        "listings": 482
+      },
+      "mediaId": 7378,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
     },
     {
       "id": 6468,
@@ -597,9 +571,9 @@
         "score": 8.3
       },
       "price": {
-        "copper": 12049,
-        "houseId": 111,
-        "listings": 38
+        "copper": 11900,
+        "houseId": 119,
+        "listings": 58
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -611,7 +585,7 @@
       "inv": "CHEST",
       "slotGroup": "CHEST",
       "requiredLevel": 29,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 34,
       "stats": {
         "STRENGTH": 9,
@@ -626,12 +600,41 @@
         "score": 10.8
       },
       "price": {
-        "copper": 7049,
+        "copper": 6995,
         "houseId": 111,
-        "listings": 41
+        "listings": 36
       },
       "mediaId": 5782,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
+    },
+    {
+      "id": 4259,
+      "name": "Green Leather Bracers",
+      "quality": "uncommon",
+      "inv": "WRIST",
+      "slotGroup": "WRIST",
+      "requiredLevel": 31,
+      "usableNow": false,
+      "itemLevel": 36,
+      "stats": {
+        "INTELLECT": 5,
+        "AGILITY": 6
+      },
+      "armor": 45,
+      "dps": 0,
+      "score": 8.2,
+      "delta": 3,
+      "current": {
+        "name": "Robust Bracers of Strength",
+        "score": 5.2
+      },
+      "price": {
+        "copper": 1990,
+        "houseId": 110,
+        "listings": 150
+      },
+      "mediaId": 4259,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg"
     },
     {
       "id": 10518,
@@ -654,12 +657,40 @@
         "score": 6.1
       },
       "price": {
-        "copper": 23900,
-        "houseId": 110,
-        "listings": 50
+        "copper": 18035,
+        "houseId": 123,
+        "listings": 55
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
+    },
+    {
+      "id": 7373,
+      "name": "Dusky Leather Leggings",
+      "quality": "uncommon",
+      "inv": "LEGS",
+      "slotGroup": "LEGS",
+      "requiredLevel": 28,
+      "usableNow": true,
+      "itemLevel": 33,
+      "stats": {
+        "AGILITY": 13
+      },
+      "armor": 86,
+      "dps": 0,
+      "score": 14.7,
+      "delta": 2.1,
+      "current": {
+        "name": "Razormaw Shorts",
+        "score": 12.6
+      },
+      "price": {
+        "copper": 3097,
+        "houseId": 110,
+        "listings": 303
+      },
+      "mediaId": 7373,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
     },
     {
       "id": 281927,
@@ -677,15 +708,15 @@
       "armor": 0,
       "dps": 0,
       "score": 4.6,
-      "delta": 2.4,
+      "delta": 1.6,
       "current": {
-        "name": "Ring of Iron Will",
-        "score": 2.2
+        "name": "Prospector's Signet",
+        "score": 3
       },
       "price": {
-        "copper": 5099,
-        "houseId": 110,
-        "listings": 20
+        "copper": 4500,
+        "houseId": 123,
+        "listings": 23
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -697,7 +728,7 @@
       "inv": "WAIST",
       "slotGroup": "WAIST",
       "requiredLevel": 28,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 33,
       "stats": {
         "STRENGTH": 6,
@@ -714,39 +745,10 @@
       "price": {
         "copper": 1900,
         "houseId": 111,
-        "listings": 35
+        "listings": 116
       },
       "mediaId": 4456,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
-    },
-    {
-      "id": 4831,
-      "name": "Stalking Pants",
-      "quality": "uncommon",
-      "inv": "LEGS",
-      "slotGroup": "LEGS",
-      "requiredLevel": 21,
-      "usableNow": true,
-      "itemLevel": 26,
-      "stats": {
-        "AGILITY": 6,
-        "STAMINA": 6
-      },
-      "armor": 76,
-      "dps": 0,
-      "score": 10.5,
-      "delta": 1.1,
-      "current": {
-        "name": "Dark Leather Pants",
-        "score": 9.4
-      },
-      "price": {
-        "copper": 9998,
-        "houseId": 111,
-        "listings": 9
-      },
-      "mediaId": 4831,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134590.jpg"
     },
     {
       "id": 4255,
@@ -770,41 +772,12 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3599,
+        "copper": 3296,
         "houseId": 111,
-        "listings": 107
+        "listings": 190
       },
       "mediaId": 4255,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
-    },
-    {
-      "id": 4794,
-      "name": "Wolf Bracers",
-      "quality": "uncommon",
-      "inv": "WRIST",
-      "slotGroup": "WRIST",
-      "requiredLevel": 20,
-      "usableNow": true,
-      "itemLevel": 25,
-      "stats": {
-        "AGILITY": 4,
-        "STAMINA": 2
-      },
-      "armor": 37,
-      "dps": 0,
-      "score": 5.7,
-      "delta": 0.5,
-      "current": {
-        "name": "Robust Bracers of Strength",
-        "score": 5.2
-      },
-      "price": {
-        "copper": 5097,
-        "houseId": 110,
-        "listings": 23
-      },
-      "mediaId": 4794,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132603.jpg"
     },
     {
       "id": 4257,
@@ -828,17 +801,17 @@
         "score": 8.3
       },
       "price": {
-        "copper": 1540,
+        "copper": 1544,
         "houseId": 111,
-        "listings": 178
+        "listings": 138
       },
       "mediaId": 4257,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5868,
-  "unknownItems": 3098,
+  "scannedItems": 5880,
+  "unknownItems": 3104,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

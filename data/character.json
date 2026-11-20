@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-19T19:09:05.215Z",
+  "last_updated": "2026-11-20T01:17:26.962Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 27,
+    "level": 29,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 19
+    "averageItemLevel": 23
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -97,39 +97,59 @@
     {
       "slot": "FINGER_1",
       "slotName": "Ring 1",
-      "id": 1319,
-      "name": "Ring of Iron Will",
-      "quality": "uncommon",
+      "id": 282283,
+      "name": "Malignant Root",
+      "quality": "rare",
       "inv": "FINGER",
       "c": 4,
       "sc": 0,
-      "ilvl": 25,
+      "ilvl": 32,
       "st": {
-        "STAMINA": 4,
-        "SPIRIT": 2
+        "STAMINA": 7,
+        "ATTACK_POWER": 8,
+        "SPELL_POWER": 4
       },
       "ar": 0,
       "dps": 0,
-      "mediaId": 1319,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132520.jpg"
+      "mediaId": 282283,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/1769008.jpg"
     },
     {
       "slot": "LEGS",
       "slotName": "Legs",
-      "id": 5961,
-      "name": "Dark Leather Pants",
+      "id": 281309,
+      "name": "Razormaw Shorts",
       "quality": "uncommon",
       "inv": "LEGS",
       "c": 4,
       "sc": 2,
-      "ilvl": 23,
+      "ilvl": 30,
       "st": {
-        "AGILITY": 8
+        "AGILITY": 8,
+        "STAMINA": 6
       },
-      "ar": 72,
+      "ar": 82,
       "dps": 0,
-      "mediaId": 5961,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134589.jpg"
+      "mediaId": 281309,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134586.jpg"
+    },
+    {
+      "slot": "NECK",
+      "slotName": "Neck",
+      "id": 281321,
+      "name": "Giantstone Medallion",
+      "quality": "rare",
+      "inv": "NECK",
+      "c": 4,
+      "sc": 0,
+      "ilvl": 32,
+      "st": {
+        "SPIRIT": 10
+      },
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 281321,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133302.jpg"
     },
     {
       "slot": "RANGED",
@@ -223,21 +243,22 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 2175,
-      "name": "Shadowhide Battle Axe",
-      "quality": "uncommon",
+      "id": 1264,
+      "name": "Headbasher",
+      "quality": "rare",
       "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 1,
-      "ilvl": 23,
+      "sc": 5,
+      "ilvl": 29,
       "st": {
-        "STRENGTH": 6,
-        "STAMINA": 3
+        "INTELLECT": 10,
+        "STRENGTH": 9,
+        "STAMINA": 5
       },
       "ar": 0,
-      "dps": 15.3125,
-      "mediaId": 2175,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135424.jpg"
+      "dps": 23.69565,
+      "mediaId": 1264,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133482.jpg"
     },
     {
       "slot": "WRIST",
@@ -261,9 +282,9 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "quests/completed: 404",
-      "character-media: 404",
       "equipment: 404",
+      "character-media: 404",
+      "quests/completed: 404",
       "profile: 404"
     ],
     "scrape": {
@@ -391,9 +412,9 @@
             "leg": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
+              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -404,9 +425,26 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
-              "requirements": "object",
               "level": "object",
               "durability": "object"
+            },
+            "neck": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "level": "object",
+              "is_subclass_hidden": "boolean"
             },
             "ranged": {
               "id": "number",
@@ -503,8 +541,10 @@
             "weapon": {
               "id": "number",
               "item": "object",
+              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
+              "context": "number",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -515,7 +555,6 @@
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
-              "requirements": "object",
               "level": "object",
               "durability": "object"
             },
@@ -689,6 +728,7 @@
               "hand": "object",
               "leftFinger": "object",
               "leg": "object",
+              "neck": "object",
               "ranged": "object",
               "rightFinger": "object",
               "shirt": "object",
@@ -806,15 +846,15 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],
       "domItems": 0
     }

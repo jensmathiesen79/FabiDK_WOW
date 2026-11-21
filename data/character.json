@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-21T07:19:32.449Z",
+  "last_updated": "2026-11-21T13:05:34.087Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 29,
+    "level": 30,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 23
+    "averageItemLevel": 25
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -93,6 +93,25 @@
       "dps": 0,
       "mediaId": 9806,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "slot": "HEAD",
+      "slotName": "Head",
+      "id": 7357,
+      "name": "Elder's Hat of the Eagle",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "c": 4,
+      "sc": 1,
+      "ilvl": 34,
+      "st": {
+        "INTELLECT": 9,
+        "STAMINA": 9
+      },
+      "ar": 37,
+      "dps": 0,
+      "mediaId": 7357,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133117.jpg"
     },
     {
       "slot": "FINGER_1",
@@ -371,6 +390,27 @@
               "durability": "object"
             },
             "hand": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "bonus_list": "object",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "armor": "object",
+              "stats": "object",
+              "sell_price": "object",
+              "requirements": "object",
+              "level": "object",
+              "durability": "object"
+            },
+            "head": {
               "id": "number",
               "item": "object",
               "slot": "object",
@@ -726,6 +766,7 @@
               "chest": "object",
               "foot": "object",
               "hand": "object",
+              "head": "object",
               "leftFinger": "object",
               "leg": "object",
               "neck": "object",
@@ -846,8 +887,8 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
+        "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",

@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-21T07:19:32.449Z",
+  "last_updated": "2026-11-21T13:05:34.087Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 116768
+      "auctions": 131538
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 120129
+      "auctions": 140173
     },
     {
       "id": 112,
@@ -20,44 +20,15 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 18599
+      "auctions": 23210
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 13081
+      "auctions": 16005
     }
   ],
   "upgrades": [
-    {
-      "id": 277050,
-      "name": "Azure Gustwoven Hood",
-      "quality": "uncommon",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 30,
-      "usableNow": false,
-      "itemLevel": 35,
-      "stats": {
-        "STRENGTH": 9,
-        "STAMINA": 9
-      },
-      "armor": 83,
-      "dps": 0,
-      "score": 14.3,
-      "delta": 14.3,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 19798,
-        "houseId": 110,
-        "listings": 19
-      },
-      "mediaId": 277050,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731376.jpg"
-    },
     {
       "id": 4253,
       "name": "Toughened Leather Gloves",
@@ -81,9 +52,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3999,
+        "copper": 3435,
         "houseId": 111,
-        "listings": 146
+        "listings": 416
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -109,9 +80,9 @@
         "score": 155.3
       },
       "price": {
-        "copper": 22099,
-        "houseId": 111,
-        "listings": 3
+        "copper": 59000,
+        "houseId": 110,
+        "listings": 2
       },
       "mediaId": 12251,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135158.jpg"
@@ -123,7 +94,7 @@
       "inv": "SHOULDER",
       "slotGroup": "SHOULDER",
       "requiredLevel": 30,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 35,
       "stats": {
         "AGILITY": 5,
@@ -140,8 +111,8 @@
       },
       "price": {
         "copper": 2600,
-        "houseId": 111,
-        "listings": 644
+        "houseId": 110,
+        "listings": 712
       },
       "mediaId": 5964,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
@@ -168,9 +139,9 @@
         "score": 155.3
       },
       "price": {
-        "copper": 17523,
+        "copper": 17500,
         "houseId": 111,
-        "listings": 98
+        "listings": 73
       },
       "mediaId": 3855,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135423.jpg"
@@ -198,9 +169,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 1709,
+        "copper": 1698,
         "houseId": 111,
-        "listings": 355
+        "listings": 396
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -212,7 +183,7 @@
       "inv": "SHOULDER",
       "slotGroup": "SHOULDER",
       "requiredLevel": 30,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 35,
       "stats": {
         "AGILITY": 7,
@@ -227,69 +198,42 @@
         "score": 2.3
       },
       "price": {
-        "copper": 12500,
-        "houseId": 111,
-        "listings": 17
+        "copper": 14900,
+        "houseId": 110,
+        "listings": 34
       },
       "mediaId": 277051,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731378.jpg"
     },
     {
-      "id": 10588,
-      "name": "Goblin Rocket Helmet",
+      "id": 5739,
+      "name": "Barbaric Harness",
       "quality": "uncommon",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 0,
-      "usableNow": true,
-      "itemLevel": 47,
-      "stats": {
-        "STAMINA": 15
-      },
-      "armor": 50,
-      "dps": 0,
-      "score": 8.5,
-      "delta": 8.5,
-      "current": {
-        "name": null,
-        "score": 0
-      },
-      "price": {
-        "copper": 40900,
-        "houseId": 110,
-        "listings": 15
-      },
-      "mediaId": 10588,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
-    },
-    {
-      "id": 277052,
-      "name": "Azure Windraveled Cover",
-      "quality": "uncommon",
-      "inv": "HEAD",
-      "slotGroup": "HEAD",
-      "requiredLevel": 30,
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 33,
       "usableNow": false,
-      "itemLevel": 35,
+      "itemLevel": 38,
       "stats": {
-        "INTELLECT": 9,
-        "STAMINA": 9
+        "AGILITY": 8,
+        "STRENGTH": 7,
+        "STAMINA": 8
       },
-      "armor": 83,
+      "armor": 106,
       "dps": 0,
-      "score": 8.4,
-      "delta": 8.4,
+      "score": 20.4,
+      "delta": 9.6,
       "current": {
-        "name": null,
-        "score": 0
+        "name": "Superior Tunic of Strength",
+        "score": 10.8
       },
       "price": {
-        "copper": 21094,
+        "copper": 2794,
         "houseId": 110,
-        "listings": 23
+        "listings": 227
       },
-      "mediaId": 277052,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7734216.jpg"
+      "mediaId": 5739,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132719.jpg"
     },
     {
       "id": 7358,
@@ -312,12 +256,41 @@
         "score": 1.1
       },
       "price": {
-        "copper": 2840,
+        "copper": 2578,
         "houseId": 110,
-        "listings": 212
+        "listings": 228
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
+    },
+    {
+      "id": 277050,
+      "name": "Azure Gustwoven Hood",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 30,
+      "usableNow": true,
+      "itemLevel": 35,
+      "stats": {
+        "STRENGTH": 9,
+        "STAMINA": 9
+      },
+      "armor": 83,
+      "dps": 0,
+      "score": 14.3,
+      "delta": 6.8,
+      "current": {
+        "name": "Elder's Hat of the Eagle",
+        "score": 7.5
+      },
+      "price": {
+        "copper": 19999,
+        "houseId": 110,
+        "listings": 20
+      },
+      "mediaId": 277050,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731376.jpg"
     },
     {
       "id": 18948,
@@ -342,9 +315,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 10900,
-        "houseId": 110,
-        "listings": 132
+        "copper": 9499,
+        "houseId": 111,
+        "listings": 134
       },
       "mediaId": 18948,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
@@ -370,9 +343,9 @@
         "score": 2.3
       },
       "price": {
-        "copper": 2685,
+        "copper": 2900,
         "houseId": 111,
-        "listings": 170
+        "listings": 311
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -400,9 +373,9 @@
         "score": 12.6
       },
       "price": {
-        "copper": 3150,
-        "houseId": 111,
-        "listings": 143
+        "copper": 3155,
+        "houseId": 110,
+        "listings": 162
       },
       "mediaId": 5963,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
@@ -414,7 +387,7 @@
       "inv": "CHEST",
       "slotGroup": "CHEST",
       "requiredLevel": 30,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 35,
       "stats": {
         "AGILITY": 14
@@ -428,9 +401,9 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3795,
+        "copper": 3790,
         "houseId": 111,
-        "listings": 252
+        "listings": 194
       },
       "mediaId": 7374,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
@@ -458,7 +431,7 @@
       "price": {
         "copper": 307,
         "houseId": 111,
-        "listings": 565
+        "listings": 505
       },
       "mediaId": 2315,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -484,9 +457,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 800,
-        "houseId": 111,
-        "listings": 21
+        "copper": 1840,
+        "houseId": 110,
+        "listings": 28
       },
       "mediaId": 4788,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -513,9 +486,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 247,
+        "copper": 245,
         "houseId": 119,
-        "listings": 232
+        "listings": 261
       },
       "mediaId": 2307,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132540.jpg"
@@ -541,9 +514,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 2390,
+        "copper": 2289,
         "houseId": 111,
-        "listings": 133
+        "listings": 209
       },
       "mediaId": 7378,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
@@ -571,9 +544,9 @@
         "score": 8.3
       },
       "price": {
-        "copper": 12000,
-        "houseId": 119,
-        "listings": 51
+        "copper": 15350,
+        "houseId": 111,
+        "listings": 79
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
@@ -600,41 +573,41 @@
         "score": 10.8
       },
       "price": {
-        "copper": 6800,
-        "houseId": 110,
-        "listings": 70
+        "copper": 4900,
+        "houseId": 123,
+        "listings": 49
       },
       "mediaId": 5782,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
     },
     {
-      "id": 4259,
-      "name": "Green Leather Bracers",
+      "id": 5783,
+      "name": "Murloc Scale Bracers",
       "quality": "uncommon",
       "inv": "WRIST",
       "slotGroup": "WRIST",
-      "requiredLevel": 31,
+      "requiredLevel": 33,
       "usableNow": false,
-      "itemLevel": 36,
+      "itemLevel": 38,
       "stats": {
-        "INTELLECT": 5,
-        "AGILITY": 6
+        "STRENGTH": 5,
+        "STAMINA": 6
       },
-      "armor": 45,
+      "armor": 47,
       "dps": 0,
-      "score": 8.2,
-      "delta": 3,
+      "score": 8.4,
+      "delta": 3.2,
       "current": {
         "name": "Robust Bracers of Strength",
         "score": 5.2
       },
       "price": {
-        "copper": 1949,
-        "houseId": 111,
-        "listings": 60
+        "copper": 4005,
+        "houseId": 110,
+        "listings": 55
       },
-      "mediaId": 4259,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132611.jpg"
+      "mediaId": 5783,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132604.jpg"
     },
     {
       "id": 10518,
@@ -657,9 +630,9 @@
         "score": 6.1
       },
       "price": {
-        "copper": 10098,
+        "copper": 10097,
         "houseId": 110,
-        "listings": 31
+        "listings": 22
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
@@ -687,7 +660,7 @@
       "price": {
         "copper": 3200,
         "houseId": 111,
-        "listings": 190
+        "listings": 231
       },
       "mediaId": 7373,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
@@ -714,9 +687,9 @@
         "score": 3
       },
       "price": {
-        "copper": 6000,
+        "copper": 7550,
         "houseId": 111,
-        "listings": 17
+        "listings": 20
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
@@ -743,41 +716,69 @@
         "score": 8.3
       },
       "price": {
-        "copper": 1900,
+        "copper": 1600,
         "houseId": 110,
-        "listings": 61
+        "listings": 62
       },
       "mediaId": 4456,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132491.jpg"
     },
     {
-      "id": 4255,
-      "name": "Green Leather Armor",
+      "id": 10588,
+      "name": "Goblin Rocket Helmet",
       "quality": "uncommon",
-      "inv": "CHEST",
-      "slotGroup": "CHEST",
-      "requiredLevel": 26,
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 0,
       "usableNow": true,
-      "itemLevel": 31,
+      "itemLevel": 47,
       "stats": {
-        "INTELLECT": 8,
-        "AGILITY": 8
+        "STAMINA": 15
       },
-      "armor": 95,
+      "armor": 50,
       "dps": 0,
-      "score": 11.9,
-      "delta": 1.1,
+      "score": 8.5,
+      "delta": 1,
       "current": {
-        "name": "Superior Tunic of Strength",
-        "score": 10.8
+        "name": "Elder's Hat of the Eagle",
+        "score": 7.5
       },
       "price": {
-        "copper": 3399,
-        "houseId": 110,
-        "listings": 151
+        "copper": 39900,
+        "houseId": 111,
+        "listings": 4
       },
-      "mediaId": 4255,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132723.jpg"
+      "mediaId": 10588,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133151.jpg"
+    },
+    {
+      "id": 277052,
+      "name": "Azure Windraveled Cover",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 30,
+      "usableNow": true,
+      "itemLevel": 35,
+      "stats": {
+        "INTELLECT": 9,
+        "STAMINA": 9
+      },
+      "armor": 83,
+      "dps": 0,
+      "score": 8.4,
+      "delta": 0.9,
+      "current": {
+        "name": "Elder's Hat of the Eagle",
+        "score": 7.5
+      },
+      "price": {
+        "copper": 21094,
+        "houseId": 110,
+        "listings": 20
+      },
+      "mediaId": 277052,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7734216.jpg"
     },
     {
       "id": 4257,
@@ -801,17 +802,17 @@
         "score": 8.3
       },
       "price": {
-        "copper": 1600,
+        "copper": 1530,
         "houseId": 111,
-        "listings": 138
+        "listings": 125
       },
       "mediaId": 4257,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132506.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 5854,
-  "unknownItems": 3078,
+  "scannedItems": 5889,
+  "unknownItems": 3106,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,

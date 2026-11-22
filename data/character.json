@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-22T07:20:10.278Z",
+  "last_updated": "2026-11-22T13:03:40.201Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 30,
+    "level": 31,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -97,21 +97,21 @@
     {
       "slot": "HEAD",
       "slotName": "Head",
-      "id": 7357,
-      "name": "Elder's Hat of the Eagle",
+      "id": 10406,
+      "name": "Scaled Leather Headband of the Tiger",
       "quality": "uncommon",
       "inv": "HEAD",
       "c": 4,
-      "sc": 1,
-      "ilvl": 34,
+      "sc": 2,
+      "ilvl": 32,
       "st": {
-        "INTELLECT": 9,
-        "STAMINA": 9
+        "AGILITY": 8,
+        "STRENGTH": 8
       },
-      "ar": 37,
+      "ar": 79,
       "dps": 0,
-      "mediaId": 7357,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133117.jpg"
+      "mediaId": 10406,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133681.jpg"
     },
     {
       "slot": "FINGER_1",
@@ -301,10 +301,10 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
-      "quests/completed: 404",
       "equipment: 404",
       "character-media: 404",
-      "profile: 404"
+      "profile: 404",
+      "quests/completed: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -889,9 +889,9 @@
       "xhrUrls": [
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
+        "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://geo.battle.net/",
-        "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
         "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",

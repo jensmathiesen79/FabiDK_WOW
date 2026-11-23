@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-22T18:58:21.918Z",
+  "last_updated": "2026-11-23T01:24:01.169Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
@@ -189,21 +189,21 @@
     {
       "slot": "FINGER_2",
       "slotName": "Ring 2",
-      "id": 281304,
-      "name": "Prospector's Signet",
+      "id": 270053,
+      "name": "Ring of Ruin",
       "quality": "uncommon",
       "inv": "FINGER",
       "c": 4,
       "sc": 0,
-      "ilvl": 31,
+      "ilvl": 35,
       "st": {
-        "INTELLECT": 4,
-        "STAMINA": 4
+        "AGILITY": 6,
+        "STRENGTH": 4
       },
       "ar": 0,
       "dps": 0,
-      "mediaId": 281304,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
+      "mediaId": 270053,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133350.jpg"
     },
     {
       "slot": "SHIRT",
@@ -303,8 +303,8 @@
     "apiWarnings": [
       "equipment: 404",
       "profile: 404",
-      "character-media: 404",
-      "quests/completed: 404"
+      "quests/completed: 404",
+      "character-media: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -887,15 +887,15 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
-        "https://geo.battle.net/",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
+        "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
       ],
       "domItems": 0
     }

@@ -34610,7 +34610,7 @@
     "miss": "2026-11-19T13:27:13.053Z"
   },
   "14815": {
-    "miss": "2026-11-15T07:13:00.488Z"
+    "miss": "2026-11-23T01:24:01.169Z"
   },
   "14816": {
     "miss": "2026-11-22T18:58:21.918Z"
@@ -35829,6 +35829,23 @@
     "dps": 0,
     "cls": [],
     "m": 15084
+  },
+  "15085": {
+    "n": "Wicked Leather Armor",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "CHEST",
+    "il": 61,
+    "rl": 56,
+    "st": {
+      "AGILITY": 25,
+      "STAMINA": 7
+    },
+    "ar": 156,
+    "dps": 0,
+    "cls": [],
+    "m": 15085
   },
   "15086": {
     "n": "Wicked Leather Headband",
@@ -37683,7 +37700,7 @@
     "miss": "2026-11-16T15:15:12.626Z"
   },
   "15677": {
-    "miss": "2026-11-15T18:54:40.952Z"
+    "miss": "2026-11-23T01:24:01.169Z"
   },
   "15678": {
     "miss": "2026-11-19T07:28:29.457Z"
@@ -39319,6 +39336,23 @@
     "dps": 28.333332,
     "cls": [],
     "m": 16004
+  },
+  "16008": {
+    "n": "Master Engineer's Goggles",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 1,
+    "inv": "HEAD",
+    "il": 58,
+    "rl": 0,
+    "st": {
+      "STAMINA": 16,
+      "SPIRIT": 17
+    },
+    "ar": 61,
+    "dps": 0,
+    "cls": [],
+    "m": 16008
   },
   "16039": {
     "miss": "2026-11-20T07:27:47.983Z"
@@ -42164,6 +42198,20 @@
     "cls": [],
     "m": 19295
   },
+  "19450": {
+    "n": "A Jubling's Tiny Home",
+    "q": "common",
+    "c": 15,
+    "sc": 2,
+    "inv": "NON_EQUIP",
+    "il": 35,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 19450
+  },
   "19483": {
     "n": "Peeling the Onion",
     "q": "common",
@@ -42958,6 +43006,20 @@
     "dps": 0,
     "cls": [],
     "m": 23203
+  },
+  "23712": {
+    "n": "White Tiger Cub",
+    "q": "common",
+    "c": 15,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 23712
   },
   "24222": {
     "miss": "2026-11-17T19:11:07.661Z"
@@ -50457,6 +50519,20 @@
     "cls": [],
     "m": 271646
   },
+  "271648": {
+    "n": "Ogre Tooth Cleaner",
+    "q": "poor",
+    "c": 15,
+    "sc": 0,
+    "inv": "NON_EQUIP",
+    "il": 1,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 271648
+  },
   "271655": {
     "n": "Thendal Apprentice's Shirt",
     "q": "common",
@@ -52185,7 +52261,7 @@
     "miss": "2026-11-16T01:32:53.329Z"
   },
   "277075": {
-    "miss": "2026-11-15T07:13:00.488Z"
+    "miss": "2026-11-23T01:24:01.169Z"
   },
   "277076": {
     "miss": "2026-11-17T13:18:54.697Z"
@@ -52195,6 +52271,9 @@
   },
   "277078": {
     "miss": "2026-11-17T13:18:54.697Z"
+  },
+  "277079": {
+    "miss": "2026-11-23T01:24:01.169Z"
   },
   "277508": {
     "n": "Prairie Wolf Pup Carrier",
@@ -52720,6 +52799,9 @@
   },
   "283462": {
     "miss": "2026-11-16T19:03:56.420Z"
+  },
+  "283471": {
+    "miss": "2026-11-23T01:24:01.169Z"
   },
   "283473": {
     "miss": "2026-11-18T01:26:50.496Z"
@@ -53437,5 +53519,6 @@
   "m5739": "https://render.worldofwarcraft.com/forever-eu/icons/56/132719.jpg",
   "m5783": "https://render.worldofwarcraft.com/forever-eu/icons/56/132604.jpg",
   "m10406": "https://render.worldofwarcraft.com/forever-eu/icons/56/133681.jpg",
-  "m7387": "https://render.worldofwarcraft.com/forever-eu/icons/56/132495.jpg"
+  "m7387": "https://render.worldofwarcraft.com/forever-eu/icons/56/132495.jpg",
+  "m270053": "https://render.worldofwarcraft.com/forever-eu/icons/56/133350.jpg"
 }

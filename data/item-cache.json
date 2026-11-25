@@ -6323,6 +6323,34 @@
     "cls": [],
     "m": 2437
   },
+  "2438": {
+    "n": "Embroidered Boots",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "FEET",
+    "il": 50,
+    "rl": 45,
+    "st": {},
+    "ar": 43,
+    "dps": 0,
+    "cls": [],
+    "m": 2438
+  },
+  "2440": {
+    "n": "Embroidered Gloves",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "HAND",
+    "il": 50,
+    "rl": 45,
+    "st": {},
+    "ar": 39,
+    "dps": 0,
+    "cls": [],
+    "m": 2440
+  },
   "2445": {
     "n": "Large Metal Shield",
     "q": "common",
@@ -9905,6 +9933,34 @@
   },
   "3571": {
     "miss": "2026-11-23T07:45:23.809Z"
+  },
+  "3587": {
+    "n": "Embroidered Belt",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "WAIST",
+    "il": 50,
+    "rl": 45,
+    "st": {},
+    "ar": 35,
+    "dps": 0,
+    "cls": [],
+    "m": 3587
+  },
+  "3588": {
+    "n": "Embroidered Bracers",
+    "q": "common",
+    "c": 4,
+    "sc": 1,
+    "inv": "WRIST",
+    "il": 50,
+    "rl": 45,
+    "st": {},
+    "ar": 27,
+    "dps": 0,
+    "cls": [],
+    "m": 3588
   },
   "3589": {
     "n": "Heavy Weave Belt",
@@ -34505,7 +34561,7 @@
     "miss": "2026-11-25T13:32:46.457Z"
   },
   "14680": {
-    "miss": "2026-11-16T01:32:53.329Z"
+    "miss": "2026-11-25T19:02:48.986Z"
   },
   "14681": {
     "miss": "2026-11-22T18:58:21.918Z"
@@ -42650,6 +42706,20 @@
     "cls": [],
     "m": 20546
   },
+  "20548": {
+    "n": "Pattern: Runed Stygian Belt",
+    "q": "rare",
+    "c": 9,
+    "sc": 2,
+    "inv": "NON_EQUIP",
+    "il": 62,
+    "rl": 0,
+    "st": {},
+    "ar": 0,
+    "dps": 0,
+    "cls": [],
+    "m": 20548
+  },
   "20549": {
     "n": "Darkrune Gauntlets",
     "q": "rare",
@@ -44410,6 +44480,22 @@
     "dps": 16.764706,
     "cls": [],
     "m": 250603
+  },
+  "250604": {
+    "n": "Iron Fists",
+    "q": "uncommon",
+    "c": 2,
+    "sc": 13,
+    "inv": "WEAPON",
+    "il": 31,
+    "rl": 26,
+    "st": {
+      "AGILITY": 5
+    },
+    "ar": 0,
+    "dps": 16.25,
+    "cls": [],
+    "m": 250604
   },
   "250605": {
     "n": "Steel Spear",
@@ -51617,6 +51703,24 @@
     "cls": [],
     "m": 274930
   },
+  "275604": {
+    "n": "Venomspew Gloves",
+    "q": "rare",
+    "c": 4,
+    "sc": 1,
+    "inv": "HAND",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "INTELLECT": 11,
+      "STAMINA": 19,
+      "NATURE_RESISTANCE": 5
+    },
+    "ar": 52,
+    "dps": 0,
+    "cls": [],
+    "m": 275604
+  },
   "275616": {
     "n": "Scalegut Clenchers",
     "q": "rare",
@@ -51634,6 +51738,25 @@
     "dps": 0,
     "cls": [],
     "m": 275616
+  },
+  "275619": {
+    "n": "Broodwatcher's Clenchers",
+    "q": "rare",
+    "c": 4,
+    "sc": 3,
+    "inv": "HAND",
+    "il": 58,
+    "rl": 53,
+    "st": {
+      "SPELL_DAMAGE_DONE": 5,
+      "SPELL_HEALING_DONE": 16,
+      "NATURE_RESISTANCE": 7,
+      "SPIRIT": 20
+    },
+    "ar": 215,
+    "dps": 0,
+    "cls": [],
+    "m": 275619
   },
   "275682": {
     "n": "Excitable Slime",
@@ -52445,6 +52568,23 @@
     "cls": [],
     "m": 277039
   },
+  "277043": {
+    "n": "Cloudy Gustwoven Spaulders",
+    "q": "uncommon",
+    "c": 4,
+    "sc": 2,
+    "inv": "SHOULDER",
+    "il": 35,
+    "rl": 30,
+    "st": {
+      "AGILITY": 7,
+      "STAMINA": 7
+    },
+    "ar": 76,
+    "dps": 0,
+    "cls": [],
+    "m": 277043
+  },
   "277048": {
     "n": "Azure Skyforged Helm",
     "q": "uncommon",
@@ -53066,7 +53206,7 @@
     "m": 282080
   },
   "282088": {
-    "miss": "2026-11-18T01:26:50.496Z"
+    "miss": "2026-11-25T19:02:48.986Z"
   },
   "282094": {
     "miss": "2026-11-24T07:29:21.686Z"
@@ -53902,5 +54042,6 @@
   "m10406": "https://render.worldofwarcraft.com/forever-eu/icons/56/133681.jpg",
   "m7387": "https://render.worldofwarcraft.com/forever-eu/icons/56/132495.jpg",
   "m270053": "https://render.worldofwarcraft.com/forever-eu/icons/56/133350.jpg",
-  "m12252": "https://render.worldofwarcraft.com/forever-eu/icons/56/135144.jpg"
+  "m12252": "https://render.worldofwarcraft.com/forever-eu/icons/56/135144.jpg",
+  "m277043": "https://render.worldofwarcraft.com/forever-eu/icons/56/7734240.jpg"
 }

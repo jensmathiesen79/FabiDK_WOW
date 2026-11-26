@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-25T19:02:48.986Z",
+  "last_updated": "2026-11-26T01:26:56.771Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 31,
+    "level": 32,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -13,7 +13,7 @@
       "id": 3,
       "name": "Roleplay"
     },
-    "averageItemLevel": 25
+    "averageItemLevel": null
   },
   "media": {
     "main": "https://render.worldofwarcraft.com/forever-eu/character/58/5292090-main-raw.png",
@@ -29,7 +29,7 @@
       "inv": "CLOAK",
       "c": 4,
       "sc": 1,
-      "ilvl": 24,
+      "ilvl": null,
       "st": {
         "AGILITY": 3,
         "STRENGTH": 3
@@ -48,7 +48,7 @@
       "inv": "CHEST",
       "c": 4,
       "sc": 2,
-      "ilvl": 28,
+      "ilvl": null,
       "st": {
         "STRENGTH": 10
       },
@@ -66,7 +66,7 @@
       "inv": "FEET",
       "c": 4,
       "sc": 2,
-      "ilvl": 28,
+      "ilvl": null,
       "st": {
         "ATTACK_POWER": 12,
         "SPELL_POWER": 5
@@ -85,7 +85,7 @@
       "inv": "HAND",
       "c": 4,
       "sc": 2,
-      "ilvl": 27,
+      "ilvl": null,
       "st": {
         "ATTACK_POWER": 14
       },
@@ -103,7 +103,7 @@
       "inv": "HEAD",
       "c": 4,
       "sc": 2,
-      "ilvl": 32,
+      "ilvl": null,
       "st": {
         "AGILITY": 8,
         "STRENGTH": 8
@@ -122,7 +122,7 @@
       "inv": "FINGER",
       "c": 4,
       "sc": 0,
-      "ilvl": 32,
+      "ilvl": null,
       "st": {
         "STAMINA": 7,
         "ATTACK_POWER": 8,
@@ -142,7 +142,7 @@
       "inv": "LEGS",
       "c": 4,
       "sc": 2,
-      "ilvl": 30,
+      "ilvl": null,
       "st": {
         "AGILITY": 8,
         "STAMINA": 6
@@ -161,7 +161,7 @@
       "inv": "NECK",
       "c": 4,
       "sc": 0,
-      "ilvl": 32,
+      "ilvl": null,
       "st": {
         "SPIRIT": 10
       },
@@ -179,7 +179,7 @@
       "inv": "RELIC",
       "c": 4,
       "sc": 9,
-      "ilvl": 10,
+      "ilvl": null,
       "st": {},
       "ar": 0,
       "dps": 0,
@@ -195,7 +195,7 @@
       "inv": "FINGER",
       "c": 4,
       "sc": 0,
-      "ilvl": 35,
+      "ilvl": null,
       "st": {
         "AGILITY": 6,
         "STRENGTH": 4
@@ -214,7 +214,7 @@
       "inv": "BODY",
       "c": 4,
       "sc": 0,
-      "ilvl": 1,
+      "ilvl": null,
       "st": {},
       "ar": 0,
       "dps": 0,
@@ -230,7 +230,7 @@
       "inv": "SHOULDER",
       "c": 4,
       "sc": 2,
-      "ilvl": 26,
+      "ilvl": null,
       "st": {
         "ATTACK_POWER": 10,
         "SPIRIT": 9
@@ -249,7 +249,7 @@
       "inv": "WAIST",
       "c": 4,
       "sc": 2,
-      "ilvl": 29,
+      "ilvl": null,
       "st": {
         "STRENGTH": 8,
         "SPELL_DAMAGE_DONE": 9
@@ -268,7 +268,7 @@
       "inv": "TWOHWEAPON",
       "c": 2,
       "sc": 5,
-      "ilvl": 29,
+      "ilvl": null,
       "st": {
         "INTELLECT": 10,
         "STRENGTH": 9,
@@ -288,7 +288,7 @@
       "inv": "WRIST",
       "c": 4,
       "sc": 2,
-      "ilvl": 25,
+      "ilvl": null,
       "st": {
         "STRENGTH": 5
       },
@@ -301,9 +301,9 @@
   "completed_quests": null,
   "debug": {
     "apiWarnings": [
+      "equipment: 404",
       "profile: 404",
       "character-media: 404",
-      "equipment: 404",
       "quests/completed: 404"
     ],
     "scrape": {
@@ -314,7 +314,6 @@
           "avatar": {
             "url": "string"
           },
-          "averageItemLevel": "number",
           "class": {
             "id": "number",
             "name": "string",
@@ -346,7 +345,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "is_subclass_hidden": "boolean"
             },
             "chest": {
@@ -367,7 +365,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             },
             "foot": {
@@ -386,7 +383,6 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "durability": "object"
             },
             "hand": {
@@ -407,7 +403,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             },
             "head": {
@@ -428,7 +423,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             },
             "leftFinger": {
@@ -446,7 +440,6 @@
               "binding": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "is_subclass_hidden": "boolean"
             },
             "leg": {
@@ -465,7 +458,6 @@
               "armor": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "durability": "object"
             },
             "neck": {
@@ -483,7 +475,6 @@
               "binding": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "is_subclass_hidden": "boolean"
             },
             "ranged": {
@@ -501,8 +492,7 @@
               "binding": "object",
               "spells": "object",
               "sell_price": "object",
-              "requirements": "object",
-              "level": "object"
+              "requirements": "object"
             },
             "rightFinger": {
               "id": "number",
@@ -519,7 +509,6 @@
               "binding": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "is_subclass_hidden": "boolean"
             },
             "shirt": {
@@ -535,7 +524,6 @@
               "item_subclass": "object",
               "inventory_type": "object",
               "sell_price": "object",
-              "level": "object",
               "is_subclass_hidden": "boolean"
             },
             "shoulder": {
@@ -555,7 +543,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             },
             "waist": {
@@ -575,13 +562,11 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             },
             "weapon": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
@@ -595,7 +580,6 @@
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
-              "level": "object",
               "durability": "object"
             },
             "wrist": {
@@ -616,7 +600,6 @@
               "stats": "object",
               "sell_price": "object",
               "requirements": "object",
-              "level": "object",
               "durability": "object"
             }
           },
@@ -748,7 +731,6 @@
             "avatar": {
               "url": "string"
             },
-            "averageItemLevel": "number",
             "class": {
               "id": "number",
               "name": "string",
@@ -887,15 +869,15 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
-        "https://geo.battle.net/",
+        "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
         "https://navbar.blizzard.com/base-api/v1/themes/nav",
+        "https://geo.battle.net/",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json",
-        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json"
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",
+        "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/v2/otPcTab.json"
       ],
       "domItems": 0
     }

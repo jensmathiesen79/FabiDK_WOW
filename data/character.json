@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-28T07:26:21.671Z",
+  "last_updated": "2026-11-28T13:09:49.881Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 33,
+    "level": 34,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -170,20 +170,21 @@
     {
       "slot": "NECK",
       "slotName": "Neck",
-      "id": 281321,
-      "name": "Giantstone Medallion",
-      "quality": "rare",
+      "id": 12047,
+      "name": "Spectral Necklace of the Gorilla",
+      "quality": "uncommon",
       "inv": "NECK",
       "c": 4,
       "sc": 0,
       "ilvl": null,
       "st": {
-        "SPIRIT": 10
+        "INTELLECT": 4,
+        "STRENGTH": 4
       },
       "ar": 0,
       "dps": 0,
-      "mediaId": 281321,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133302.jpg"
+      "mediaId": 12047,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133291.jpg"
     },
     {
       "slot": "RANGED",
@@ -278,21 +279,22 @@
     {
       "slot": "MAIN_HAND",
       "slotName": "Main Hand",
-      "id": 271766,
-      "name": "Heavehammer",
+      "id": 9459,
+      "name": "Thermaplugg's Left Arm",
       "quality": "rare",
       "inv": "TWOHWEAPON",
       "c": 2,
-      "sc": 5,
+      "sc": 1,
       "ilvl": null,
       "st": {
-        "ATTACK_POWER": 32,
-        "EXTRA_ARMOR": 60
+        "INTELLECT": 4,
+        "STRENGTH": 17,
+        "STAMINA": 5
       },
       "ar": 0,
-      "dps": 27.727272,
-      "mediaId": 271766,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133046.jpg"
+      "dps": 31.296295,
+      "mediaId": 9459,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132394.jpg"
     },
     {
       "slot": "WRIST",
@@ -499,6 +501,7 @@
               "slot": "object",
               "quantity": "number",
               "context": "number",
+              "bonus_list": "object",
               "quality": "object",
               "name": "string",
               "media": "object",
@@ -508,6 +511,7 @@
               "binding": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "is_subclass_hidden": "boolean"
             },
             "ranged": {
@@ -599,7 +603,6 @@
             "weapon": {
               "id": "number",
               "item": "object",
-              "enchantments": "object",
               "slot": "object",
               "quantity": "number",
               "context": "number",
@@ -613,6 +616,7 @@
               "weapon": "object",
               "stats": "object",
               "sell_price": "object",
+              "requirements": "object",
               "durability": "object"
             },
             "wrist": {
@@ -903,11 +907,11 @@
         ]
       },
       "xhrUrls": [
-        "https://navbar.blizzard.com/base-api/v1/en-us/nav",
         "https://navbar.blizzard.com/base-api/v1/en-us/navfooter",
+        "https://navbar.blizzard.com/base-api/v1/en-us/nav",
+        "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://worldofwarcraft.blizzard.com/en-us/navbar/authenticate",
         "https://geo.battle.net/",
-        "https://navbar.blizzard.com/base-api/v1/themes/nav",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/22011b0f-2c46-49a3-a7bf-5f98a4d4da65.json",
         "https://cdn.cookielaw.org/consent/22011b0f-2c46-49a3-a7bf-5f98a4d4da65/01991b0e-281b-7ba4-a546-a043fe139e03/en.json",
         "https://cdn.cookielaw.org/scripttemplates/202402.1.0/assets/otFlat.json",

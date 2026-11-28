@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-11-27T19:07:59.737Z",
+  "last_updated": "2026-11-28T01:26:18.436Z",
   "source": "scrape",
   "profile": {
     "name": "Fabi",
     "surname": "Stormhammer",
-    "level": 32,
+    "level": 33,
     "race": "Dwarf",
     "class": "Shaman",
     "faction": "Alliance",
@@ -132,6 +132,22 @@
       "dps": 0,
       "mediaId": 282283,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/1769008.jpg"
+    },
+    {
+      "slot": "TRINKET_1",
+      "slotName": "Trinket 1",
+      "id": 280766,
+      "name": "Satchel of Potions",
+      "quality": "uncommon",
+      "inv": "TRINKET",
+      "c": 4,
+      "sc": 0,
+      "ilvl": null,
+      "st": {},
+      "ar": 0,
+      "dps": 0,
+      "mediaId": 280766,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133633.jpg"
     },
     {
       "slot": "LEGS",
@@ -303,8 +319,8 @@
     "apiWarnings": [
       "profile: 404",
       "equipment: 404",
-      "quests/completed: 404",
-      "character-media: 404"
+      "character-media: 404",
+      "quests/completed: 404"
     ],
     "scrape": {
       "equipmentSource": "state:character.gear",
@@ -440,6 +456,24 @@
               "binding": "object",
               "stats": "object",
               "sell_price": "object",
+              "is_subclass_hidden": "boolean"
+            },
+            "leftTrinket": {
+              "id": "number",
+              "item": "object",
+              "slot": "object",
+              "quantity": "number",
+              "context": "number",
+              "quality": "object",
+              "name": "string",
+              "media": "object",
+              "item_class": "object",
+              "item_subclass": "object",
+              "inventory_type": "object",
+              "binding": "object",
+              "spells": "object",
+              "sell_price": "object",
+              "description": "string",
               "is_subclass_hidden": "boolean"
             },
             "leg": {
@@ -750,6 +784,7 @@
               "hand": "object",
               "head": "object",
               "leftFinger": "object",
+              "leftTrinket": "object",
               "leg": "object",
               "neck": "object",
               "ranged": "object",

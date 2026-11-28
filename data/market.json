@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-27T19:07:59.737Z",
+  "last_updated": "2026-11-28T01:26:18.436Z",
   "error": null,
   "houses": [
     {
       "id": 110,
       "name": "Alliance Auction House",
-      "auctions": 195916
+      "auctions": 213824
     },
     {
       "id": 111,
       "name": "Alliance Auction House",
-      "auctions": 202378
+      "auctions": 222306
     },
     {
       "id": 112,
@@ -20,12 +20,12 @@
     {
       "id": 119,
       "name": "Alliance Auction House",
-      "auctions": 26952
+      "auctions": 29436
     },
     {
       "id": 123,
       "name": "Alliance Auction House",
-      "auctions": 19954
+      "auctions": 20269
     }
   ],
   "upgrades": [
@@ -51,9 +51,9 @@
         "score": 155.3
       },
       "price": {
-        "copper": 14574,
-        "houseId": 119,
-        "listings": 16
+        "copper": 14999,
+        "houseId": 111,
+        "listings": 14
       },
       "mediaId": 3856,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132408.jpg"
@@ -81,9 +81,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3379,
+        "copper": 3850,
         "houseId": 111,
-        "listings": 296
+        "listings": 277
       },
       "mediaId": 4253,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132958.jpg"
@@ -110,9 +110,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 6398,
-        "houseId": 111,
-        "listings": 58
+        "copper": 7277,
+        "houseId": 110,
+        "listings": 101
       },
       "mediaId": 7390,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132541.jpg"
@@ -138,9 +138,9 @@
         "score": 155.3
       },
       "price": {
-        "copper": 29999,
+        "copper": 29900,
         "houseId": 110,
-        "listings": 3
+        "listings": 1
       },
       "mediaId": 12251,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135158.jpg"
@@ -168,9 +168,9 @@
         "score": 2.3
       },
       "price": {
-        "copper": 2600,
-        "houseId": 111,
-        "listings": 754
+        "copper": 2597,
+        "houseId": 110,
+        "listings": 809
       },
       "mediaId": 5964,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135039.jpg"
@@ -197,9 +197,9 @@
         "score": 155.3
       },
       "price": {
-        "copper": 18097,
+        "copper": 17598,
         "houseId": 111,
-        "listings": 152
+        "listings": 111
       },
       "mediaId": 3855,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135423.jpg"
@@ -227,9 +227,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 1400,
-        "houseId": 111,
-        "listings": 254
+        "copper": 1549,
+        "houseId": 110,
+        "listings": 149
       },
       "mediaId": 4254,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -256,9 +256,9 @@
         "score": 2.3
       },
       "price": {
-        "copper": 15094,
+        "copper": 15000,
         "houseId": 111,
-        "listings": 23
+        "listings": 28
       },
       "mediaId": 277051,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/7731378.jpg"
@@ -270,7 +270,7 @@
       "inv": "CHEST",
       "slotGroup": "CHEST",
       "requiredLevel": 33,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 38,
       "stats": {
         "AGILITY": 8,
@@ -286,12 +286,41 @@
         "score": 10.8
       },
       "price": {
-        "copper": 2800,
+        "copper": 2790,
         "houseId": 110,
-        "listings": 539
+        "listings": 277
       },
       "mediaId": 5739,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132719.jpg"
+    },
+    {
+      "id": 8175,
+      "name": "Nightscape Tunic",
+      "quality": "uncommon",
+      "inv": "CHEST",
+      "slotGroup": "CHEST",
+      "requiredLevel": 36,
+      "usableNow": false,
+      "itemLevel": 41,
+      "stats": {
+        "AGILITY": 15,
+        "STAMINA": 6
+      },
+      "armor": 113,
+      "dps": 0,
+      "score": 20.3,
+      "delta": 9.5,
+      "current": {
+        "name": "Superior Tunic of Strength",
+        "score": 10.8
+      },
+      "price": {
+        "copper": 4999,
+        "houseId": 110,
+        "listings": 348
+      },
+      "mediaId": 8175,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
     },
     {
       "id": 274490,
@@ -315,9 +344,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 9000,
+        "copper": 30000,
         "houseId": 110,
-        "listings": 1
+        "listings": 7
       },
       "mediaId": 274490,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132539.jpg"
@@ -343,9 +372,9 @@
         "score": 1.1
       },
       "price": {
-        "copper": 3998,
+        "copper": 3000,
         "houseId": 119,
-        "listings": 112
+        "listings": 201
       },
       "mediaId": 7358,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132939.jpg"
@@ -373,9 +402,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 9500,
-        "houseId": 110,
-        "listings": 155
+        "copper": 9995,
+        "houseId": 111,
+        "listings": 175
       },
       "mediaId": 18948,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132614.jpg"
@@ -403,7 +432,7 @@
       "price": {
         "copper": 2719,
         "houseId": 111,
-        "listings": 248
+        "listings": 162
       },
       "mediaId": 4252,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/135043.jpg"
@@ -431,9 +460,9 @@
         "score": 12.6
       },
       "price": {
-        "copper": 3179,
+        "copper": 3153,
         "houseId": 110,
-        "listings": 287
+        "listings": 392
       },
       "mediaId": 5963,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134592.jpg"
@@ -459,9 +488,9 @@
         "score": 1.2
       },
       "price": {
-        "copper": 7000,
+        "copper": 6090,
         "houseId": 111,
-        "listings": 263
+        "listings": 258
       },
       "mediaId": 7391,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132542.jpg"
@@ -487,9 +516,9 @@
         "score": 10.8
       },
       "price": {
-        "copper": 3780,
+        "copper": 3770,
         "houseId": 110,
-        "listings": 308
+        "listings": 310
       },
       "mediaId": 7374,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132718.jpg"
@@ -516,9 +545,9 @@
         "score": 8.3
       },
       "price": {
-        "copper": 2850,
-        "houseId": 111,
-        "listings": 179
+        "copper": 5455,
+        "houseId": 110,
+        "listings": 169
       },
       "mediaId": 7387,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132495.jpg"
@@ -544,9 +573,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 2700,
+        "copper": 2699,
         "houseId": 110,
-        "listings": 136
+        "listings": 187
       },
       "mediaId": 7378,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132606.jpg"
@@ -574,41 +603,12 @@
         "score": 8.3
       },
       "price": {
-        "copper": 15000,
+        "copper": 17000,
         "houseId": 111,
-        "listings": 51
+        "listings": 101
       },
       "mediaId": 6468,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
-    },
-    {
-      "id": 5782,
-      "name": "Thick Murloc Armor",
-      "quality": "uncommon",
-      "inv": "CHEST",
-      "slotGroup": "CHEST",
-      "requiredLevel": 29,
-      "usableNow": true,
-      "itemLevel": 34,
-      "stats": {
-        "STRENGTH": 9,
-        "STAMINA": 8
-      },
-      "armor": 100,
-      "dps": 0,
-      "score": 14.1,
-      "delta": 3.3,
-      "current": {
-        "name": "Superior Tunic of Strength",
-        "score": 10.8
-      },
-      "price": {
-        "copper": 5097,
-        "houseId": 110,
-        "listings": 26
-      },
-      "mediaId": 5782,
-      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132634.jpg"
     },
     {
       "id": 5783,
@@ -617,7 +617,7 @@
       "inv": "WRIST",
       "slotGroup": "WRIST",
       "requiredLevel": 33,
-      "usableNow": false,
+      "usableNow": true,
       "itemLevel": 38,
       "stats": {
         "STRENGTH": 5,
@@ -632,9 +632,9 @@
         "score": 5.2
       },
       "price": {
-        "copper": 3500,
-        "houseId": 123,
-        "listings": 48
+        "copper": 4888,
+        "houseId": 110,
+        "listings": 29
       },
       "mediaId": 5783,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132604.jpg"
@@ -660,12 +660,41 @@
         "score": 8.3
       },
       "price": {
-        "copper": 6900,
-        "houseId": 110,
-        "listings": 35
+        "copper": 6090,
+        "houseId": 111,
+        "listings": 12
       },
       "mediaId": 4264,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132498.jpg"
+    },
+    {
+      "id": 8176,
+      "name": "Nightscape Headband",
+      "quality": "uncommon",
+      "inv": "HEAD",
+      "slotGroup": "HEAD",
+      "requiredLevel": 36,
+      "usableNow": false,
+      "itemLevel": 41,
+      "stats": {
+        "AGILITY": 12,
+        "STAMINA": 11
+      },
+      "armor": 91,
+      "dps": 0,
+      "score": 19.3,
+      "delta": 2.5,
+      "current": {
+        "name": "Scaled Leather Headband of the Tiger",
+        "score": 16.8
+      },
+      "price": {
+        "copper": 3799,
+        "houseId": 111,
+        "listings": 923
+      },
+      "mediaId": 8176,
+      "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/132513.jpg"
     },
     {
       "id": 10518,
@@ -688,9 +717,9 @@
         "score": 6.1
       },
       "price": {
-        "copper": 8999,
+        "copper": 8900,
         "houseId": 111,
-        "listings": 76
+        "listings": 49
       },
       "mediaId": 10518,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133763.jpg"
@@ -716,9 +745,9 @@
         "score": 12.6
       },
       "price": {
-        "copper": 3245,
+        "copper": 3211,
         "houseId": 111,
-        "listings": 226
+        "listings": 227
       },
       "mediaId": 7373,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/134587.jpg"
@@ -747,15 +776,15 @@
       "price": {
         "copper": 7500,
         "houseId": 110,
-        "listings": 28
+        "listings": 21
       },
       "mediaId": 281927,
       "icon": "https://render.worldofwarcraft.com/forever-eu/icons/56/133345.jpg"
     }
   ],
   "rulesetId": 3,
-  "scannedItems": 6020,
-  "unknownItems": 3143,
+  "scannedItems": 6055,
+  "unknownItems": 3156,
   "weights": {
     "AGILITY": 1,
     "STRENGTH": 0.9,
